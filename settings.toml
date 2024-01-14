@@ -1,1 +1,3 @@
 version = "0.1.0"
+certs_dir = "/home/marcos/projetos/bet/certs"
+app_key = "oqkDBDNIsHACh4Cc"

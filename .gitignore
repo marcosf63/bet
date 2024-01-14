@@ -5,3 +5,4 @@ bet.egg-info/
 .secrets.*
 __pycache__/
 bet/__pycache__/
+certs/
