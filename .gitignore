@@ -1,2 +1,7 @@
 .venv
 bet.egg-info/
+
+# Ignore dynaconf secret files
+.secrets.*
+__pycache__/
+bet/__pycache__/
