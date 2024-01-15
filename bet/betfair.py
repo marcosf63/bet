@@ -6,7 +6,9 @@ import datetime
 import betfairlightweight
 from betfairlightweight import StreamListener
 from betfairlightweight.resources.bettingresources import MarketBook
-
+from betfairlightweight.filters import market_filter
+from datetime import datetime, timedelta
+import pytz
 
 def get_session_token():
     payload = f"username={settings.username}&password={settings.password}"
@@ -122,16 +124,46 @@ def get_initial_odds(data_folder, date):
                 for runner in market_book.runners:
                     print(f"Evento: {market_book.event_type} Mercado: {market_book.market_id} Seleção: {runner.selection_id} Odd inicial: {runner.last_price_traded}")
 
+def get_match_day():
+    trading = betfairlightweight.APIClient(settings.username, settings.password, app_key=settings.app_key, certs=settings.certs_dir)
+    trading.login()
+
+    timezone = pytz.timezone("UTC")  # Define a timezone como UTC
+    today = datetime.now(timezone).date()
+    start_time = datetime.combine(today, datetime.min.time()).astimezone(timezone)
+    end_time = datetime.combine(today, datetime.max.time()).astimezone(timezone)
+
+    event_filter = market_filter(
+        event_type_ids=['1'],  # ID 1 para Futebol
+        market_start_time={
+            'from': start_time.isoformat(),
+            'to': end_time.isoformat()
+        }
+    )
+    # Lista de eventos
+    events = trading.betting.list_events(
+        filter=event_filter
+    )
+    diferenca_fuso = timedelta(hours=3)
+    # Imprimir os detalhes dos eventos
+    match_day_list = []
+    for event in events:
+        match_day_list.append(
+            {
+                "Evento:", event.event.name,
+                "Data e Hora:",event.event.open_date - diferenca_fuso,
+                "EVENT_ID:", event.event.id,
+            }
+
+        )
+    
+    # Fazer logout
+    trading.logout()
+
+    return match_day_list 
+
+
 
 if __name__ == "__main__":
-    # session_token = get_session_token()
-    # print(session_token)
-    # list_matchs = get_soccer_matchs_today(session_token)
-    # event_ids = [match["event"]["id"] for match in list_matchs]
-    # list_market_info = get_market_info_by_event(session_token, event_ids)
-    # print("List market info")
-    # print(list_market_info)
-
-    trading = betfairlightweight.APIClient(settings.username, settings.password, app_key=settings.app_key, certs='/certs')
-    print(dir(trading))
-    #get_initial_odds("data", datetime.date(2023, 7, 20))
+    import json
+    print(json.dumps(get_match_day()))

@@ -6,3 +6,4 @@ bet.egg-info/
 __pycache__/
 bet/__pycache__/
 certs/
+.venv/
