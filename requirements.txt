@@ -4,6 +4,8 @@
 #
 #    pip-compile requirements.in
 #
+annotated-types==0.6.0
+    # via pydantic
 betfairlightweight==2.19.1
     # via -r requirements.in
 certifi==2023.11.17
@@ -20,17 +22,36 @@ markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
+numpy==1.26.3
+    # via pandas
+pandas==2.1.4
+    # via -r requirements.in
+pydantic==2.5.3
+    # via -r requirements.in
+pydantic-core==2.14.6
+    # via pydantic
 pygments==2.17.2
     # via rich
+python-dateutil==2.8.2
+    # via pandas
 pytz==2023.3.post1
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   pandas
 requests==2.31.0
     # via betfairlightweight
 rich==13.7.0
     # via -r requirements.in
+six==1.16.0
+    # via python-dateutil
 typer==0.9.0
     # via -r requirements.in
 typing-extensions==4.9.0
-    # via typer
+    # via
+    #   pydantic
+    #   pydantic-core
+    #   typer
+tzdata==2023.4
+    # via pandas
 urllib3==2.1.0
     # via requests

@@ -1,0 +1,95 @@
+{"op":"mcm","clk":"12038905955","pt":1725530444087,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6120651551,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}
+{"op":"mcm","clk":"12039485072","pt":1725537341806,"mc":[{"id":"1.232674722","rc":[{"ltp":3.75,"id":58805},{"ltp":2.76,"id":11532030}]}]}
+{"op":"mcm","clk":"12049531332","pt":1725658293025,"mc":[{"id":"1.232674722","rc":[{"ltp":2.66,"id":25394538}]}]}
+{"op":"mcm","clk":"12051139879","pt":1725685840376,"mc":[{"id":"1.232674722","rc":[{"ltp":2.56,"id":25394538}]}]}
+{"op":"mcm","clk":"12051421660","pt":1725690753871,"mc":[{"id":"1.232674722","rc":[{"ltp":4.3,"id":58805},{"ltp":2.6,"id":11532030}]}]}
+{"op":"mcm","clk":"12051547016","pt":1725693018658,"mc":[{"id":"1.232674722","rc":[{"ltp":2.7,"id":25394538}]}]}
+{"op":"mcm","clk":"12051588596","pt":1725693797756,"mc":[{"id":"1.232674722","rc":[{"ltp":4.2,"id":58805}]}]}
+{"op":"mcm","clk":"12052030225","pt":1725700772238,"mc":[{"id":"1.232674722","rc":[{"ltp":2.52,"id":11532030}]}]}
+{"op":"mcm","clk":"12052145498","pt":1725702027741,"mc":[{"id":"1.232674722","rc":[{"ltp":4.4,"id":58805},{"ltp":2.38,"id":11532030}]}]}
+{"op":"mcm","clk":"12052267008","pt":1725703313873,"mc":[{"id":"1.232674722","rc":[{"ltp":2.6,"id":11532030}]}]}
+{"op":"mcm","clk":"12052316749","pt":1725703716085,"mc":[{"id":"1.232674722","rc":[{"ltp":4.3,"id":58805},{"ltp":2.52,"id":11532030}]}]}
+{"op":"mcm","clk":"12052524717","pt":1725705270969,"mc":[{"id":"1.232674722","rc":[{"ltp":2.58,"id":11532030}]}]}
+{"op":"mcm","clk":"12052533739","pt":1725705339406,"mc":[{"id":"1.232674722","rc":[{"ltp":2.6,"id":11532030}]}]}
+{"op":"mcm","clk":"12052568349","pt":1725705639040,"mc":[{"id":"1.232674722","rc":[{"ltp":3.95,"id":58805}]}]}
+{"op":"mcm","clk":"12052574724","pt":1725705693708,"mc":[{"id":"1.232674722","rc":[{"ltp":2.64,"id":25394538}]}]}
+{"op":"mcm","clk":"12052642234","pt":1725706222272,"mc":[{"id":"1.232674722","rc":[{"ltp":2.58,"id":25394538}]}]}
+{"op":"mcm","clk":"12052676315","pt":1725706531439,"mc":[{"id":"1.232674722","rc":[{"ltp":4.3,"id":58805},{"ltp":2.62,"id":11532030}]}]}
+{"op":"mcm","clk":"12052682133","pt":1725706595214,"mc":[{"id":"1.232674722","rc":[{"ltp":2.7,"id":25394538}]}]}
+{"op":"mcm","clk":"12052687460","pt":1725706658326,"mc":[{"id":"1.232674722","rc":[{"ltp":2.58,"id":25394538}]}]}
+{"op":"mcm","clk":"12052692033","pt":1725706710660,"mc":[{"id":"1.232674722","rc":[{"ltp":4.2,"id":58805},{"ltp":2.68,"id":11532030}]}]}
+{"op":"mcm","clk":"12052716811","pt":1725706961983,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123653919,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}
+{"op":"mcm","clk":"12052723350","pt":1725707021932,"mc":[{"id":"1.232674722","rc":[{"ltp":4.3,"id":58805}]}]}
+{"op":"mcm","clk":"12052744320","pt":1725707201333,"mc":[{"id":"1.232674722","rc":[{"ltp":4.2,"id":58805},{"ltp":2.56,"id":25394538},{"ltp":3.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12052751701","pt":1725707260323,"mc":[{"id":"1.232674722","rc":[{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12052760426","pt":1725707321854,"mc":[{"id":"1.232674722","rc":[{"ltp":3.85,"id":58805}]}]}
+{"op":"mcm","clk":"12052785385","pt":1725707500577,"mc":[{"id":"1.232674722","rc":[{"ltp":4.0,"id":58805},{"ltp":2.06,"id":25394538}]}]}
+{"op":"mcm","clk":"12052812700","pt":1725707621039,"mc":[{"id":"1.232674722","rc":[{"ltp":4.8,"id":58805},{"ltp":1.77,"id":25394538}]}]}
+{"op":"mcm","clk":"12052820871","pt":1725707680822,"mc":[{"id":"1.232674722","rc":[{"ltp":1.74,"id":25394538}]}]}
+{"op":"mcm","clk":"12052863262","pt":1725707980385,"mc":[{"id":"1.232674722","rc":[{"ltp":5.5,"id":11532030}]}]}
+{"op":"mcm","clk":"12052914697","pt":1725708340257,"mc":[{"id":"1.232674722","rc":[{"ltp":1.62,"id":25394538}]}]}
+{"op":"mcm","clk":"12052922722","pt":1725708401787,"mc":[{"id":"1.232674722","rc":[{"ltp":4.4,"id":58805}]}]}
+{"op":"mcm","clk":"12052948164","pt":1725708582001,"mc":[{"id":"1.232674722","rc":[{"ltp":6.2,"id":11532030}]}]}
+{"op":"mcm","clk":"12052998888","pt":1725708941393,"mc":[{"id":"1.232674722","rc":[{"ltp":4.5,"id":58805}]}]}
+{"op":"mcm","clk":"12053025913","pt":1725709120943,"mc":[{"id":"1.232674722","rc":[{"ltp":4.1,"id":58805},{"ltp":6.8,"id":11532030}]}]}
+{"op":"mcm","clk":"12053069487","pt":1725709421451,"mc":[{"id":"1.232674722","rc":[{"ltp":3.0,"id":58805},{"ltp":2.84,"id":25394538},{"ltp":3.2,"id":11532030}]}]}
+{"op":"mcm","clk":"12053077681","pt":1725709480897,"mc":[{"id":"1.232674722","rc":[{"ltp":3.05,"id":58805}]}]}
+{"op":"mcm","clk":"12053085967","pt":1725709540653,"mc":[{"id":"1.232674722","rc":[{"ltp":2.76,"id":25394538}]}]}
+{"op":"mcm","clk":"12053123777","pt":1725709841899,"mc":[{"id":"1.232674722","rc":[{"ltp":3.15,"id":11532030}]}]}
+{"op":"mcm","clk":"12053168145","pt":1725710261942,"mc":[{"id":"1.232674722","rc":[{"ltp":2.88,"id":58805}]}]}
+{"op":"mcm","clk":"12053180324","pt":1725710380481,"mc":[{"id":"1.232674722","rc":[{"ltp":3.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053193579","pt":1725710501550,"mc":[{"id":"1.232674722","rc":[{"ltp":3.15,"id":11532030}]}]}
+{"op":"mcm","clk":"12053198940","pt":1725710550338,"mc":[{"id":"1.232674722","rc":[{"ltp":3.05,"id":58805}]}]}
+{"op":"mcm","clk":"12053207225","pt":1725710616990,"mc":[{"id":"1.232674722","rc":[{"ltp":3.05,"id":25394538}]}]}
+{"op":"mcm","clk":"12053214694","pt":1725710674347,"mc":[{"id":"1.232674722","rc":[{"ltp":2.9,"id":58805}]}]}
+{"op":"mcm","clk":"12053222626","pt":1725710729000,"mc":[{"id":"1.232674722","rc":[{"ltp":3.1,"id":58805},{"ltp":2.9,"id":25394538}]}]}
+{"op":"mcm","clk":"12053240870","pt":1725710860327,"mc":[{"id":"1.232674722","rc":[{"ltp":3.2,"id":58805},{"ltp":2.98,"id":11532030}]}]}
+{"op":"mcm","clk":"12053256874","pt":1725710981673,"mc":[{"id":"1.232674722","rc":[{"ltp":2.86,"id":58805}]}]}
+{"op":"mcm","clk":"12053284203","pt":1725711161858,"mc":[{"id":"1.232674722","rc":[{"ltp":2.94,"id":25394538}]}]}
+{"op":"mcm","clk":"12053293462","pt":1725711219714,"mc":[{"id":"1.232674722","rc":[{"ltp":2.98,"id":58805},{"ltp":3.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053304015","pt":1725711282005,"mc":[{"id":"1.232674722","rc":[{"ltp":2.82,"id":58805},{"ltp":3.2,"id":25394538}]}]}
+{"op":"mcm","clk":"12053314412","pt":1725711341960,"mc":[{"id":"1.232674722","rc":[{"ltp":3.05,"id":25394538}]}]}
+{"op":"mcm","clk":"12053323539","pt":1725711400585,"mc":[{"id":"1.232674722","rc":[{"ltp":3.1,"id":25394538}]}]}
+{"op":"mcm","clk":"12053332173","pt":1725711461944,"mc":[{"id":"1.232674722","rc":[{"ltp":2.66,"id":58805},{"ltp":3.35,"id":25394538}]}]}
+{"op":"mcm","clk":"12053340691","pt":1725711521362,"mc":[{"id":"1.232674722","rc":[{"ltp":3.4,"id":25394538}]}]}
+{"op":"mcm","clk":"12053348644","pt":1725711581598,"mc":[{"id":"1.232674722","rc":[{"ltp":2.58,"id":58805}]}]}
+{"op":"mcm","clk":"12053364578","pt":1725711701383,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123801814,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}
+{"op":"mcm","clk":"12053371981","pt":1725711758891,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123802018,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}
+{"op":"mcm","clk":"12053379931","pt":1725711821735,"mc":[{"id":"1.232674722","rc":[{"ltp":6.8,"id":11532030}]}]}
+{"op":"mcm","clk":"12053387462","pt":1725711881927,"mc":[{"id":"1.232674722","rc":[{"ltp":2.08,"id":25394538}]}]}
+{"op":"mcm","clk":"12053394797","pt":1725711941661,"mc":[{"id":"1.232674722","rc":[{"ltp":2.54,"id":58805}]}]}
+{"op":"mcm","clk":"12053408464","pt":1725712061799,"mc":[{"id":"1.232674722","rc":[{"ltp":2.2,"id":25394538}]}]}
+{"op":"mcm","clk":"12053415143","pt":1725712121452,"mc":[{"id":"1.232674722","rc":[{"ltp":2.52,"id":58805}]}]}
+{"op":"mcm","clk":"12053422250","pt":1725712181496,"mc":[{"id":"1.232674722","rc":[{"ltp":2.38,"id":58805}]}]}
+{"op":"mcm","clk":"12053429913","pt":1725712241604,"mc":[{"id":"1.232674722","rc":[{"ltp":7.8,"id":11532030}]}]}
+{"op":"mcm","clk":"12053437648","pt":1725712301958,"mc":[{"id":"1.232674722","rc":[{"ltp":2.24,"id":58805}]}]}
+{"op":"mcm","clk":"12053445208","pt":1725712361981,"mc":[{"id":"1.232674722","rc":[{"ltp":2.32,"id":25394538},{"ltp":7.6,"id":11532030}]}]}
+{"op":"mcm","clk":"12053452963","pt":1725712421924,"mc":[{"id":"1.232674722","rc":[{"ltp":2.12,"id":58805},{"ltp":2.34,"id":25394538}]}]}
+{"op":"mcm","clk":"12053459707","pt":1725712476318,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123821982,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"},"rc":[{"ltp":2.1,"id":58805},{"ltp":2.44,"id":25394538},{"ltp":8.8,"id":11532030}]}]}
+{"op":"mcm","clk":"12053467197","pt":1725712541724,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123823586,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}
+{"op":"mcm","clk":"12053474757","pt":1725712601651,"mc":[{"id":"1.232674722","rc":[{"ltp":1.2,"id":25394538}]}]}
+{"op":"mcm","clk":"12053483043","pt":1725712661984,"mc":[{"id":"1.232674722","rc":[{"ltp":7.8,"id":58805},{"ltp":1.17,"id":25394538},{"ltp":42.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053491868","pt":1725712721259,"mc":[{"id":"1.232674722","rc":[{"ltp":8.0,"id":58805},{"ltp":55.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053500875","pt":1725712781654,"mc":[{"id":"1.232674722","rc":[{"ltp":1.16,"id":25394538}]}]}
+{"op":"mcm","clk":"12053510139","pt":1725712841913,"mc":[{"id":"1.232674722","rc":[{"ltp":60.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053519800","pt":1725712901564,"mc":[{"id":"1.232674722","rc":[{"ltp":7.8,"id":58805},{"ltp":75.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053547341","pt":1725713021500,"mc":[{"id":"1.232674722","rc":[{"ltp":8.6,"id":58805},{"ltp":1.15,"id":25394538},{"ltp":85.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053556215","pt":1725713081842,"mc":[{"id":"1.232674722","rc":[{"ltp":8.4,"id":58805},{"ltp":1.11,"id":25394538},{"ltp":75.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053565283","pt":1725713141476,"mc":[{"id":"1.232674722","rc":[{"ltp":11.0,"id":58805},{"ltp":1.15,"id":25394538},{"ltp":100.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053573845","pt":1725713201849,"mc":[{"id":"1.232674722","rc":[{"ltp":1.13,"id":25394538}]}]}
+{"op":"mcm","clk":"12053582108","pt":1725713261779,"mc":[{"id":"1.232674722","rc":[{"ltp":10.0,"id":58805},{"ltp":1.09,"id":25394538},{"ltp":220.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053589307","pt":1725713321833,"mc":[{"id":"1.232674722","rc":[{"ltp":11.0,"id":58805},{"ltp":1.1,"id":25394538},{"ltp":130.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053597553","pt":1725713381932,"mc":[{"id":"1.232674722","rc":[{"ltp":1.09,"id":25394538}]}]}
+{"op":"mcm","clk":"12053605480","pt":1725713441956,"mc":[{"id":"1.232674722","rc":[{"ltp":11.5,"id":58805},{"ltp":1.1,"id":25394538}]}]}
+{"op":"mcm","clk":"12053612343","pt":1725713501812,"mc":[{"id":"1.232674722","rc":[{"ltp":15.0,"id":58805},{"ltp":160.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053619005","pt":1725713561932,"mc":[{"id":"1.232674722","rc":[{"ltp":11.0,"id":58805},{"ltp":170.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053625089","pt":1725713621847,"mc":[{"id":"1.232674722","rc":[{"ltp":11.5,"id":58805},{"ltp":260.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053631445","pt":1725713681818,"mc":[{"id":"1.232674722","rc":[{"ltp":14.5,"id":58805},{"ltp":1.06,"id":25394538},{"ltp":320.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053637253","pt":1725713740553,"mc":[{"id":"1.232674722","rc":[{"ltp":16.0,"id":58805}]}]}
+{"op":"mcm","clk":"12053642630","pt":1725713801596,"mc":[{"id":"1.232674722","rc":[{"ltp":1.07,"id":25394538},{"ltp":1000.0,"id":11532030}]}]}
+{"op":"mcm","clk":"12053653174","pt":1725713921493,"mc":[{"id":"1.232674722","rc":[{"ltp":18.0,"id":58805},{"ltp":1.05,"id":25394538}]}]}
+{"op":"mcm","clk":"12053658988","pt":1725713981520,"mc":[{"id":"1.232674722","rc":[{"ltp":34.0,"id":58805},{"ltp":1.02,"id":25394538}]}]}
+{"op":"mcm","clk":"12053665977","pt":1725714041047,"mc":[{"id":"1.232674722","rc":[{"ltp":50.0,"id":58805}]}]}
+{"op":"mcm","clk":"12053672309","pt":1725714101752,"mc":[{"id":"1.232674722","rc":[{"ltp":27.0,"id":58805},{"ltp":1.04,"id":25394538}]}]}
+{"op":"mcm","clk":"12053677926","pt":1725714155435,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"ACTIVE","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123883830,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}
+{"op":"mcm","clk":"12053683218","pt":1725714203124,"mc":[{"id":"1.232674722","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33557324","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T11:00:00.000Z","suspendTime":"2024-09-07T11:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-07T13:03:05.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":11532030,"name":"Kieler SV Holstein II"},{"status":"WINNER","sortPriority":2,"id":25394538,"name":"FC Phonix Lubeck"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T11:00:00.000Z","version":6123886712,"name":"Match Odds","eventName":"Kieler SV Holstein II v FC Phonix Lubeck"}}]}

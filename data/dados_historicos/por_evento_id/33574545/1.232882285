@@ -1,0 +1,76 @@
+{"op":"mcm","clk":"12028504347","pt":1725989071372,"mc":[{"id":"1.232882285","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33574545","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T15:00:00.000Z","suspendTime":"2024-09-11T15:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":59004432,"name":"Racing Feminas (W)"},{"status":"ACTIVE","sortPriority":2,"id":62618266,"name":"Osasuna (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T15:00:00.000Z","version":6130608148,"name":"Match Odds","eventName":"Racing Feminas (W) v Osasuna (W)"}}]}
+{"op":"mcm","clk":"12031432141","pt":1726032508729,"mc":[{"id":"1.232882285","rc":[{"ltp":9.6,"id":58805}]}]}
+{"op":"mcm","clk":"12031671489","pt":1726039508510,"mc":[{"id":"1.232882285","rc":[{"ltp":1.15,"id":62618266}]}]}
+{"op":"mcm","clk":"12031708174","pt":1726040415746,"mc":[{"id":"1.232882285","rc":[{"ltp":1.2,"id":62618266},{"ltp":8.4,"id":58805},{"ltp":21.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12031924993","pt":1726044500014,"mc":[{"id":"1.232882285","rc":[{"ltp":7.8,"id":58805}]}]}
+{"op":"mcm","clk":"12032247255","pt":1726048863011,"mc":[{"id":"1.232882285","rc":[{"ltp":7.6,"id":58805}]}]}
+{"op":"mcm","clk":"12032292889","pt":1726049452259,"mc":[{"id":"1.232882285","rc":[{"ltp":1.19,"id":62618266}]}]}
+{"op":"mcm","clk":"12033051356","pt":1726060467649,"mc":[{"id":"1.232882285","rc":[{"ltp":1.24,"id":62618266}]}]}
+{"op":"mcm","clk":"12033270496","pt":1726063228008,"mc":[{"id":"1.232882285","rc":[{"ltp":6.6,"id":58805}]}]}
+{"op":"mcm","clk":"12033399779","pt":1726064849106,"mc":[{"id":"1.232882285","rc":[{"ltp":1.22,"id":62618266}]}]}
+{"op":"mcm","clk":"12033421288","pt":1726065088524,"mc":[{"id":"1.232882285","rc":[{"ltp":1.31,"id":62618266},{"ltp":6.2,"id":58805},{"ltp":15.5,"id":59004432}]}]}
+{"op":"mcm","clk":"12033499307","pt":1726065916355,"mc":[{"id":"1.232882285","rc":[{"ltp":1.35,"id":62618266}]}]}
+{"op":"mcm","clk":"12033548216","pt":1726066527580,"mc":[{"id":"1.232882285","rc":[{"ltp":1.46,"id":62618266},{"ltp":4.8,"id":58805},{"ltp":10.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033560795","pt":1726066705875,"mc":[{"id":"1.232882285","rc":[{"ltp":5.4,"id":58805},{"ltp":11.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033565458","pt":1726066767599,"mc":[{"id":"1.232882285","rc":[{"ltp":1.4,"id":62618266}]}]}
+{"op":"mcm","clk":"12033569978","pt":1726066828541,"mc":[{"id":"1.232882285","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33574545","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T15:00:00.000Z","suspendTime":"2024-09-11T15:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":59004432,"name":"Racing Feminas (W)"},{"status":"ACTIVE","sortPriority":2,"id":62618266,"name":"Osasuna (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T15:00:00.000Z","version":6131708840,"name":"Match Odds","eventName":"Racing Feminas (W) v Osasuna (W)"}}]}
+{"op":"mcm","clk":"12033579828","pt":1726066947995,"mc":[{"id":"1.232882285","rc":[{"ltp":1.18,"id":62618266},{"ltp":6.6,"id":58805},{"ltp":12.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033590018","pt":1726067067947,"mc":[{"id":"1.232882285","rc":[{"ltp":1.13,"id":62618266},{"ltp":23.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033595278","pt":1726067129222,"mc":[{"id":"1.232882285","rc":[{"ltp":28.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033611746","pt":1726067308966,"mc":[{"id":"1.232882285","rc":[{"ltp":29.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033616760","pt":1726067368498,"mc":[{"id":"1.232882285","rc":[{"ltp":1.11,"id":62618266},{"ltp":13.0,"id":58805},{"ltp":44.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033626872","pt":1726067488860,"mc":[{"id":"1.232882285","rc":[{"ltp":11.5,"id":58805},{"ltp":34.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033636991","pt":1726067609166,"mc":[{"id":"1.232882285","rc":[{"ltp":1.13,"id":62618266},{"ltp":36.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033646135","pt":1726067727034,"mc":[{"id":"1.232882285","rc":[{"ltp":1.12,"id":62618266}]}]}
+{"op":"mcm","clk":"12033650958","pt":1726067787484,"mc":[{"id":"1.232882285","rc":[{"ltp":50.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033671022","pt":1726068029186,"mc":[{"id":"1.232882285","rc":[{"ltp":1.11,"id":62618266}]}]}
+{"op":"mcm","clk":"12033702849","pt":1726068389005,"mc":[{"id":"1.232882285","rc":[{"ltp":1.14,"id":62618266}]}]}
+{"op":"mcm","clk":"12033707783","pt":1726068447891,"mc":[{"id":"1.232882285","rc":[{"ltp":1.15,"id":62618266}]}]}
+{"op":"mcm","clk":"12033733604","pt":1726068749091,"mc":[{"id":"1.232882285","rc":[{"ltp":36.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033738771","pt":1726068809306,"mc":[{"id":"1.232882285","rc":[{"ltp":1.16,"id":62618266}]}]}
+{"op":"mcm","clk":"12033744556","pt":1726068869181,"mc":[{"id":"1.232882285","rc":[{"ltp":1.15,"id":62618266}]}]}
+{"op":"mcm","clk":"12033750266","pt":1726068929137,"mc":[{"id":"1.232882285","rc":[{"ltp":42.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033755523","pt":1726068984507,"mc":[{"id":"1.232882285","rc":[{"ltp":1.16,"id":62618266},{"ltp":8.2,"id":58805}]}]}
+{"op":"mcm","clk":"12033761836","pt":1726069049191,"mc":[{"id":"1.232882285","rc":[{"ltp":34.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033783250","pt":1726069229133,"mc":[{"id":"1.232882285","rc":[{"ltp":1.17,"id":62618266}]}]}
+{"op":"mcm","clk":"12033825995","pt":1726069647261,"mc":[{"id":"1.232882285","rc":[{"ltp":7.8,"id":58805},{"ltp":44.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033831167","pt":1726069708199,"mc":[{"id":"1.232882285","rc":[{"ltp":1.18,"id":62618266}]}]}
+{"op":"mcm","clk":"12033836645","pt":1726069766566,"mc":[{"id":"1.232882285","rc":[{"ltp":46.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033851780","pt":1726069945518,"mc":[{"id":"1.232882285","rc":[{"ltp":44.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033867548","pt":1726070126403,"mc":[{"id":"1.232882285","rc":[{"ltp":1.17,"id":62618266}]}]}
+{"op":"mcm","clk":"12033872873","pt":1726070187876,"mc":[{"id":"1.232882285","rc":[{"ltp":40.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033888424","pt":1726070365657,"mc":[{"id":"1.232882285","rc":[{"ltp":38.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033905554","pt":1726070547101,"mc":[{"id":"1.232882285","rc":[{"ltp":1.15,"id":62618266},{"ltp":8.8,"id":58805},{"ltp":55.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033911548","pt":1726070609241,"mc":[{"id":"1.232882285","rc":[{"ltp":8.0,"id":58805},{"ltp":50.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033917778","pt":1726070669330,"mc":[{"id":"1.232882285","rc":[{"ltp":9.2,"id":58805},{"ltp":42.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033923882","pt":1726070728783,"mc":[{"id":"1.232882285","rc":[{"ltp":1.14,"id":62618266},{"ltp":8.2,"id":58805}]}]}
+{"op":"mcm","clk":"12033929897","pt":1726070789091,"mc":[{"id":"1.232882285","rc":[{"ltp":48.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033941415","pt":1726070909232,"mc":[{"id":"1.232882285","rc":[{"ltp":50.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033962508","pt":1726071147388,"mc":[{"id":"1.232882285","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33574545","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T15:00:00.000Z","suspendTime":"2024-09-11T15:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":59004432,"name":"Racing Feminas (W)"},{"status":"ACTIVE","sortPriority":2,"id":62618266,"name":"Osasuna (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T15:00:00.000Z","version":6131785554,"name":"Match Odds","eventName":"Racing Feminas (W) v Osasuna (W)"}}]}
+{"op":"mcm","clk":"12033981106","pt":1726071269230,"mc":[{"id":"1.232882285","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33574545","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T15:00:00.000Z","suspendTime":"2024-09-11T15:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":59004432,"name":"Racing Feminas (W)"},{"status":"ACTIVE","sortPriority":2,"id":62618266,"name":"Osasuna (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T15:00:00.000Z","version":6131789974,"name":"Match Odds","eventName":"Racing Feminas (W) v Osasuna (W)"}}]}
+{"op":"mcm","clk":"12033986956","pt":1726071329303,"mc":[{"id":"1.232882285","rc":[{"ltp":1.44,"id":62618266},{"ltp":5.0,"id":58805},{"ltp":17.5,"id":59004432}]}]}
+{"op":"mcm","clk":"12033992572","pt":1726071389186,"mc":[{"id":"1.232882285","rc":[{"ltp":1.37,"id":62618266},{"ltp":4.4,"id":58805},{"ltp":19.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12033998007","pt":1726071448626,"mc":[{"id":"1.232882285","rc":[{"ltp":1.38,"id":62618266}]}]}
+{"op":"mcm","clk":"12034003514","pt":1726071509306,"mc":[{"id":"1.232882285","rc":[{"ltp":1.35,"id":62618266},{"ltp":22.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034009023","pt":1726071568521,"mc":[{"id":"1.232882285","rc":[{"ltp":1.36,"id":62618266},{"ltp":24.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034014657","pt":1726071628990,"mc":[{"id":"1.232882285","rc":[{"ltp":1.37,"id":62618266},{"ltp":4.9,"id":58805},{"ltp":22.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034020290","pt":1726071685182,"mc":[{"id":"1.232882285","rc":[{"ltp":19.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034026670","pt":1726071748677,"mc":[{"id":"1.232882285","rc":[{"ltp":1.33,"id":62618266},{"ltp":24.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034032356","pt":1726071808790,"mc":[{"id":"1.232882285","rc":[{"ltp":26.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034037511","pt":1726071867270,"mc":[{"id":"1.232882285","rc":[{"ltp":1.35,"id":62618266}]}]}
+{"op":"mcm","clk":"12034042770","pt":1726071928777,"mc":[{"id":"1.232882285","rc":[{"ltp":1.49,"id":62618266},{"ltp":4.7,"id":58805}]}]}
+{"op":"mcm","clk":"12034047827","pt":1726071988930,"mc":[{"id":"1.232882285","rc":[{"ltp":1.34,"id":62618266},{"ltp":5.2,"id":58805},{"ltp":28.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034052832","pt":1726072049199,"mc":[{"id":"1.232882285","rc":[{"ltp":5.1,"id":58805}]}]}
+{"op":"mcm","clk":"12034057389","pt":1726072108701,"mc":[{"id":"1.232882285","rc":[{"ltp":1.31,"id":62618266}]}]}
+{"op":"mcm","clk":"12034062571","pt":1726072169157,"mc":[{"id":"1.232882285","rc":[{"ltp":1.32,"id":62618266},{"ltp":4.8,"id":58805},{"ltp":32.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034072441","pt":1726072289112,"mc":[{"id":"1.232882285","rc":[{"ltp":1.04,"id":62618266}]}]}
+{"op":"mcm","clk":"12034082823","pt":1726072409114,"mc":[{"id":"1.232882285","rc":[{"ltp":1.02,"id":62618266},{"ltp":28.0,"id":58805}]}]}
+{"op":"mcm","clk":"12034093445","pt":1726072526060,"mc":[{"id":"1.232882285","rc":[{"ltp":1.04,"id":62618266}]}]}
+{"op":"mcm","clk":"12034099045","pt":1726072589037,"mc":[{"id":"1.232882285","rc":[{"ltp":1.03,"id":62618266}]}]}
+{"op":"mcm","clk":"12034115090","pt":1726072768975,"mc":[{"id":"1.232882285","rc":[{"ltp":1.02,"id":62618266}]}]}
+{"op":"mcm","clk":"12034131475","pt":1726072947402,"mc":[{"id":"1.232882285","rc":[{"ltp":1.03,"id":62618266}]}]}
+{"op":"mcm","clk":"12034136813","pt":1726073009286,"mc":[{"id":"1.232882285","rc":[{"ltp":1.02,"id":62618266}]}]}
+{"op":"mcm","clk":"12034146538","pt":1726073129214,"mc":[{"id":"1.232882285","rc":[{"ltp":1.01,"id":62618266},{"ltp":70.0,"id":58805},{"ltp":1000.0,"id":59004432}]}]}
+{"op":"mcm","clk":"12034171981","pt":1726073489199,"mc":[{"id":"1.232882285","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12034177174","pt":1726073562384,"mc":[{"id":"1.232882285","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33574545","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T15:00:00.000Z","suspendTime":"2024-09-11T15:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":59004432,"name":"Racing Feminas (W)"},{"status":"ACTIVE","sortPriority":2,"id":62618266,"name":"Osasuna (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T15:00:00.000Z","version":6131833546,"name":"Match Odds","eventName":"Racing Feminas (W) v Osasuna (W)"}}]}
+{"op":"mcm","clk":"12034182466","pt":1726073639048,"mc":[{"id":"1.232882285","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33574545","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T15:00:00.000Z","suspendTime":"2024-09-11T15:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-11T16:53:39.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":59004432,"name":"Racing Feminas (W)"},{"status":"WINNER","sortPriority":2,"id":62618266,"name":"Osasuna (W)"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T15:00:00.000Z","version":6131835681,"name":"Match Odds","eventName":"Racing Feminas (W) v Osasuna (W)"}}]}

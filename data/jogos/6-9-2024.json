@@ -1,0 +1,177 @@
+[
+    {
+        "evento_id": "33557786",
+        "data": "2024-09-06",
+        "hora": "05:30",
+        "home_team": "Maccabi Beer Sheva",
+        "away_team": "SC Hapoel Segev Shalom"
+    },
+    {
+        "evento_id": "33557062",
+        "data": "2024-09-06",
+        "hora": "19:00",
+        "home_team": "Australia U20 (W)",
+        "away_team": "Cameroon U20 (W)"
+    },
+    {
+        "evento_id": "33559239",
+        "data": "2024-09-06",
+        "hora": "19:00",
+        "home_team": "Real Zamora",
+        "away_team": "Canoneros Marina"
+    },
+    {
+        "evento_id": "33550954",
+        "data": "2024-09-06",
+        "hora": "19:00",
+        "home_team": "Aguilas Doradas",
+        "away_team": "Atletico Bucaramanga"
+    },
+    {
+        "evento_id": "33557596",
+        "data": "2024-09-06",
+        "hora": "19:00",
+        "home_team": "CA Independiente (Res)",
+        "away_team": "Racing Club (Res)"
+    },
+    {
+        "evento_id": "33557166",
+        "data": "2024-09-06",
+        "hora": "19:00",
+        "home_team": "Mexico U20 (W)",
+        "away_team": "Colombia U20 (W)"
+    },
+    {
+        "evento_id": "33557755",
+        "data": "2024-09-06",
+        "hora": "19:00",
+        "home_team": "CA Ituzaingo",
+        "away_team": "General Lamadrid"
+    },
+    {
+        "evento_id": "33549347",
+        "data": "2024-09-06",
+        "hora": "20:00",
+        "home_team": "CD Tepatitlan De Morelos",
+        "away_team": "Celaya"
+    },
+    {
+        "evento_id": "33548258",
+        "data": "2024-09-06",
+        "hora": "20:30",
+        "home_team": "Louisville FC",
+        "away_team": "Loudoun United FC"
+    },
+    {
+        "evento_id": "33537632",
+        "data": "2024-09-06",
+        "hora": "20:30",
+        "home_team": "Uruguay",
+        "away_team": "Paraguay"
+    },
+    {
+        "evento_id": "33549761",
+        "data": "2024-09-06",
+        "hora": "20:30",
+        "home_team": "Junior FC Barranquilla",
+        "away_team": "Deportivo Pereira"
+    },
+    {
+        "evento_id": "33557130",
+        "data": "2024-09-06",
+        "hora": "21:00",
+        "home_team": "Jamaica",
+        "away_team": "Cuba"
+    },
+    {
+        "evento_id": "33557146",
+        "data": "2024-09-06",
+        "hora": "21:00",
+        "home_team": "Puerto Rico",
+        "away_team": "Haiti"
+    },
+    {
+        "evento_id": "33558758",
+        "data": "2024-09-06",
+        "hora": "21:00",
+        "home_team": "Sportivo Belgrano",
+        "away_team": "CS General San Martin"
+    },
+    {
+        "evento_id": "33548262",
+        "data": "2024-09-06",
+        "hora": "22:00",
+        "home_team": "New Mexico United",
+        "away_team": "Miami FC"
+    },
+    {
+        "evento_id": "33549345",
+        "data": "2024-09-06",
+        "hora": "22:00",
+        "home_team": "Mineros de Zacatecas",
+        "away_team": "Tapatio"
+    },
+    {
+        "evento_id": "33537627",
+        "data": "2024-09-06",
+        "hora": "22:00",
+        "home_team": "Brazil",
+        "away_team": "Ecuador"
+    },
+    {
+        "evento_id": "33557169",
+        "data": "2024-09-06",
+        "hora": "22:00",
+        "home_team": "Canada U20 (W)",
+        "away_team": "Brazil U20 (W)"
+    },
+    {
+        "evento_id": "33557174",
+        "data": "2024-09-06",
+        "hora": "22:00",
+        "home_team": "Santos Laguna (W)",
+        "away_team": "Queretaro (W)"
+    },
+    {
+        "evento_id": "33560058",
+        "data": "2024-09-06",
+        "hora": "22:00",
+        "home_team": "FC Santiago",
+        "away_team": "Caja Oblatos C.FD"
+    },
+    {
+        "evento_id": "33558742",
+        "data": "2024-09-06",
+        "hora": "22:30",
+        "home_team": "San Francisco FC",
+        "away_team": "Sporting San Miguelito"
+    },
+    {
+        "evento_id": "33533254",
+        "data": "2024-09-06",
+        "hora": "22:30",
+        "home_team": "Peru",
+        "away_team": "Colombia"
+    },
+    {
+        "evento_id": "33560132",
+        "data": "2024-09-06",
+        "hora": "23:00",
+        "home_team": "Cimarrones de Sonora II",
+        "away_team": "Tuzos de la UAZ"
+    },
+    {
+        "evento_id": "33557126",
+        "data": "2024-09-06",
+        "hora": "23:00",
+        "home_team": "Honduras",
+        "away_team": "Trinidad & Tobago"
+    },
+    {
+        "evento_id": "33551787",
+        "data": "2024-09-06",
+        "hora": "23:00",
+        "home_team": "Vancouver FC",
+        "away_team": "York9"
+    }
+]

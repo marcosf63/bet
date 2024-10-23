@@ -1,0 +1,81 @@
+{"op":"mcm","clk":"12067230793","pt":1725881627163,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"ACTIVE","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6129128725,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"}}]}
+{"op":"mcm","clk":"12067239848","pt":1725881873772,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"ACTIVE","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6129128725,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"}}]}
+{"op":"mcm","clk":"12069748429","pt":1725914392319,"mc":[{"id":"1.232835391","rc":[{"ltp":1.04,"id":209703}]}]}
+{"op":"mcm","clk":"12070717503","pt":1725942700476,"mc":[{"id":"1.232835391","rc":[{"ltp":1.13,"id":209703}]}]}
+{"op":"mcm","clk":"12070721453","pt":1725942836587,"mc":[{"id":"1.232835391","rc":[{"ltp":11.5,"id":58805}]}]}
+{"op":"mcm","clk":"12070868313","pt":1725947493351,"mc":[{"id":"1.232835391","rc":[{"ltp":1.14,"id":209703}]}]}
+{"op":"mcm","clk":"12070909484","pt":1725948713911,"mc":[{"id":"1.232835391","rc":[{"ltp":1.15,"id":209703}]}]}
+{"op":"mcm","clk":"12070937686","pt":1725949570828,"mc":[{"id":"1.232835391","rc":[{"ltp":10.0,"id":58805}]}]}
+{"op":"mcm","clk":"12070979921","pt":1725950607031,"mc":[{"id":"1.232835391","rc":[{"ltp":11.0,"id":58805}]}]}
+{"op":"mcm","clk":"12071003343","pt":1725951269513,"mc":[{"id":"1.232835391","rc":[{"ltp":1.14,"id":209703}]}]}
+{"op":"mcm","clk":"12071093006","pt":1725953507493,"mc":[{"id":"1.232835391","rc":[{"ltp":1.17,"id":209703}]}]}
+{"op":"mcm","clk":"12071105422","pt":1725953760319,"mc":[{"id":"1.232835391","rc":[{"ltp":1.14,"id":209703}]}]}
+{"op":"mcm","clk":"12071221182","pt":1725955837237,"mc":[{"id":"1.232835391","rc":[{"ltp":26.0,"id":210048},{"ltp":11.5,"id":58805}]}]}
+{"op":"mcm","clk":"12071295794","pt":1725956819912,"mc":[{"id":"1.232835391","rc":[{"ltp":28.0,"id":210048}]}]}
+{"op":"mcm","clk":"12072011169","pt":1725966117594,"mc":[{"id":"1.232835391","rc":[{"ltp":1.17,"id":209703}]}]}
+{"op":"mcm","clk":"12072139597","pt":1725967581056,"mc":[{"id":"1.232835391","rc":[{"ltp":27.0,"id":210048}]}]}
+{"op":"mcm","clk":"12072307550","pt":1725969414569,"mc":[{"id":"1.232835391","rc":[{"ltp":26.0,"id":210048}]}]}
+{"op":"mcm","clk":"12072526391","pt":1725971641102,"mc":[{"id":"1.232835391","rc":[{"ltp":1.14,"id":209703}]}]}
+{"op":"mcm","clk":"12072609242","pt":1725972385310,"mc":[{"id":"1.232835391","rc":[{"ltp":25.0,"id":210048}]}]}
+{"op":"mcm","clk":"12072808455","pt":1725974332256,"mc":[{"id":"1.232835391","rc":[{"ltp":1.17,"id":209703}]}]}
+{"op":"mcm","clk":"12072926518","pt":1725975527380,"mc":[{"id":"1.232835391","rc":[{"ltp":11.0,"id":58805}]}]}
+{"op":"mcm","clk":"12073047597","pt":1725977000264,"mc":[{"id":"1.232835391","rc":[{"ltp":1.14,"id":209703}]}]}
+{"op":"mcm","clk":"12073212753","pt":1725978713829,"mc":[{"id":"1.232835391","rc":[{"ltp":11.5,"id":58805}]}]}
+{"op":"mcm","clk":"12073370632","pt":1725980625979,"mc":[{"id":"1.232835391","rc":[{"ltp":10.5,"id":58805}]}]}
+{"op":"mcm","clk":"12073596763","pt":1725982854277,"mc":[{"id":"1.232835391","rc":[{"ltp":22.0,"id":210048},{"ltp":11.0,"id":58805}]}]}
+{"op":"mcm","clk":"12073665058","pt":1725983455799,"mc":[{"id":"1.232835391","rc":[{"ltp":10.0,"id":58805},{"ltp":1.17,"id":209703}]}]}
+{"op":"mcm","clk":"12073688172","pt":1725983691374,"mc":[{"id":"1.232835391","rc":[{"ltp":9.4,"id":58805},{"ltp":1.18,"id":209703}]}]}
+{"op":"mcm","clk":"12073692180","pt":1725983729014,"mc":[{"id":"1.232835391","rc":[{"ltp":25.0,"id":210048},{"ltp":9.6,"id":58805}]}]}
+{"op":"mcm","clk":"12073700444","pt":1725983812054,"mc":[{"id":"1.232835391","rc":[{"ltp":19.5,"id":210048},{"ltp":10.0,"id":58805}]}]}
+{"op":"mcm","clk":"12073704785","pt":1725983855211,"mc":[{"id":"1.232835391","rc":[{"ltp":9.2,"id":58805}]}]}
+{"op":"mcm","clk":"12073719139","pt":1725983994917,"mc":[{"id":"1.232835391","rc":[{"ltp":9.0,"id":58805}]}]}
+{"op":"mcm","clk":"12073735404","pt":1725984116079,"mc":[{"id":"1.232835391","rc":[{"ltp":23.0,"id":210048},{"ltp":9.4,"id":58805}]}]}
+{"op":"mcm","clk":"12073752787","pt":1725984234518,"mc":[{"id":"1.232835391","rc":[{"ltp":9.2,"id":58805}]}]}
+{"op":"mcm","clk":"12073761301","pt":1725984293259,"mc":[{"id":"1.232835391","rc":[{"ltp":9.4,"id":58805}]}]}
+{"op":"mcm","clk":"12073779545","pt":1725984414300,"mc":[{"id":"1.232835391","rc":[{"ltp":9.2,"id":58805}]}]}
+{"op":"mcm","clk":"12073823939","pt":1725984715537,"mc":[{"id":"1.232835391","rc":[{"ltp":1.19,"id":209703}]}]}
+{"op":"mcm","clk":"12073860493","pt":1725984956514,"mc":[{"id":"1.232835391","rc":[{"ltp":21.0,"id":210048},{"ltp":8.2,"id":58805},{"ltp":1.18,"id":209703}]}]}
+{"op":"mcm","clk":"12073868533","pt":1725985007775,"mc":[{"id":"1.232835391","rc":[{"ltp":8.4,"id":58805}]}]}
+{"op":"mcm","clk":"12073887159","pt":1725985133582,"mc":[{"id":"1.232835391","rc":[{"ltp":22.0,"id":210048}]}]}
+{"op":"mcm","clk":"12073896244","pt":1725985196542,"mc":[{"id":"1.232835391","rc":[{"ltp":8.6,"id":58805}]}]}
+{"op":"mcm","clk":"12073904670","pt":1725985253938,"mc":[{"id":"1.232835391","rc":[{"ltp":8.4,"id":58805}]}]}
+{"op":"mcm","clk":"12073914323","pt":1725985316805,"mc":[{"id":"1.232835391","rc":[{"ltp":19.5,"id":210048},{"ltp":1.2,"id":209703}]}]}
+{"op":"mcm","clk":"12073922959","pt":1725985373051,"mc":[{"id":"1.232835391","rc":[{"ltp":1.19,"id":209703}]}]}
+{"op":"mcm","clk":"12073932578","pt":1725985436833,"mc":[{"id":"1.232835391","rc":[{"ltp":1.2,"id":209703}]}]}
+{"op":"mcm","clk":"12073942076","pt":1725985496433,"mc":[{"id":"1.232835391","rc":[{"ltp":18.0,"id":210048}]}]}
+{"op":"mcm","clk":"12073951787","pt":1725985556523,"mc":[{"id":"1.232835391","rc":[{"ltp":18.5,"id":210048},{"ltp":8.0,"id":58805},{"ltp":1.22,"id":209703}]}]}
+{"op":"mcm","clk":"12073961713","pt":1725985616867,"mc":[{"id":"1.232835391","rc":[{"ltp":8.2,"id":58805}]}]}
+{"op":"mcm","clk":"12073971538","pt":1725985676812,"mc":[{"id":"1.232835391","rc":[{"ltp":17.0,"id":210048},{"ltp":8.4,"id":58805}]}]}
+{"op":"mcm","clk":"12073981255","pt":1725985736334,"mc":[{"id":"1.232835391","rc":[{"ltp":16.5,"id":210048},{"ltp":7.8,"id":58805},{"ltp":1.23,"id":209703}]}]}
+{"op":"mcm","clk":"12073991469","pt":1725985796684,"mc":[{"id":"1.232835391","rc":[{"ltp":15.0,"id":210048},{"ltp":8.2,"id":58805},{"ltp":1.24,"id":209703}]}]}
+{"op":"mcm","clk":"12074001615","pt":1725985856569,"mc":[{"id":"1.232835391","rc":[{"ltp":1.23,"id":209703}]}]}
+{"op":"mcm","clk":"12074011292","pt":1725985916113,"mc":[{"id":"1.232835391","rc":[{"ltp":8.6,"id":58805}]}]}
+{"op":"mcm","clk":"12074020714","pt":1725985970680,"mc":[{"id":"1.232835391","rc":[{"ltp":1.21,"id":209703}]}]}
+{"op":"mcm","clk":"12074032226","pt":1725986036697,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"ACTIVE","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6130525244,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"},"rc":[{"ltp":15.5,"id":210048},{"ltp":7.4,"id":58805},{"ltp":1.24,"id":209703}]}]}
+{"op":"mcm","clk":"12074042753","pt":1725986096829,"mc":[{"id":"1.232835391","rc":[{"ltp":16.5,"id":210048},{"ltp":7.6,"id":58805}]}]}
+{"op":"mcm","clk":"12074052300","pt":1725986151327,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"ACTIVE","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6130531438,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"},"rc":[{"ltp":130.0,"id":210048},{"ltp":27.0,"id":58805},{"ltp":1.09,"id":209703}]}]}
+{"op":"mcm","clk":"12074063463","pt":1725986216684,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"ACTIVE","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6130533914,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"},"rc":[{"ltp":46.0,"id":210048},{"ltp":16.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074074090","pt":1725986276579,"mc":[{"id":"1.232835391","rc":[{"ltp":50.0,"id":210048},{"ltp":15.5,"id":58805},{"ltp":1.1,"id":209703}]}]}
+{"op":"mcm","clk":"12074084490","pt":1725986336861,"mc":[{"id":"1.232835391","rc":[{"ltp":42.0,"id":210048}]}]}
+{"op":"mcm","clk":"12074094897","pt":1725986396512,"mc":[{"id":"1.232835391","rc":[{"ltp":50.0,"id":210048}]}]}
+{"op":"mcm","clk":"12074105887","pt":1725986456614,"mc":[{"id":"1.232835391","rc":[{"ltp":46.0,"id":210048}]}]}
+{"op":"mcm","clk":"12074116093","pt":1725986516705,"mc":[{"id":"1.232835391","rc":[{"ltp":1.02,"id":209703}]}]}
+{"op":"mcm","clk":"12074127113","pt":1725986576863,"mc":[{"id":"1.232835391","rc":[{"ltp":190.0,"id":210048},{"ltp":46.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074137685","pt":1725986636814,"mc":[{"id":"1.232835391","rc":[{"ltp":240.0,"id":210048},{"ltp":48.0,"id":58805},{"ltp":1.03,"id":209703}]}]}
+{"op":"mcm","clk":"12074159792","pt":1725986756809,"mc":[{"id":"1.232835391","rc":[{"ltp":280.0,"id":210048},{"ltp":1.02,"id":209703}]}]}
+{"op":"mcm","clk":"12074170794","pt":1725986816790,"mc":[{"id":"1.232835391","rc":[{"ltp":250.0,"id":210048},{"ltp":42.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074180885","pt":1725986876738,"mc":[{"id":"1.232835391","rc":[{"ltp":170.0,"id":210048}]}]}
+{"op":"mcm","clk":"12074190701","pt":1725986936779,"mc":[{"id":"1.232835391","rc":[{"ltp":220.0,"id":210048}]}]}
+{"op":"mcm","clk":"12074199932","pt":1725986996862,"mc":[{"id":"1.232835391","rc":[{"ltp":1.01,"id":209703}]}]}
+{"op":"mcm","clk":"12074207997","pt":1725987056631,"mc":[{"id":"1.232835391","rc":[{"ltp":1000.0,"id":210048}]}]}
+{"op":"mcm","clk":"12074215189","pt":1725987114685,"mc":[{"id":"1.232835391","rc":[{"ltp":280.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074230260","pt":1725987236526,"mc":[{"id":"1.232835391","rc":[{"ltp":240.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074244308","pt":1725987356789,"mc":[{"id":"1.232835391","rc":[{"ltp":290.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074312107","pt":1725987836756,"mc":[{"id":"1.232835391","rc":[{"ltp":250.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074360541","pt":1725988136851,"mc":[{"id":"1.232835391","rc":[{"ltp":270.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074603754","pt":1725989576762,"mc":[{"id":"1.232835391","rc":[{"ltp":240.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074622201","pt":1725989694099,"mc":[{"id":"1.232835391","rc":[{"ltp":280.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074664348","pt":1725989936497,"mc":[{"id":"1.232835391","rc":[{"ltp":150.0,"id":58805}]}]}
+{"op":"mcm","clk":"12074754456","pt":1725990475892,"mc":[{"id":"1.232835391","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12075005529","pt":1725992611641,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"ACTIVE","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6130709829,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"}}]}
+{"op":"mcm","clk":"12075012252","pt":1725992679977,"mc":[{"id":"1.232835391","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571100","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-10T16:30:00.000Z","suspendTime":"2024-09-10T16:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-10T18:24:20.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":210048,"name":"Malta U21"},{"status":"WINNER","sortPriority":2,"id":209703,"name":"Scotland U21"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"discountAllowed":true,"timezone":"GMT","openDate":"2024-09-10T16:30:00.000Z","version":6130711085,"name":"Match Odds","eventName":"Malta U21 v Scotland U21"}}]}

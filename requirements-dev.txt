@@ -7,3 +7,6 @@ pytest-order     # ordenação de testes
 httpx            # request async para testes
 black            # auto formatação
 flake8           # linter
+jedi             # autocomplete
+jupyter          # jupyter notebbok para testes
+isort

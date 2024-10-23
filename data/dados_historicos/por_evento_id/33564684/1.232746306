@@ -1,0 +1,54 @@
+{"op":"mcm","clk":"12006104000","pt":1725714616814,"mc":[{"id":"1.232746306","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33564684","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":11780079,"name":"Diyarbekirspor"},{"status":"ACTIVE","sortPriority":2,"id":1341524,"name":"Giresunspor"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"TR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6123901964,"name":"Match Odds","eventName":"Diyarbekirspor v Giresunspor"}}]}
+{"op":"mcm","clk":"12013254520","pt":1725786006370,"mc":[{"id":"1.232746306","rc":[{"ltp":2.8,"id":11780079}]}]}
+{"op":"mcm","clk":"12013279402","pt":1725786276704,"mc":[{"id":"1.232746306","rc":[{"ltp":2.84,"id":11780079},{"ltp":2.74,"id":1341524},{"ltp":3.55,"id":58805}]}]}
+{"op":"mcm","clk":"12013533659","pt":1725788650042,"mc":[{"id":"1.232746306","rc":[{"ltp":3.25,"id":58805}]}]}
+{"op":"mcm","clk":"12013809723","pt":1725790569049,"mc":[{"id":"1.232746306","rc":[{"ltp":3.15,"id":1341524}]}]}
+{"op":"mcm","clk":"12013849075","pt":1725790804342,"mc":[{"id":"1.232746306","rc":[{"ltp":2.94,"id":58805},{"ltp":3.2,"id":1341524}]}]}
+{"op":"mcm","clk":"12015110765","pt":1725799997134,"mc":[{"id":"1.232746306","rc":[{"ltp":2.62,"id":11780079},{"ltp":3.35,"id":1341524}]}]}
+{"op":"mcm","clk":"12015124715","pt":1725800132124,"mc":[{"id":"1.232746306","rc":[{"ltp":3.3,"id":58805}]}]}
+{"op":"mcm","clk":"12015150132","pt":1725800416086,"mc":[{"id":"1.232746306","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33564684","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":11780079,"name":"Diyarbekirspor"},{"status":"ACTIVE","sortPriority":2,"id":1341524,"name":"Giresunspor"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"TR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6127188591,"name":"Match Odds","eventName":"Diyarbekirspor v Giresunspor"},"rc":[{"ltp":3.2,"id":58805}]}]}
+{"op":"mcm","clk":"12015173506","pt":1725800608003,"mc":[{"id":"1.232746306","rc":[{"ltp":1.09,"id":11780079}]}]}
+{"op":"mcm","clk":"12015231565","pt":1725801056809,"mc":[{"id":"1.232746306","rc":[{"ltp":3.05,"id":58805}]}]}
+{"op":"mcm","clk":"12015267357","pt":1725801256037,"mc":[{"id":"1.232746306","rc":[{"ltp":2.98,"id":58805}]}]}
+{"op":"mcm","clk":"12015372899","pt":1725802028791,"mc":[{"id":"1.232746306","rc":[{"ltp":3.6,"id":1341524}]}]}
+{"op":"mcm","clk":"12015429000","pt":1725802455479,"mc":[{"id":"1.232746306","rc":[{"ltp":3.85,"id":1341524},{"ltp":2.52,"id":58805}]}]}
+{"op":"mcm","clk":"12015454088","pt":1725802636159,"mc":[{"id":"1.232746306","rc":[{"ltp":4.0,"id":1341524}]}]}
+{"op":"mcm","clk":"12015481196","pt":1725802816887,"mc":[{"id":"1.232746306","rc":[{"ltp":4.1,"id":1341524}]}]}
+{"op":"mcm","clk":"12015521771","pt":1725803110798,"mc":[{"id":"1.232746306","rc":[{"ltp":2.94,"id":11780079}]}]}
+{"op":"mcm","clk":"12015555059","pt":1725803352699,"mc":[{"id":"1.232746306","rc":[{"ltp":3.85,"id":1341524}]}]}
+{"op":"mcm","clk":"12015593714","pt":1725803707478,"mc":[{"id":"1.232746306","rc":[{"ltp":3.25,"id":11780079}]}]}
+{"op":"mcm","clk":"12015608159","pt":1725803836329,"mc":[{"id":"1.232746306","rc":[{"ltp":2.28,"id":58805}]}]}
+{"op":"mcm","clk":"12015643861","pt":1725804137132,"mc":[{"id":"1.232746306","rc":[{"ltp":2.94,"id":11780079}]}]}
+{"op":"mcm","clk":"12015674024","pt":1725804351515,"mc":[{"id":"1.232746306","rc":[{"ltp":1.56,"id":11780079},{"ltp":3.0,"id":58805}]}]}
+{"op":"mcm","clk":"12015686665","pt":1725804436886,"mc":[{"id":"1.232746306","rc":[{"ltp":3.25,"id":11780079},{"ltp":4.0,"id":1341524},{"ltp":2.3,"id":58805}]}]}
+{"op":"mcm","clk":"12015704888","pt":1725804556164,"mc":[{"id":"1.232746306","rc":[{"ltp":3.35,"id":11780079},{"ltp":2.2,"id":58805}]}]}
+{"op":"mcm","clk":"12015722852","pt":1725804672867,"mc":[{"id":"1.232746306","rc":[{"ltp":3.5,"id":11780079},{"ltp":3.95,"id":1341524}]}]}
+{"op":"mcm","clk":"12015761729","pt":1725804916055,"mc":[{"id":"1.232746306","rc":[{"ltp":2.0,"id":58805}]}]}
+{"op":"mcm","clk":"12015845579","pt":1725805516474,"mc":[{"id":"1.232746306","rc":[{"ltp":1.8,"id":58805}]}]}
+{"op":"mcm","clk":"12015853426","pt":1725805576851,"mc":[{"id":"1.232746306","rc":[{"ltp":1.84,"id":58805}]}]}
+{"op":"mcm","clk":"12015861175","pt":1725805635824,"mc":[{"id":"1.232746306","rc":[{"ltp":4.3,"id":11780079},{"ltp":5.0,"id":1341524}]}]}
+{"op":"mcm","clk":"12015869043","pt":1725805696432,"mc":[{"id":"1.232746306","rc":[{"ltp":5.2,"id":1341524}]}]}
+{"op":"mcm","clk":"12015901827","pt":1725805936647,"mc":[{"id":"1.232746306","rc":[{"ltp":1.66,"id":58805}]}]}
+{"op":"mcm","clk":"12015926865","pt":1725806114302,"mc":[{"id":"1.232746306","rc":[{"ltp":1.56,"id":58805}]}]}
+{"op":"mcm","clk":"12015953438","pt":1725806297164,"mc":[{"id":"1.232746306","rc":[{"ltp":8.2,"id":1341524}]}]}
+{"op":"mcm","clk":"12015961881","pt":1725806357143,"mc":[{"id":"1.232746306","rc":[{"ltp":7.2,"id":1341524},{"ltp":1.46,"id":58805}]}]}
+{"op":"mcm","clk":"12015977913","pt":1725806475958,"mc":[{"id":"1.232746306","rc":[{"ltp":5.3,"id":11780079},{"ltp":7.6,"id":1341524},{"ltp":1.45,"id":58805}]}]}
+{"op":"mcm","clk":"12015985817","pt":1725806533635,"mc":[{"id":"1.232746306","rc":[{"ltp":5.5,"id":11780079}]}]}
+{"op":"mcm","clk":"12016003025","pt":1725806597119,"mc":[{"id":"1.232746306","rc":[{"ltp":6.2,"id":11780079},{"ltp":8.4,"id":1341524},{"ltp":1.39,"id":58805}]}]}
+{"op":"mcm","clk":"12016010831","pt":1725806656790,"mc":[{"id":"1.232746306","rc":[{"ltp":1.36,"id":58805}]}]}
+{"op":"mcm","clk":"12016018584","pt":1725806715991,"mc":[{"id":"1.232746306","rc":[{"ltp":6.0,"id":11780079}]}]}
+{"op":"mcm","clk":"12016026729","pt":1725806776829,"mc":[{"id":"1.232746306","rc":[{"ltp":6.2,"id":11780079}]}]}
+{"op":"mcm","clk":"12016034698","pt":1725806836913,"mc":[{"id":"1.232746306","rc":[{"ltp":1.31,"id":58805}]}]}
+{"op":"mcm","clk":"12016041896","pt":1725806896309,"mc":[{"id":"1.232746306","rc":[{"ltp":1.3,"id":58805}]}]}
+{"op":"mcm","clk":"12016049397","pt":1725806956870,"mc":[{"id":"1.232746306","rc":[{"ltp":1.24,"id":58805}]}]}
+{"op":"mcm","clk":"12016055147","pt":1725807013532,"mc":[{"id":"1.232746306","rc":[{"ltp":1.22,"id":58805}]}]}
+{"op":"mcm","clk":"12016061370","pt":1725807076713,"mc":[{"id":"1.232746306","rc":[{"ltp":9.4,"id":11780079},{"ltp":11.5,"id":1341524},{"ltp":1.2,"id":58805}]}]}
+{"op":"mcm","clk":"12016067307","pt":1725807136616,"mc":[{"id":"1.232746306","rc":[{"ltp":11.5,"id":11780079},{"ltp":1.1,"id":58805}]}]}
+{"op":"mcm","clk":"12016073366","pt":1725807196690,"mc":[{"id":"1.232746306","rc":[{"ltp":1.16,"id":58805}]}]}
+{"op":"mcm","clk":"12016077402","pt":1725807239545,"mc":[{"id":"1.232746306","rc":[{"ltp":1.13,"id":58805}]}]}
+{"op":"mcm","clk":"12016084813","pt":1725807316490,"mc":[{"id":"1.232746306","rc":[{"ltp":13.0,"id":11780079},{"ltp":1.09,"id":58805}]}]}
+{"op":"mcm","clk":"12016090548","pt":1725807376366,"mc":[{"id":"1.232746306","rc":[{"ltp":22.0,"id":1341524},{"ltp":1.04,"id":58805}]}]}
+{"op":"mcm","clk":"12016096213","pt":1725807436980,"mc":[{"id":"1.232746306","rc":[{"ltp":1.05,"id":58805}]}]}
+{"op":"mcm","clk":"12016101330","pt":1725807495524,"mc":[{"id":"1.232746306","rc":[{"ltp":34.0,"id":11780079}]}]}
+{"op":"mcm","clk":"12016106870","pt":1725807556630,"mc":[{"id":"1.232746306","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33564684","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":11780079,"name":"Diyarbekirspor"},{"status":"ACTIVE","sortPriority":2,"id":1341524,"name":"Giresunspor"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"TR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6127507699,"name":"Match Odds","eventName":"Diyarbekirspor v Giresunspor"}}]}
+{"op":"mcm","clk":"12016112318","pt":1725807616259,"mc":[{"id":"1.232746306","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33564684","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-08T14:59:54.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":11780079,"name":"Diyarbekirspor"},{"status":"LOSER","sortPriority":2,"id":1341524,"name":"Giresunspor"},{"status":"WINNER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"TR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6127509849,"name":"Match Odds","eventName":"Diyarbekirspor v Giresunspor"}}]}

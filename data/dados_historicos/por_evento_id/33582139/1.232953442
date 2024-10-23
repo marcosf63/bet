@@ -1,0 +1,57 @@
+{"op":"mcm","clk":"12047290950","pt":1726158917182,"mc":[{"id":"1.232953442","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33582139","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-13T14:00:00.000Z","suspendTime":"2024-09-13T14:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":73781899,"name":"ACS Petrolul 52 Ploiesti II"},{"status":"ACTIVE","sortPriority":2,"id":11352647,"name":"CSM Flacara Moreni"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"RO","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-13T14:00:00.000Z","version":6132943629,"name":"Match Odds","eventName":"ACS Petrolul 52 Ploiesti II v CSM Flacara Moreni"}}]}
+{"op":"mcm","clk":"12047457437","pt":1726160702376,"mc":[{"id":"1.232953442","rc":[{"ltp":2.54,"id":11352647},{"ltp":2.6,"id":73781899}]}]}
+{"op":"mcm","clk":"12050358628","pt":1726208404887,"mc":[{"id":"1.232953442","rc":[{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12050901878","pt":1726217351339,"mc":[{"id":"1.232953442","rc":[{"ltp":3.75,"id":58805}]}]}
+{"op":"mcm","clk":"12052614833","pt":1726234346261,"mc":[{"id":"1.232953442","rc":[{"ltp":3.85,"id":58805}]}]}
+{"op":"mcm","clk":"12052778640","pt":1726235706238,"mc":[{"id":"1.232953442","rc":[{"ltp":2.74,"id":11352647},{"ltp":3.6,"id":58805}]}]}
+{"op":"mcm","clk":"12052801229","pt":1726235950338,"mc":[{"id":"1.232953442","rc":[{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12052808659","pt":1726236018685,"mc":[{"id":"1.232953442","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33582139","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-13T14:00:00.000Z","suspendTime":"2024-09-13T14:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":73781899,"name":"ACS Petrolul 52 Ploiesti II"},{"status":"ACTIVE","sortPriority":2,"id":11352647,"name":"CSM Flacara Moreni"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"RO","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-13T14:00:00.000Z","version":6134012283,"name":"Match Odds","eventName":"ACS Petrolul 52 Ploiesti II v CSM Flacara Moreni"}}]}
+{"op":"mcm","clk":"12052881859","pt":1726236554428,"mc":[{"id":"1.232953442","rc":[{"ltp":2.48,"id":11352647}]}]}
+{"op":"mcm","clk":"12052890218","pt":1726236612986,"mc":[{"id":"1.232953442","rc":[{"ltp":3.9,"id":58805}]}]}
+{"op":"mcm","clk":"12052911456","pt":1726236773985,"mc":[{"id":"1.232953442","rc":[{"ltp":3.85,"id":58805}]}]}
+{"op":"mcm","clk":"12052928009","pt":1726236918269,"mc":[{"id":"1.232953442","rc":[{"ltp":2.5,"id":11352647}]}]}
+{"op":"mcm","clk":"12052935172","pt":1726236976551,"mc":[{"id":"1.232953442","rc":[{"ltp":2.78,"id":11352647}]}]}
+{"op":"mcm","clk":"12052945530","pt":1726237064968,"mc":[{"id":"1.232953442","rc":[{"ltp":2.64,"id":11352647}]}]}
+{"op":"mcm","clk":"12052956681","pt":1726237158940,"mc":[{"id":"1.232953442","rc":[{"ltp":3.2,"id":58805}]}]}
+{"op":"mcm","clk":"12052964227","pt":1726237217761,"mc":[{"id":"1.232953442","rc":[{"ltp":1.54,"id":73781899},{"ltp":5.1,"id":58805}]}]}
+{"op":"mcm","clk":"12052995449","pt":1726237457842,"mc":[{"id":"1.232953442","rc":[{"ltp":8.2,"id":11352647}]}]}
+{"op":"mcm","clk":"12053003696","pt":1726237514204,"mc":[{"id":"1.232953442","rc":[{"ltp":6.6,"id":11352647}]}]}
+{"op":"mcm","clk":"12053092194","pt":1726238176559,"mc":[{"id":"1.232953442","rc":[{"ltp":4.2,"id":58805}]}]}
+{"op":"mcm","clk":"12053099472","pt":1726238238198,"mc":[{"id":"1.232953442","rc":[{"ltp":1.53,"id":73781899}]}]}
+{"op":"mcm","clk":"12053122164","pt":1726238418034,"mc":[{"id":"1.232953442","rc":[{"ltp":9.0,"id":11352647}]}]}
+{"op":"mcm","clk":"12053129923","pt":1726238477960,"mc":[{"id":"1.232953442","rc":[{"ltp":8.8,"id":11352647}]}]}
+{"op":"mcm","clk":"12053137890","pt":1726238538040,"mc":[{"id":"1.232953442","rc":[{"ltp":1.45,"id":73781899}]}]}
+{"op":"mcm","clk":"12053159437","pt":1726238716806,"mc":[{"id":"1.232953442","rc":[{"ltp":9.0,"id":11352647},{"ltp":1.5,"id":73781899},{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12053167737","pt":1726238778789,"mc":[{"id":"1.232953442","rc":[{"ltp":1.41,"id":73781899}]}]}
+{"op":"mcm","clk":"12053237038","pt":1726239435364,"mc":[{"id":"1.232953442","rc":[{"ltp":12.0,"id":11352647},{"ltp":1.43,"id":73781899}]}]}
+{"op":"mcm","clk":"12053242395","pt":1726239496823,"mc":[{"id":"1.232953442","rc":[{"ltp":1.45,"id":73781899},{"ltp":4.3,"id":58805}]}]}
+{"op":"mcm","clk":"12053248720","pt":1726239559005,"mc":[{"id":"1.232953442","rc":[{"ltp":1.47,"id":73781899}]}]}
+{"op":"mcm","clk":"12053275269","pt":1726239798803,"mc":[{"id":"1.232953442","rc":[{"ltp":1.44,"id":73781899},{"ltp":4.5,"id":58805}]}]}
+{"op":"mcm","clk":"12053282147","pt":1726239858570,"mc":[{"id":"1.232953442","rc":[{"ltp":13.0,"id":11352647},{"ltp":1.48,"id":73781899},{"ltp":4.2,"id":58805}]}]}
+{"op":"mcm","clk":"12053298101","pt":1726239978401,"mc":[{"id":"1.232953442","rc":[{"ltp":16.0,"id":11352647},{"ltp":1.43,"id":73781899},{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12053337631","pt":1726240278811,"mc":[{"id":"1.232953442","rc":[{"ltp":17.5,"id":11352647},{"ltp":1.39,"id":73781899}]}]}
+{"op":"mcm","clk":"12053345374","pt":1726240338887,"mc":[{"id":"1.232953442","rc":[{"ltp":18.5,"id":11352647}]}]}
+{"op":"mcm","clk":"12053370606","pt":1726240397560,"mc":[{"id":"1.232953442","rc":[{"ltp":1.36,"id":73781899}]}]}
+{"op":"mcm","clk":"12053394827","pt":1726240578392,"mc":[{"id":"1.232953442","rc":[{"ltp":21.0,"id":11352647},{"ltp":1.34,"id":73781899}]}]}
+{"op":"mcm","clk":"12053410817","pt":1726240698823,"mc":[{"id":"1.232953442","rc":[{"ltp":1.33,"id":73781899}]}]}
+{"op":"mcm","clk":"12053428009","pt":1726240818444,"mc":[{"id":"1.232953442","rc":[{"ltp":22.0,"id":11352647}]}]}
+{"op":"mcm","clk":"12053436955","pt":1726240878937,"mc":[{"id":"1.232953442","rc":[{"ltp":1.36,"id":73781899},{"ltp":4.6,"id":58805}]}]}
+{"op":"mcm","clk":"12053445727","pt":1726240938959,"mc":[{"id":"1.232953442","rc":[{"ltp":23.0,"id":11352647},{"ltp":1.29,"id":73781899},{"ltp":4.5,"id":58805}]}]}
+{"op":"mcm","clk":"12053454461","pt":1726240998833,"mc":[{"id":"1.232953442","rc":[{"ltp":1.34,"id":73781899}]}]}
+{"op":"mcm","clk":"12053482425","pt":1726241177951,"mc":[{"id":"1.232953442","rc":[{"ltp":26.0,"id":11352647}]}]}
+{"op":"mcm","clk":"12053490298","pt":1726241238445,"mc":[{"id":"1.232953442","rc":[{"ltp":28.0,"id":11352647},{"ltp":1.31,"id":73781899}]}]}
+{"op":"mcm","clk":"12053506486","pt":1726241358939,"mc":[{"id":"1.232953442","rc":[{"ltp":38.0,"id":11352647},{"ltp":5.1,"id":58805}]}]}
+{"op":"mcm","clk":"12053514754","pt":1726241418820,"mc":[{"id":"1.232953442","rc":[{"ltp":42.0,"id":11352647},{"ltp":1.28,"id":73781899},{"ltp":5.3,"id":58805}]}]}
+{"op":"mcm","clk":"12053522972","pt":1726241478878,"mc":[{"id":"1.232953442","rc":[{"ltp":1.25,"id":73781899},{"ltp":5.6,"id":58805}]}]}
+{"op":"mcm","clk":"12053530628","pt":1726241538436,"mc":[{"id":"1.232953442","rc":[{"ltp":44.0,"id":11352647}]}]}
+{"op":"mcm","clk":"12053538106","pt":1726241598634,"mc":[{"id":"1.232953442","rc":[{"ltp":1.27,"id":73781899}]}]}
+{"op":"mcm","clk":"12053545293","pt":1726241658579,"mc":[{"id":"1.232953442","rc":[{"ltp":1.25,"id":73781899}]}]}
+{"op":"mcm","clk":"12053562042","pt":1726241777326,"mc":[{"id":"1.232953442","rc":[{"ltp":1.23,"id":73781899}]}]}
+{"op":"mcm","clk":"12053570727","pt":1726241836600,"mc":[{"id":"1.232953442","rc":[{"ltp":70.0,"id":11352647},{"ltp":1.22,"id":73781899},{"ltp":5.8,"id":58805}]}]}
+{"op":"mcm","clk":"12053607118","pt":1726242079013,"mc":[{"id":"1.232953442","rc":[{"ltp":140.0,"id":11352647},{"ltp":1.21,"id":73781899},{"ltp":6.0,"id":58805}]}]}
+{"op":"mcm","clk":"12053633414","pt":1726242258950,"mc":[{"id":"1.232953442","rc":[{"ltp":1.08,"id":73781899}]}]}
+{"op":"mcm","clk":"12053647642","pt":1726242364539,"mc":[{"id":"1.232953442","rc":[{"ltp":1.05,"id":73781899}]}]}
+{"op":"mcm","clk":"12053654563","pt":1726242419098,"mc":[{"id":"1.232953442","rc":[{"ltp":1.15,"id":73781899},{"ltp":7.8,"id":58805}]}]}
+{"op":"mcm","clk":"12053672913","pt":1726242558695,"mc":[{"id":"1.232953442","rc":[{"ltp":1.05,"id":73781899}]}]}
+{"op":"mcm","clk":"12053680548","pt":1726242617271,"mc":[{"id":"1.232953442","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33582139","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-13T14:00:00.000Z","suspendTime":"2024-09-13T14:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":73781899,"name":"ACS Petrolul 52 Ploiesti II"},{"status":"ACTIVE","sortPriority":2,"id":11352647,"name":"CSM Flacara Moreni"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"RO","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-13T14:00:00.000Z","version":6134213287,"name":"Match Odds","eventName":"ACS Petrolul 52 Ploiesti II v CSM Flacara Moreni"},"rc":[{"ltp":1.01,"id":73781899},{"ltp":22.0,"id":58805}]}]}
+{"op":"mcm","clk":"12053688409","pt":1726242676737,"mc":[{"id":"1.232953442","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33582139","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-13T14:00:00.000Z","suspendTime":"2024-09-13T14:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-13T15:51:09.000Z","runners":[{"status":"WINNER","sortPriority":1,"id":73781899,"name":"ACS Petrolul 52 Ploiesti II"},{"status":"LOSER","sortPriority":2,"id":11352647,"name":"CSM Flacara Moreni"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"RO","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-13T14:00:00.000Z","version":6134216490,"name":"Match Odds","eventName":"ACS Petrolul 52 Ploiesti II v CSM Flacara Moreni"}}]}

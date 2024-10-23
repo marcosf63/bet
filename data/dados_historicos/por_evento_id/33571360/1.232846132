@@ -1,0 +1,47 @@
+{"op":"mcm","clk":"12033424617","pt":1725896072302,"mc":[{"id":"1.232846132","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571360","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T18:45:00.000Z","suspendTime":"2024-09-11T18:45:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":44958394,"name":"Sligo Rovers (W)"},{"status":"ACTIVE","sortPriority":2,"id":10503944,"name":"Shelbourne (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"IE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T18:45:00.000Z","version":6129270802,"name":"Match Odds","eventName":"Sligo Rovers (W) v Shelbourne (W)"}}]}
+{"op":"mcm","clk":"12041791237","pt":1726055470509,"mc":[{"id":"1.232846132","rc":[{"ltp":1.09,"id":10503944}]}]}
+{"op":"mcm","clk":"12041887622","pt":1726057260098,"mc":[{"id":"1.232846132","rc":[{"ltp":50.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12042075096","pt":1726061003823,"mc":[{"id":"1.232846132","rc":[{"ltp":65.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12042224589","pt":1726064246438,"mc":[{"id":"1.232846132","rc":[{"ltp":1.14,"id":10503944},{"ltp":50.0,"id":44958394},{"ltp":12.0,"id":58805}]}]}
+{"op":"mcm","clk":"12042228017","pt":1726064303723,"mc":[{"id":"1.232846132","rc":[{"ltp":10.5,"id":58805}]}]}
+{"op":"mcm","clk":"12042965976","pt":1726075182038,"mc":[{"id":"1.232846132","rc":[{"ltp":1.11,"id":10503944}]}]}
+{"op":"mcm","clk":"12043057915","pt":1726076550233,"mc":[{"id":"1.232846132","rc":[{"ltp":1.13,"id":10503944}]}]}
+{"op":"mcm","clk":"12043090573","pt":1726077072332,"mc":[{"id":"1.232846132","rc":[{"ltp":1.12,"id":10503944}]}]}
+{"op":"mcm","clk":"12043118612","pt":1726077498862,"mc":[{"id":"1.232846132","rc":[{"ltp":1.1,"id":10503944}]}]}
+{"op":"mcm","clk":"12043179379","pt":1726078219109,"mc":[{"id":"1.232846132","rc":[{"ltp":1.09,"id":10503944}]}]}
+{"op":"mcm","clk":"12043355949","pt":1726080026540,"mc":[{"id":"1.232846132","rc":[{"ltp":1.1,"id":10503944},{"ltp":13.5,"id":58805}]}]}
+{"op":"mcm","clk":"12043379108","pt":1726080271641,"mc":[{"id":"1.232846132","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571360","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T18:45:00.000Z","suspendTime":"2024-09-11T18:45:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":44958394,"name":"Sligo Rovers (W)"},{"status":"ACTIVE","sortPriority":2,"id":10503944,"name":"Shelbourne (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"IE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T18:45:00.000Z","version":6132002096,"name":"Match Odds","eventName":"Sligo Rovers (W) v Shelbourne (W)"},"rc":[{"ltp":1.08,"id":10503944}]}]}
+{"op":"mcm","clk":"12043390872","pt":1726080392381,"mc":[{"id":"1.232846132","rc":[{"ltp":1.09,"id":10503944}]}]}
+{"op":"mcm","clk":"12043402605","pt":1726080512649,"mc":[{"id":"1.232846132","rc":[{"ltp":55.0,"id":44958394},{"ltp":14.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043407698","pt":1726080572175,"mc":[{"id":"1.232846132","rc":[{"ltp":50.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043412806","pt":1726080632452,"mc":[{"id":"1.232846132","rc":[{"ltp":1.1,"id":10503944},{"ltp":14.5,"id":58805}]}]}
+{"op":"mcm","clk":"12043417826","pt":1726080692266,"mc":[{"id":"1.232846132","rc":[{"ltp":1.12,"id":10503944},{"ltp":12.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043422812","pt":1726080752621,"mc":[{"id":"1.232846132","rc":[{"ltp":55.0,"id":44958394},{"ltp":11.5,"id":58805}]}]}
+{"op":"mcm","clk":"12043428217","pt":1726080812536,"mc":[{"id":"1.232846132","rc":[{"ltp":1.1,"id":10503944}]}]}
+{"op":"mcm","clk":"12043433598","pt":1726080872552,"mc":[{"id":"1.232846132","rc":[{"ltp":220.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043438715","pt":1726080932161,"mc":[{"id":"1.232846132","rc":[{"ltp":730.0,"id":44958394},{"ltp":38.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043443806","pt":1726080991431,"mc":[{"id":"1.232846132","rc":[{"ltp":250.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043454126","pt":1726081112550,"mc":[{"id":"1.232846132","rc":[{"ltp":340.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043464071","pt":1726081232526,"mc":[{"id":"1.232846132","rc":[{"ltp":1.02,"id":10503944},{"ltp":350.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043469271","pt":1726081292588,"mc":[{"id":"1.232846132","rc":[{"ltp":250.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043491623","pt":1726081532612,"mc":[{"id":"1.232846132","rc":[{"ltp":1.03,"id":10503944}]}]}
+{"op":"mcm","clk":"12043497394","pt":1726081590087,"mc":[{"id":"1.232846132","rc":[{"ltp":360.0,"id":44958394},{"ltp":40.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043503340","pt":1726081652518,"mc":[{"id":"1.232846132","rc":[{"ltp":250.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043521567","pt":1726081832592,"mc":[{"id":"1.232846132","rc":[{"ltp":1.04,"id":10503944},{"ltp":160.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043527990","pt":1726081892646,"mc":[{"id":"1.232846132","rc":[{"ltp":1.03,"id":10503944},{"ltp":180.0,"id":44958394}]}]}
+{"op":"mcm","clk":"12043534983","pt":1726081952532,"mc":[{"id":"1.232846132","rc":[{"ltp":1.04,"id":10503944}]}]}
+{"op":"mcm","clk":"12043555133","pt":1726082132642,"mc":[{"id":"1.232846132","rc":[{"ltp":130.0,"id":44958394},{"ltp":25.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043567105","pt":1726082251236,"mc":[{"id":"1.232846132","rc":[{"ltp":26.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043573657","pt":1726082312603,"mc":[{"id":"1.232846132","rc":[{"ltp":1.01,"id":10503944}]}]}
+{"op":"mcm","clk":"12043586057","pt":1726082432179,"mc":[{"id":"1.232846132","rc":[{"ltp":1000.0,"id":44958394},{"ltp":210.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043610249","pt":1726082672525,"mc":[{"id":"1.232846132","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043616658","pt":1726082732288,"mc":[{"id":"1.232846132","rc":[{"ltp":440.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043773482","pt":1726084412272,"mc":[{"id":"1.232846132","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043793852","pt":1726084772353,"mc":[{"id":"1.232846132","rc":[{"ltp":680.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043797395","pt":1726084832427,"mc":[{"id":"1.232846132","rc":[{"ltp":640.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043812378","pt":1726085072392,"mc":[{"id":"1.232846132","rc":[{"ltp":740.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043820178","pt":1726085192556,"mc":[{"id":"1.232846132","rc":[{"ltp":680.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043824254","pt":1726085251802,"mc":[{"id":"1.232846132","rc":[{"ltp":630.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043842954","pt":1726085552574,"mc":[{"id":"1.232846132","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12043911591","pt":1726086845954,"mc":[{"id":"1.232846132","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571360","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T18:45:00.000Z","suspendTime":"2024-09-11T18:45:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":44958394,"name":"Sligo Rovers (W)"},{"status":"ACTIVE","sortPriority":2,"id":10503944,"name":"Shelbourne (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"IE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T18:45:00.000Z","version":6132149724,"name":"Match Odds","eventName":"Sligo Rovers (W) v Shelbourne (W)"}}]}
+{"op":"mcm","clk":"12043914011","pt":1726086911471,"mc":[{"id":"1.232846132","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33571360","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T18:45:00.000Z","suspendTime":"2024-09-11T18:45:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-11T20:34:47.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":44958394,"name":"Sligo Rovers (W)"},{"status":"WINNER","sortPriority":2,"id":10503944,"name":"Shelbourne (W)"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"IE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T18:45:00.000Z","version":6132150480,"name":"Match Odds","eventName":"Sligo Rovers (W) v Shelbourne (W)"}}]}

@@ -1,0 +1,70 @@
+{"op":"mcm","clk":"11990436640","pt":1725479026708,"mc":[{"id":"1.232607447","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33551064","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T19:30:00.000Z","suspendTime":"2024-09-07T19:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":3303609,"name":"Barcelona B"},{"status":"ACTIVE","sortPriority":2,"id":11572620,"name":"UD Ourense"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T19:30:00.000Z","version":6120183205,"name":"Match Odds","eventName":"Barcelona B v UD Ourense"}}]}
+{"op":"mcm","clk":"11998887072","pt":1725630435474,"mc":[{"id":"1.232607447","rc":[{"ltp":1.95,"id":3303609},{"ltp":4.2,"id":11572620}]}]}
+{"op":"mcm","clk":"11999016291","pt":1725631534248,"mc":[{"id":"1.232607447","rc":[{"ltp":3.85,"id":11572620}]}]}
+{"op":"mcm","clk":"11999170293","pt":1725632811271,"mc":[{"id":"1.232607447","rc":[{"ltp":3.75,"id":11572620}]}]}
+{"op":"mcm","clk":"11999231134","pt":1725633395411,"mc":[{"id":"1.232607447","rc":[{"ltp":3.3,"id":11572620}]}]}
+{"op":"mcm","clk":"11999441969","pt":1725635215759,"mc":[{"id":"1.232607447","rc":[{"ltp":3.1,"id":11572620}]}]}
+{"op":"mcm","clk":"11999463641","pt":1725635394533,"mc":[{"id":"1.232607447","rc":[{"ltp":2.82,"id":11572620}]}]}
+{"op":"mcm","clk":"12002236078","pt":1725660353012,"mc":[{"id":"1.232607447","rc":[{"ltp":2.22,"id":3303609},{"ltp":7.0,"id":58805},{"ltp":2.94,"id":11572620}]}]}
+{"op":"mcm","clk":"12002276605","pt":1725661081152,"mc":[{"id":"1.232607447","rc":[{"ltp":2.68,"id":3303609}]}]}
+{"op":"mcm","clk":"12002278557","pt":1725661122308,"mc":[{"id":"1.232607447","rc":[{"ltp":2.24,"id":3303609}]}]}
+{"op":"mcm","clk":"12002552797","pt":1725668538238,"mc":[{"id":"1.232607447","rc":[{"ltp":2.48,"id":3303609},{"ltp":3.65,"id":58805}]}]}
+{"op":"mcm","clk":"12003196101","pt":1725679790426,"mc":[{"id":"1.232607447","rc":[{"ltp":2.26,"id":3303609}]}]}
+{"op":"mcm","clk":"12003217182","pt":1725680130580,"mc":[{"id":"1.232607447","rc":[{"ltp":2.04,"id":3303609}]}]}
+{"op":"mcm","clk":"12003364930","pt":1725682492445,"mc":[{"id":"1.232607447","rc":[{"ltp":2.06,"id":3303609}]}]}
+{"op":"mcm","clk":"12003598483","pt":1725687773088,"mc":[{"id":"1.232607447","rc":[{"ltp":2.16,"id":3303609},{"ltp":4.8,"id":58805},{"ltp":2.96,"id":11572620}]}]}
+{"op":"mcm","clk":"12003611707","pt":1725687883365,"mc":[{"id":"1.232607447","rc":[{"ltp":2.26,"id":3303609},{"ltp":3.6,"id":58805}]}]}
+{"op":"mcm","clk":"12003615932","pt":1725688004285,"mc":[{"id":"1.232607447","rc":[{"ltp":2.04,"id":3303609}]}]}
+{"op":"mcm","clk":"12003821035","pt":1725692081243,"mc":[{"id":"1.232607447","rc":[{"ltp":2.58,"id":3303609}]}]}
+{"op":"mcm","clk":"12004048928","pt":1725695471963,"mc":[{"id":"1.232607447","rc":[{"ltp":2.48,"id":3303609}]}]}
+{"op":"mcm","clk":"12004540410","pt":1725701159614,"mc":[{"id":"1.232607447","rc":[{"ltp":2.38,"id":3303609}]}]}
+{"op":"mcm","clk":"12004670702","pt":1725702242612,"mc":[{"id":"1.232607447","rc":[{"ltp":2.16,"id":3303609},{"ltp":3.9,"id":58805},{"ltp":3.7,"id":11572620}]}]}
+{"op":"mcm","clk":"12005771540","pt":1725711597885,"mc":[{"id":"1.232607447","rc":[{"ltp":2.28,"id":3303609}]}]}
+{"op":"mcm","clk":"12005784275","pt":1725711717636,"mc":[{"id":"1.232607447","rc":[{"ltp":3.65,"id":58805}]}]}
+{"op":"mcm","clk":"12005850596","pt":1725712313986,"mc":[{"id":"1.232607447","rc":[{"ltp":3.5,"id":58805},{"ltp":3.5,"id":11572620}]}]}
+{"op":"mcm","clk":"12005991911","pt":1725713585655,"mc":[{"id":"1.232607447","rc":[{"ltp":2.22,"id":3303609},{"ltp":3.65,"id":58805},{"ltp":3.6,"id":11572620}]}]}
+{"op":"mcm","clk":"12006475103","pt":1725717762374,"mc":[{"id":"1.232607447","rc":[{"ltp":3.3,"id":11572620}]}]}
+{"op":"mcm","clk":"12009157031","pt":1725733909728,"mc":[{"id":"1.232607447","rc":[{"ltp":2.24,"id":3303609},{"ltp":3.7,"id":58805}]}]}
+{"op":"mcm","clk":"12009183252","pt":1725734098490,"mc":[{"id":"1.232607447","rc":[{"ltp":2.3,"id":3303609},{"ltp":3.35,"id":11572620}]}]}
+{"op":"mcm","clk":"12009322306","pt":1725735000170,"mc":[{"id":"1.232607447","rc":[{"ltp":2.24,"id":3303609}]}]}
+{"op":"mcm","clk":"12009392694","pt":1725735448541,"mc":[{"id":"1.232607447","rc":[{"ltp":2.42,"id":3303609},{"ltp":3.45,"id":58805}]}]}
+{"op":"mcm","clk":"12009444966","pt":1725735783315,"mc":[{"id":"1.232607447","rc":[{"ltp":2.26,"id":3303609}]}]}
+{"op":"mcm","clk":"12009474624","pt":1725735963137,"mc":[{"id":"1.232607447","rc":[{"ltp":2.3,"id":3303609},{"ltp":3.65,"id":11572620}]}]}
+{"op":"mcm","clk":"12009554120","pt":1725736382828,"mc":[{"id":"1.232607447","rc":[{"ltp":2.24,"id":3303609},{"ltp":3.55,"id":11572620}]}]}
+{"op":"mcm","clk":"12009638309","pt":1725736863528,"mc":[{"id":"1.232607447","rc":[{"ltp":2.26,"id":3303609},{"ltp":3.7,"id":11572620}]}]}
+{"op":"mcm","clk":"12009687060","pt":1725737162958,"mc":[{"id":"1.232607447","rc":[{"ltp":3.65,"id":58805}]}]}
+{"op":"mcm","clk":"12009716655","pt":1725737343770,"mc":[{"id":"1.232607447","rc":[{"ltp":2.32,"id":3303609}]}]}
+{"op":"mcm","clk":"12009726681","pt":1725737404416,"mc":[{"id":"1.232607447","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33551064","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T19:30:00.000Z","suspendTime":"2024-09-07T19:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":3303609,"name":"Barcelona B"},{"status":"ACTIVE","sortPriority":2,"id":11572620,"name":"UD Ourense"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T19:30:00.000Z","version":6125309295,"name":"Match Odds","eventName":"Barcelona B v UD Ourense"},"rc":[{"ltp":2.28,"id":3303609},{"ltp":3.55,"id":11572620}]}]}
+{"op":"mcm","clk":"12009737474","pt":1725737464477,"mc":[{"id":"1.232607447","rc":[{"ltp":3.4,"id":58805}]}]}
+{"op":"mcm","clk":"12009759168","pt":1725737584000,"mc":[{"id":"1.232607447","rc":[{"ltp":3.7,"id":58805}]}]}
+{"op":"mcm","clk":"12009769856","pt":1725737644487,"mc":[{"id":"1.232607447","rc":[{"ltp":3.4,"id":58805}]}]}
+{"op":"mcm","clk":"12009778604","pt":1725737704439,"mc":[{"id":"1.232607447","rc":[{"ltp":2.5,"id":3303609}]}]}
+{"op":"mcm","clk":"12009787174","pt":1725737764069,"mc":[{"id":"1.232607447","rc":[{"ltp":2.52,"id":3303609},{"ltp":3.2,"id":11572620}]}]}
+{"op":"mcm","clk":"12009795280","pt":1725737823032,"mc":[{"id":"1.232607447","rc":[{"ltp":3.3,"id":11572620}]}]}
+{"op":"mcm","clk":"12009803726","pt":1725737884403,"mc":[{"id":"1.232607447","rc":[{"ltp":2.54,"id":3303609}]}]}
+{"op":"mcm","clk":"12009845098","pt":1725738180944,"mc":[{"id":"1.232607447","rc":[{"ltp":2.7,"id":3303609}]}]}
+{"op":"mcm","clk":"12009853885","pt":1725738244439,"mc":[{"id":"1.232607447","rc":[{"ltp":2.58,"id":3303609}]}]}
+{"op":"mcm","clk":"12009877422","pt":1725738423581,"mc":[{"id":"1.232607447","rc":[{"ltp":3.3,"id":58805}]}]}
+{"op":"mcm","clk":"12009903014","pt":1725738604208,"mc":[{"id":"1.232607447","rc":[{"ltp":2.62,"id":3303609},{"ltp":3.2,"id":58805}]}]}
+{"op":"mcm","clk":"12009932274","pt":1725738784083,"mc":[{"id":"1.232607447","rc":[{"ltp":3.0,"id":58805}]}]}
+{"op":"mcm","clk":"12009941738","pt":1725738844389,"mc":[{"id":"1.232607447","rc":[{"ltp":2.72,"id":3303609},{"ltp":2.96,"id":58805},{"ltp":3.35,"id":11572620}]}]}
+{"op":"mcm","clk":"12009976555","pt":1725739084200,"mc":[{"id":"1.232607447","rc":[{"ltp":2.88,"id":58805}]}]}
+{"op":"mcm","clk":"12009991224","pt":1725739195340,"mc":[{"id":"1.232607447","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33551064","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T19:30:00.000Z","suspendTime":"2024-09-07T19:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":3303609,"name":"Barcelona B"},{"status":"ACTIVE","sortPriority":2,"id":11572620,"name":"UD Ourense"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T19:30:00.000Z","version":6125447961,"name":"Match Odds","eventName":"Barcelona B v UD Ourense"}}]}
+{"op":"mcm","clk":"12010000242","pt":1725739264216,"mc":[{"id":"1.232607447","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33551064","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T19:30:00.000Z","suspendTime":"2024-09-07T19:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":3303609,"name":"Barcelona B"},{"status":"ACTIVE","sortPriority":2,"id":11572620,"name":"UD Ourense"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T19:30:00.000Z","version":6125455059,"name":"Match Odds","eventName":"Barcelona B v UD Ourense"}}]}
+{"op":"mcm","clk":"12010008863","pt":1725739324440,"mc":[{"id":"1.232607447","rc":[{"ltp":3.95,"id":3303609}]}]}
+{"op":"mcm","clk":"12010017317","pt":1725739383632,"mc":[{"id":"1.232607447","rc":[{"ltp":1.45,"id":3303609}]}]}
+{"op":"mcm","clk":"12010025966","pt":1725739444179,"mc":[{"id":"1.232607447","rc":[{"ltp":4.4,"id":58805}]}]}
+{"op":"mcm","clk":"12010034491","pt":1725739504442,"mc":[{"id":"1.232607447","rc":[{"ltp":1.44,"id":3303609},{"ltp":4.3,"id":58805},{"ltp":10.0,"id":11572620}]}]}
+{"op":"mcm","clk":"12010099281","pt":1725739924193,"mc":[{"id":"1.232607447","rc":[{"ltp":1.05,"id":3303609}]}]}
+{"op":"mcm","clk":"12010108858","pt":1725739984039,"mc":[{"id":"1.232607447","rc":[{"ltp":1.13,"id":3303609},{"ltp":14.5,"id":58805}]}]}
+{"op":"mcm","clk":"12010118418","pt":1725740044152,"mc":[{"id":"1.232607447","rc":[{"ltp":1.11,"id":3303609}]}]}
+{"op":"mcm","clk":"12010127746","pt":1725740104458,"mc":[{"id":"1.232607447","rc":[{"ltp":1.04,"id":3303609}]}]}
+{"op":"mcm","clk":"12010146089","pt":1725740223428,"mc":[{"id":"1.232607447","rc":[{"ltp":1.02,"id":3303609},{"ltp":110.0,"id":11572620}]}]}
+{"op":"mcm","clk":"12010164412","pt":1725740344194,"mc":[{"id":"1.232607447","rc":[{"ltp":1.01,"id":3303609},{"ltp":50.0,"id":58805}]}]}
+{"op":"mcm","clk":"12010295015","pt":1725741180169,"mc":[{"id":"1.232607447","rc":[{"ltp":1.02,"id":3303609}]}]}
+{"op":"mcm","clk":"12010387811","pt":1725741843575,"mc":[{"id":"1.232607447","rc":[{"ltp":290.0,"id":11572620}]}]}
+{"op":"mcm","clk":"12010402069","pt":1725741964118,"mc":[{"id":"1.232607447","rc":[{"ltp":1.01,"id":3303609},{"ltp":100.0,"id":58805}]}]}
+{"op":"mcm","clk":"12010493385","pt":1725742923852,"mc":[{"id":"1.232607447","rc":[{"ltp":1000.0,"id":11572620}]}]}
+{"op":"mcm","clk":"12010565362","pt":1725743883914,"mc":[{"id":"1.232607447","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12010588018","pt":1725744186883,"mc":[{"id":"1.232607447","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33551064","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T19:30:00.000Z","suspendTime":"2024-09-07T19:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":3303609,"name":"Barcelona B"},{"status":"ACTIVE","sortPriority":2,"id":11572620,"name":"UD Ourense"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T19:30:00.000Z","version":6125702446,"name":"Match Odds","eventName":"Barcelona B v UD Ourense"}}]}
+{"op":"mcm","clk":"12010594017","pt":1725744268874,"mc":[{"id":"1.232607447","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33551064","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-07T19:30:00.000Z","suspendTime":"2024-09-07T19:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-07T21:24:07.000Z","runners":[{"status":"WINNER","sortPriority":1,"id":3303609,"name":"Barcelona B"},{"status":"LOSER","sortPriority":2,"id":11572620,"name":"UD Ourense"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"ES","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-07T19:30:00.000Z","version":6125704330,"name":"Match Odds","eventName":"Barcelona B v UD Ourense"}}]}

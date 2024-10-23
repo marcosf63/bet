@@ -3,3 +3,5 @@ dynaconf
 rich
 betfairlightweight
 pytz
+pandas
+pydantic

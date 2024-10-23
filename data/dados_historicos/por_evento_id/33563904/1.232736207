@@ -1,0 +1,53 @@
+{"op":"mcm","clk":"12004524291","pt":1725701017115,"mc":[{"id":"1.232736207","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563904","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T12:00:00.000Z","suspendTime":"2024-09-08T12:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":9650419,"name":"Motherwell (W)"},{"status":"ACTIVE","sortPriority":2,"id":24306998,"name":"Partick Thistle (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"GB","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T12:00:00.000Z","version":6123517879,"name":"Match Odds","eventName":"Motherwell (W) v Partick Thistle (W)"}}]}
+{"op":"mcm","clk":"12008017659","pt":1725725566023,"mc":[{"id":"1.232736207","rc":[{"ltp":3.75,"id":9650419}]}]}
+{"op":"mcm","clk":"12010815509","pt":1725747452099,"mc":[{"id":"1.232736207","rc":[{"ltp":3.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12011248172","pt":1725753607025,"mc":[{"id":"1.232736207","rc":[{"ltp":2.78,"id":9650419}]}]}
+{"op":"mcm","clk":"12012886798","pt":1725780764837,"mc":[{"id":"1.232736207","rc":[{"ltp":2.44,"id":24306998},{"ltp":2.94,"id":9650419}]}]}
+{"op":"mcm","clk":"12013069672","pt":1725783687140,"mc":[{"id":"1.232736207","rc":[{"ltp":4.2,"id":58805},{"ltp":3.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12013499794","pt":1725788366727,"mc":[{"id":"1.232736207","rc":[{"ltp":2.98,"id":9650419}]}]}
+{"op":"mcm","clk":"12013796515","pt":1725790493085,"mc":[{"id":"1.232736207","rc":[{"ltp":2.94,"id":9650419}]}]}
+{"op":"mcm","clk":"12014022879","pt":1725791854374,"mc":[{"id":"1.232736207","rc":[{"ltp":2.98,"id":9650419}]}]}
+{"op":"mcm","clk":"12014526452","pt":1725795154339,"mc":[{"id":"1.232736207","rc":[{"ltp":3.9,"id":58805}]}]}
+{"op":"mcm","clk":"12014603939","pt":1725795633695,"mc":[{"id":"1.232736207","rc":[{"ltp":4.2,"id":58805}]}]}
+{"op":"mcm","clk":"12014689794","pt":1725796214341,"mc":[{"id":"1.232736207","rc":[{"ltp":2.28,"id":24306998},{"ltp":3.25,"id":9650419}]}]}
+{"op":"mcm","clk":"12014719749","pt":1725796472212,"mc":[{"id":"1.232736207","rc":[{"ltp":2.38,"id":24306998},{"ltp":3.05,"id":9650419}]}]}
+{"op":"mcm","clk":"12014731275","pt":1725796591772,"mc":[{"id":"1.232736207","rc":[{"ltp":3.9,"id":58805},{"ltp":3.1,"id":9650419}]}]}
+{"op":"mcm","clk":"12014736758","pt":1725796650231,"mc":[{"id":"1.232736207","rc":[{"ltp":2.4,"id":24306998},{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12014741845","pt":1725796703795,"mc":[{"id":"1.232736207","rc":[{"ltp":2.3,"id":24306998}]}]}
+{"op":"mcm","clk":"12014748111","pt":1725796773408,"mc":[{"id":"1.232736207","rc":[{"ltp":2.4,"id":24306998}]}]}
+{"op":"mcm","clk":"12014758920","pt":1725796884417,"mc":[{"id":"1.232736207","rc":[{"ltp":4.0,"id":58805},{"ltp":3.05,"id":9650419}]}]}
+{"op":"mcm","clk":"12014765992","pt":1725796954739,"mc":[{"id":"1.232736207","rc":[{"ltp":2.34,"id":24306998},{"ltp":3.25,"id":9650419}]}]}
+{"op":"mcm","clk":"12014771494","pt":1725797014824,"mc":[{"id":"1.232736207","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563904","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T12:00:00.000Z","suspendTime":"2024-09-08T12:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":9650419,"name":"Motherwell (W)"},{"status":"ACTIVE","sortPriority":2,"id":24306998,"name":"Partick Thistle (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"GB","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T12:00:00.000Z","version":6127077810,"name":"Match Odds","eventName":"Motherwell (W) v Partick Thistle (W)"},"rc":[{"ltp":2.28,"id":24306998}]}]}
+{"op":"mcm","clk":"12014784636","pt":1725797134897,"mc":[{"id":"1.232736207","rc":[{"ltp":2.22,"id":24306998}]}]}
+{"op":"mcm","clk":"12014812502","pt":1725797374531,"mc":[{"id":"1.232736207","rc":[{"ltp":2.26,"id":24306998}]}]}
+{"op":"mcm","clk":"12014819827","pt":1725797434403,"mc":[{"id":"1.232736207","rc":[{"ltp":3.95,"id":58805}]}]}
+{"op":"mcm","clk":"12014840269","pt":1725797614310,"mc":[{"id":"1.232736207","rc":[{"ltp":2.32,"id":24306998},{"ltp":3.55,"id":58805}]}]}
+{"op":"mcm","clk":"12014893269","pt":1725798094766,"mc":[{"id":"1.232736207","rc":[{"ltp":2.34,"id":24306998}]}]}
+{"op":"mcm","clk":"12014906195","pt":1725798212275,"mc":[{"id":"1.232736207","rc":[{"ltp":1.48,"id":24306998},{"ltp":5.5,"id":58805}]}]}
+{"op":"mcm","clk":"12014926914","pt":1725798395004,"mc":[{"id":"1.232736207","rc":[{"ltp":1.47,"id":24306998},{"ltp":5.4,"id":58805}]}]}
+{"op":"mcm","clk":"12014935571","pt":1725798453028,"mc":[{"id":"1.232736207","rc":[{"ltp":1.44,"id":24306998}]}]}
+{"op":"mcm","clk":"12015033855","pt":1725799295009,"mc":[{"id":"1.232736207","rc":[{"ltp":1.46,"id":24306998}]}]}
+{"op":"mcm","clk":"12015055685","pt":1725799474926,"mc":[{"id":"1.232736207","rc":[{"ltp":1.13,"id":24306998},{"ltp":220.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12015063434","pt":1725799534207,"mc":[{"id":"1.232736207","rc":[{"ltp":13.0,"id":58805}]}]}
+{"op":"mcm","clk":"12015071016","pt":1725799593178,"mc":[{"id":"1.232736207","rc":[{"ltp":1.1,"id":24306998}]}]}
+{"op":"mcm","clk":"12015077957","pt":1725799653851,"mc":[{"id":"1.232736207","rc":[{"ltp":1.11,"id":24306998}]}]}
+{"op":"mcm","clk":"12015095125","pt":1725799830295,"mc":[{"id":"1.232736207","rc":[{"ltp":1.1,"id":24306998}]}]}
+{"op":"mcm","clk":"12015124934","pt":1725800134814,"mc":[{"id":"1.232736207","rc":[{"ltp":1.09,"id":24306998}]}]}
+{"op":"mcm","clk":"12015130071","pt":1725800192991,"mc":[{"id":"1.232736207","rc":[{"ltp":1.1,"id":24306998},{"ltp":14.0,"id":58805}]}]}
+{"op":"mcm","clk":"12015133859","pt":1725800236852,"mc":[{"id":"1.232736207","rc":[{"ltp":36.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12015152014","pt":1725800433570,"mc":[{"id":"1.232736207","rc":[{"ltp":1.09,"id":24306998}]}]}
+{"op":"mcm","clk":"12015158933","pt":1725800493378,"mc":[{"id":"1.232736207","rc":[{"ltp":1.1,"id":24306998}]}]}
+{"op":"mcm","clk":"12015228525","pt":1725801033689,"mc":[{"id":"1.232736207","rc":[{"ltp":1.08,"id":24306998}]}]}
+{"op":"mcm","clk":"12015236491","pt":1725801093681,"mc":[{"id":"1.232736207","rc":[{"ltp":1.1,"id":24306998}]}]}
+{"op":"mcm","clk":"12015244692","pt":1725801154859,"mc":[{"id":"1.232736207","rc":[{"ltp":1.08,"id":24306998}]}]}
+{"op":"mcm","clk":"12015269743","pt":1725801273509,"mc":[{"id":"1.232736207","rc":[{"ltp":1.02,"id":24306998}]}]}
+{"op":"mcm","clk":"12015278034","pt":1725801332871,"mc":[{"id":"1.232736207","rc":[{"ltp":1.01,"id":24306998}]}]}
+{"op":"mcm","clk":"12015296086","pt":1725801454990,"mc":[{"id":"1.232736207","rc":[{"ltp":170.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12015304522","pt":1725801511791,"mc":[{"id":"1.232736207","rc":[{"ltp":95.0,"id":58805}]}]}
+{"op":"mcm","clk":"12015330024","pt":1725801694991,"mc":[{"id":"1.232736207","rc":[{"ltp":90.0,"id":58805},{"ltp":690.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12015345983","pt":1725801815018,"mc":[{"id":"1.232736207","rc":[{"ltp":1.02,"id":24306998}]}]}
+{"op":"mcm","clk":"12015431660","pt":1725802474997,"mc":[{"id":"1.232736207","rc":[{"ltp":1.01,"id":24306998}]}]}
+{"op":"mcm","clk":"12015456852","pt":1725802655003,"mc":[{"id":"1.232736207","rc":[{"ltp":1000.0,"id":9650419}]}]}
+{"op":"mcm","clk":"12015533364","pt":1725803194707,"mc":[{"id":"1.232736207","rc":[{"ltp":1000.0,"id":58805}]}]}
+{"op":"mcm","clk":"12015596764","pt":1725803733701,"mc":[{"id":"1.232736207","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563904","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T12:00:00.000Z","suspendTime":"2024-09-08T12:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":9650419,"name":"Motherwell (W)"},{"status":"ACTIVE","sortPriority":2,"id":24306998,"name":"Partick Thistle (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"GB","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T12:00:00.000Z","version":6127305240,"name":"Match Odds","eventName":"Motherwell (W) v Partick Thistle (W)"}}]}
+{"op":"mcm","clk":"12015603580","pt":1725803794948,"mc":[{"id":"1.232736207","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563904","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T12:00:00.000Z","suspendTime":"2024-09-08T12:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-08T13:56:24.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":9650419,"name":"Motherwell (W)"},{"status":"WINNER","sortPriority":2,"id":24306998,"name":"Partick Thistle (W)"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"GB","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T12:00:00.000Z","version":6127306443,"name":"Match Odds","eventName":"Motherwell (W) v Partick Thistle (W)"}}]}

@@ -1,3 +1,6 @@
 version = "0.1.0"
 certs_dir = "/home/marcos/projetos/bet/certs"
-app_key = "oqkDBDNIsHACh4Cc"
+data_dir = "/home/marcos/projetos/bet/data"
+sofascore_live_url = "https://www.sofascore.com/api/v1/sport/football/events/live"
+group_number = '120363329116133030@g.us'
+

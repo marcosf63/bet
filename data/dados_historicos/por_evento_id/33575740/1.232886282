@@ -1,0 +1,72 @@
+{"op":"mcm","clk":"12039353998","pt":1725995441808,"mc":[{"id":"1.232886282","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33575740","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T14:30:00.000Z","suspendTime":"2024-09-11T14:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":9192016,"name":"NK Neretva Metkovic"},{"status":"ACTIVE","sortPriority":2,"id":7154530,"name":"NK Junak Sinj"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"HR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T14:30:00.000Z","version":6130840552,"name":"Match Odds","eventName":"NK Neretva Metkovic v NK Junak Sinj"}}]}
+{"op":"mcm","clk":"12040538773","pt":1726017246238,"mc":[{"id":"1.232886282","rc":[{"ltp":1.96,"id":9192016}]}]}
+{"op":"mcm","clk":"12040798496","pt":1726024086569,"mc":[{"id":"1.232886282","rc":[{"ltp":3.15,"id":7154530}]}]}
+{"op":"mcm","clk":"12041761157","pt":1726054934357,"mc":[{"id":"1.232886282","rc":[{"ltp":3.8,"id":7154530},{"ltp":2.16,"id":9192016}]}]}
+{"op":"mcm","clk":"12041781552","pt":1726055301314,"mc":[{"id":"1.232886282","rc":[{"ltp":3.65,"id":58805}]}]}
+{"op":"mcm","clk":"12041811733","pt":1726055946288,"mc":[{"id":"1.232886282","rc":[{"ltp":3.9,"id":7154530}]}]}
+{"op":"mcm","clk":"12042029877","pt":1726060049130,"mc":[{"id":"1.232886282","rc":[{"ltp":3.35,"id":58805}]}]}
+{"op":"mcm","clk":"12042239837","pt":1726064504750,"mc":[{"id":"1.232886282","rc":[{"ltp":3.75,"id":7154530}]}]}
+{"op":"mcm","clk":"12042246367","pt":1726064622383,"mc":[{"id":"1.232886282","rc":[{"ltp":4.3,"id":7154530},{"ltp":2.04,"id":9192016}]}]}
+{"op":"mcm","clk":"12042250553","pt":1726064687445,"mc":[{"id":"1.232886282","rc":[{"ltp":2.02,"id":9192016}]}]}
+{"op":"mcm","clk":"12042262210","pt":1726064901585,"mc":[{"id":"1.232886282","rc":[{"ltp":5.2,"id":58805},{"ltp":2.18,"id":9192016}]}]}
+{"op":"mcm","clk":"12042265835","pt":1726064972576,"mc":[{"id":"1.232886282","rc":[{"ltp":2.02,"id":9192016}]}]}
+{"op":"mcm","clk":"12042277975","pt":1726065167890,"mc":[{"id":"1.232886282","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33575740","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T14:30:00.000Z","suspendTime":"2024-09-11T14:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":9192016,"name":"NK Neretva Metkovic"},{"status":"ACTIVE","sortPriority":2,"id":7154530,"name":"NK Junak Sinj"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"HR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T14:30:00.000Z","version":6131686770,"name":"Match Odds","eventName":"NK Neretva Metkovic v NK Junak Sinj"},"rc":[{"ltp":3.5,"id":58805}]}]}
+{"op":"mcm","clk":"12042305928","pt":1726065527825,"mc":[{"id":"1.232886282","rc":[{"ltp":4.3,"id":58805},{"ltp":1.83,"id":9192016}]}]}
+{"op":"mcm","clk":"12042314348","pt":1726065647643,"mc":[{"id":"1.232886282","rc":[{"ltp":3.6,"id":58805},{"ltp":4.9,"id":7154530},{"ltp":1.92,"id":9192016}]}]}
+{"op":"mcm","clk":"12042349461","pt":1726066187739,"mc":[{"id":"1.232886282","rc":[{"ltp":4.6,"id":7154530}]}]}
+{"op":"mcm","clk":"12042360786","pt":1726066367512,"mc":[{"id":"1.232886282","rc":[{"ltp":4.0,"id":58805},{"ltp":4.1,"id":7154530}]}]}
+{"op":"mcm","clk":"12042365373","pt":1726066427396,"mc":[{"id":"1.232886282","rc":[{"ltp":4.6,"id":7154530}]}]}
+{"op":"mcm","clk":"12042369998","pt":1726066487763,"mc":[{"id":"1.232886282","rc":[{"ltp":1.93,"id":9192016}]}]}
+{"op":"mcm","clk":"12042374403","pt":1726066546038,"mc":[{"id":"1.232886282","rc":[{"ltp":4.7,"id":7154530},{"ltp":1.91,"id":9192016}]}]}
+{"op":"mcm","clk":"12042378946","pt":1726066607812,"mc":[{"id":"1.232886282","rc":[{"ltp":3.45,"id":58805},{"ltp":5.2,"id":7154530},{"ltp":1.94,"id":9192016}]}]}
+{"op":"mcm","clk":"12042383118","pt":1726066667853,"mc":[{"id":"1.232886282","rc":[{"ltp":2.0,"id":9192016}]}]}
+{"op":"mcm","clk":"12042387139","pt":1726066727751,"mc":[{"id":"1.232886282","rc":[{"ltp":3.15,"id":58805},{"ltp":5.4,"id":7154530}]}]}
+{"op":"mcm","clk":"12042398923","pt":1726066907380,"mc":[{"id":"1.232886282","rc":[{"ltp":1.87,"id":9192016}]}]}
+{"op":"mcm","clk":"12042403503","pt":1726066966787,"mc":[{"id":"1.232886282","rc":[{"ltp":3.5,"id":58805},{"ltp":6.4,"id":7154530},{"ltp":2.08,"id":9192016}]}]}
+{"op":"mcm","clk":"12042407973","pt":1726067027857,"mc":[{"id":"1.232886282","rc":[{"ltp":2.74,"id":58805},{"ltp":1.71,"id":9192016}]}]}
+{"op":"mcm","clk":"12042416859","pt":1726067147912,"mc":[{"id":"1.232886282","rc":[{"ltp":3.55,"id":58805},{"ltp":7.2,"id":7154530},{"ltp":1.72,"id":9192016}]}]}
+{"op":"mcm","clk":"12042418614","pt":1726067169643,"mc":[{"id":"1.232886282","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33575740","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T14:30:00.000Z","suspendTime":"2024-09-11T14:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":9192016,"name":"NK Neretva Metkovic"},{"status":"ACTIVE","sortPriority":2,"id":7154530,"name":"NK Junak Sinj"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"HR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T14:30:00.000Z","version":6131719695,"name":"Match Odds","eventName":"NK Neretva Metkovic v NK Junak Sinj"}}]}
+{"op":"mcm","clk":"12042425658","pt":1726067267755,"mc":[{"id":"1.232886282","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33575740","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T14:30:00.000Z","suspendTime":"2024-09-11T14:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":9192016,"name":"NK Neretva Metkovic"},{"status":"ACTIVE","sortPriority":2,"id":7154530,"name":"NK Junak Sinj"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"HR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T14:30:00.000Z","version":6131722523,"name":"Match Odds","eventName":"NK Neretva Metkovic v NK Junak Sinj"}}]}
+{"op":"mcm","clk":"12042430408","pt":1726067327669,"mc":[{"id":"1.232886282","rc":[{"ltp":4.8,"id":58805},{"ltp":1.35,"id":9192016}]}]}
+{"op":"mcm","clk":"12042435239","pt":1726067387744,"mc":[{"id":"1.232886282","rc":[{"ltp":1.32,"id":9192016}]}]}
+{"op":"mcm","clk":"12042439617","pt":1726067446863,"mc":[{"id":"1.232886282","rc":[{"ltp":1.29,"id":9192016}]}]}
+{"op":"mcm","clk":"12042450403","pt":1726067567906,"mc":[{"id":"1.232886282","rc":[{"ltp":5.7,"id":58805},{"ltp":1.31,"id":9192016}]}]}
+{"op":"mcm","clk":"12042503627","pt":1726068167641,"mc":[{"id":"1.232886282","rc":[{"ltp":1.35,"id":9192016}]}]}
+{"op":"mcm","clk":"12042515136","pt":1726068345384,"mc":[{"id":"1.232886282","rc":[{"ltp":7.4,"id":58805},{"ltp":29.0,"id":7154530},{"ltp":1.2,"id":9192016}]}]}
+{"op":"mcm","clk":"12042518734","pt":1726068399113,"mc":[{"id":"1.232886282","rc":[{"ltp":1.3,"id":9192016}]}]}
+{"op":"mcm","clk":"12042523251","pt":1726068467241,"mc":[{"id":"1.232886282","rc":[{"ltp":5.1,"id":58805},{"ltp":1.29,"id":9192016}]}]}
+{"op":"mcm","clk":"12042527416","pt":1726068522996,"mc":[{"id":"1.232886282","rc":[{"ltp":17.5,"id":7154530}]}]}
+{"op":"mcm","clk":"12042537213","pt":1726068645979,"mc":[{"id":"1.232886282","rc":[{"ltp":7.4,"id":58805}]}]}
+{"op":"mcm","clk":"12042542240","pt":1726068705227,"mc":[{"id":"1.232886282","rc":[{"ltp":10.0,"id":58805},{"ltp":7.6,"id":7154530},{"ltp":1.3,"id":9192016}]}]}
+{"op":"mcm","clk":"12042561222","pt":1726068936778,"mc":[{"id":"1.232886282","rc":[{"ltp":1.32,"id":9192016}]}]}
+{"op":"mcm","clk":"12042620810","pt":1726069667789,"mc":[{"id":"1.232886282","rc":[{"ltp":1.24,"id":9192016}]}]}
+{"op":"mcm","clk":"12042625854","pt":1726069727639,"mc":[{"id":"1.232886282","rc":[{"ltp":30.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042631413","pt":1726069786418,"mc":[{"id":"1.232886282","rc":[{"ltp":6.6,"id":58805}]}]}
+{"op":"mcm","clk":"12042636672","pt":1726069847699,"mc":[{"id":"1.232886282","rc":[{"ltp":7.8,"id":58805},{"ltp":42.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042641556","pt":1726069907772,"mc":[{"id":"1.232886282","rc":[{"ltp":55.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042666040","pt":1726070267729,"mc":[{"id":"1.232886282","rc":[{"ltp":70.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042669604","pt":1726070327591,"mc":[{"id":"1.232886282","rc":[{"ltp":7.2,"id":58805}]}]}
+{"op":"mcm","clk":"12042673551","pt":1726070386644,"mc":[{"id":"1.232886282","rc":[{"ltp":9.0,"id":58805},{"ltp":1.13,"id":9192016}]}]}
+{"op":"mcm","clk":"12042677356","pt":1726070447919,"mc":[{"id":"1.232886282","rc":[{"ltp":7.4,"id":58805},{"ltp":80.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042681320","pt":1726070507617,"mc":[{"id":"1.232886282","rc":[{"ltp":1.17,"id":9192016}]}]}
+{"op":"mcm","clk":"12042684814","pt":1726070567882,"mc":[{"id":"1.232886282","rc":[{"ltp":7.6,"id":58805},{"ltp":75.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042691674","pt":1726070687608,"mc":[{"id":"1.232886282","rc":[{"ltp":1.18,"id":9192016}]}]}
+{"op":"mcm","clk":"12042695657","pt":1726070747894,"mc":[{"id":"1.232886282","rc":[{"ltp":90.0,"id":7154530},{"ltp":1.17,"id":9192016}]}]}
+{"op":"mcm","clk":"12042699250","pt":1726070807461,"mc":[{"id":"1.232886282","rc":[{"ltp":95.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042703233","pt":1726070867050,"mc":[{"id":"1.232886282","rc":[{"ltp":7.4,"id":58805},{"ltp":110.0,"id":7154530}]}]}
+{"op":"mcm","clk":"12042708001","pt":1726070926815,"mc":[{"id":"1.232886282","rc":[{"ltp":9.8,"id":58805},{"ltp":180.0,"id":7154530},{"ltp":1.16,"id":9192016}]}]}
+{"op":"mcm","clk":"12042712941","pt":1726070987113,"mc":[{"id":"1.232886282","rc":[{"ltp":1.13,"id":9192016}]}]}
+{"op":"mcm","clk":"12042717678","pt":1726071047260,"mc":[{"id":"1.232886282","rc":[{"ltp":8.2,"id":58805},{"ltp":1.15,"id":9192016}]}]}
+{"op":"mcm","clk":"12042722032","pt":1726071107467,"mc":[{"id":"1.232886282","rc":[{"ltp":140.0,"id":7154530},{"ltp":1.13,"id":9192016}]}]}
+{"op":"mcm","clk":"12042730098","pt":1726071227840,"mc":[{"id":"1.232886282","rc":[{"ltp":8.6,"id":58805}]}]}
+{"op":"mcm","clk":"12042734299","pt":1726071287601,"mc":[{"id":"1.232886282","rc":[{"ltp":1.11,"id":9192016}]}]}
+{"op":"mcm","clk":"12042738395","pt":1726071347890,"mc":[{"id":"1.232886282","rc":[{"ltp":10.5,"id":58805},{"ltp":190.0,"id":7154530},{"ltp":1.12,"id":9192016}]}]}
+{"op":"mcm","clk":"12042746388","pt":1726071467148,"mc":[{"id":"1.232886282","rc":[{"ltp":1.04,"id":9192016}]}]}
+{"op":"mcm","clk":"12042750168","pt":1726071527357,"mc":[{"id":"1.232886282","rc":[{"ltp":1.11,"id":9192016}]}]}
+{"op":"mcm","clk":"12042753624","pt":1726071587637,"mc":[{"id":"1.232886282","rc":[{"ltp":1.1,"id":9192016}]}]}
+{"op":"mcm","clk":"12042756977","pt":1726071646788,"mc":[{"id":"1.232886282","rc":[{"ltp":12.5,"id":58805}]}]}
+{"op":"mcm","clk":"12042760297","pt":1726071706576,"mc":[{"id":"1.232886282","rc":[{"ltp":1.09,"id":9192016}]}]}
+{"op":"mcm","clk":"12042767290","pt":1726071827471,"mc":[{"id":"1.232886282","rc":[{"ltp":14.0,"id":58805}]}]}
+{"op":"mcm","clk":"12042770256","pt":1726071887745,"mc":[{"id":"1.232886282","rc":[{"ltp":1000.0,"id":7154530},{"ltp":1.01,"id":9192016}]}]}
+{"op":"mcm","clk":"12042772765","pt":1726071939224,"mc":[{"id":"1.232886282","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33575740","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T14:30:00.000Z","suspendTime":"2024-09-11T14:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":9192016,"name":"NK Neretva Metkovic"},{"status":"ACTIVE","sortPriority":2,"id":7154530,"name":"NK Junak Sinj"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"HR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T14:30:00.000Z","version":6131802217,"name":"Match Odds","eventName":"NK Neretva Metkovic v NK Junak Sinj"}}]}
+{"op":"mcm","clk":"12042776089","pt":1726072002030,"mc":[{"id":"1.232886282","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33575740","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T14:30:00.000Z","suspendTime":"2024-09-11T14:30:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-11T16:26:32.000Z","runners":[{"status":"WINNER","sortPriority":1,"id":9192016,"name":"NK Neretva Metkovic"},{"status":"LOSER","sortPriority":2,"id":7154530,"name":"NK Junak Sinj"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"HR","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T14:30:00.000Z","version":6131804167,"name":"Match Odds","eventName":"NK Neretva Metkovic v NK Junak Sinj"}}]}

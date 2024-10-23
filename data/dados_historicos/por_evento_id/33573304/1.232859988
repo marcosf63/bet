@@ -1,0 +1,45 @@
+{"op":"mcm","clk":"12036387345","pt":1725949411698,"mc":[{"id":"1.232859988","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33573304","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T17:00:00.000Z","suspendTime":"2024-09-11T17:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":907526,"name":"VFC Plauen"},{"status":"ACTIVE","sortPriority":2,"id":4901941,"name":"Meuselwitz"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T17:00:00.000Z","version":6129917326,"name":"Match Odds","eventName":"VFC Plauen v Meuselwitz"}}]}
+{"op":"mcm","clk":"12036658006","pt":1725954735435,"mc":[{"id":"1.232859988","rc":[{"ltp":2.92,"id":907526}]}]}
+{"op":"mcm","clk":"12040211395","pt":1726008230597,"mc":[{"id":"1.232859988","rc":[{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12040883168","pt":1726027523044,"mc":[{"id":"1.232859988","rc":[{"ltp":3.65,"id":58805}]}]}
+{"op":"mcm","clk":"12040888845","pt":1726027721989,"mc":[{"id":"1.232859988","rc":[{"ltp":3.6,"id":58805}]}]}
+{"op":"mcm","clk":"12040894607","pt":1726028016532,"mc":[{"id":"1.232859988","rc":[{"ltp":3.55,"id":58805}]}]}
+{"op":"mcm","clk":"12040895831","pt":1726028065191,"mc":[{"id":"1.232859988","rc":[{"ltp":3.5,"id":58805}]}]}
+{"op":"mcm","clk":"12040899469","pt":1726028250225,"mc":[{"id":"1.232859988","rc":[{"ltp":3.45,"id":58805}]}]}
+{"op":"mcm","clk":"12041011475","pt":1726034733787,"mc":[{"id":"1.232859988","rc":[{"ltp":3.85,"id":58805}]}]}
+{"op":"mcm","clk":"12041016566","pt":1726035016638,"mc":[{"id":"1.232859988","rc":[{"ltp":2.98,"id":907526}]}]}
+{"op":"mcm","clk":"12041059954","pt":1726036682200,"mc":[{"id":"1.232859988","rc":[{"ltp":2.8,"id":907526}]}]}
+{"op":"mcm","clk":"12041080057","pt":1726037786393,"mc":[{"id":"1.232859988","rc":[{"ltp":3.15,"id":907526}]}]}
+{"op":"mcm","clk":"12041180258","pt":1726041810218,"mc":[{"id":"1.232859988","rc":[{"ltp":3.4,"id":58805}]}]}
+{"op":"mcm","clk":"12041200183","pt":1726042536949,"mc":[{"id":"1.232859988","rc":[{"ltp":3.05,"id":907526}]}]}
+{"op":"mcm","clk":"12041204789","pt":1726042698238,"mc":[{"id":"1.232859988","rc":[{"ltp":2.3,"id":4901941},{"ltp":3.15,"id":907526},{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12041215054","pt":1726043053213,"mc":[{"id":"1.232859988","rc":[{"ltp":3.3,"id":907526}]}]}
+{"op":"mcm","clk":"12041310254","pt":1726045529943,"mc":[{"id":"1.232859988","rc":[{"ltp":3.15,"id":907526}]}]}
+{"op":"mcm","clk":"12041401873","pt":1726047607265,"mc":[{"id":"1.232859988","rc":[{"ltp":3.2,"id":907526}]}]}
+{"op":"mcm","clk":"12041455731","pt":1726048717983,"mc":[{"id":"1.232859988","rc":[{"ltp":3.5,"id":58805}]}]}
+{"op":"mcm","clk":"12041802889","pt":1726055735272,"mc":[{"id":"1.232859988","rc":[{"ltp":2.38,"id":4901941},{"ltp":3.75,"id":58805}]}]}
+{"op":"mcm","clk":"12042024994","pt":1726059927403,"mc":[{"id":"1.232859988","rc":[{"ltp":3.7,"id":58805}]}]}
+{"op":"mcm","clk":"12042103173","pt":1726061751427,"mc":[{"id":"1.232859988","rc":[{"ltp":3.85,"id":58805}]}]}
+{"op":"mcm","clk":"12042153489","pt":1726062801053,"mc":[{"id":"1.232859988","rc":[{"ltp":2.58,"id":4901941},{"ltp":2.94,"id":907526},{"ltp":3.7,"id":58805}]}]}
+{"op":"mcm","clk":"12042323754","pt":1726065781011,"mc":[{"id":"1.232859988","rc":[{"ltp":2.48,"id":4901941},{"ltp":3.9,"id":58805}]}]}
+{"op":"mcm","clk":"12042333568","pt":1726065938418,"mc":[{"id":"1.232859988","rc":[{"ltp":2.46,"id":4901941}]}]}
+{"op":"mcm","clk":"12042494416","pt":1726068029708,"mc":[{"id":"1.232859988","rc":[{"ltp":3.8,"id":58805}]}]}
+{"op":"mcm","clk":"12042555492","pt":1726068861889,"mc":[{"id":"1.232859988","rc":[{"ltp":2.42,"id":4901941},{"ltp":2.96,"id":907526},{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12042725536","pt":1726071158855,"mc":[{"id":"1.232859988","rc":[{"ltp":3.95,"id":58805}]}]}
+{"op":"mcm","clk":"12042759774","pt":1726071697907,"mc":[{"id":"1.232859988","rc":[{"ltp":2.98,"id":907526},{"ltp":3.85,"id":58805}]}]}
+{"op":"mcm","clk":"12042775801","pt":1726071996362,"mc":[{"id":"1.232859988","rc":[{"ltp":3.95,"id":58805}]}]}
+{"op":"mcm","clk":"12042778433","pt":1726072041585,"mc":[{"id":"1.232859988","rc":[{"ltp":2.96,"id":907526}]}]}
+{"op":"mcm","clk":"12042787320","pt":1726072175631,"mc":[{"id":"1.232859988","rc":[{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12042798724","pt":1726072357911,"mc":[{"id":"1.232859988","rc":[{"ltp":3.2,"id":907526}]}]}
+{"op":"mcm","clk":"12042804607","pt":1726072460847,"mc":[{"id":"1.232859988","rc":[{"ltp":2.98,"id":907526}]}]}
+{"op":"mcm","clk":"12042809208","pt":1726072538504,"mc":[{"id":"1.232859988","rc":[{"ltp":2.46,"id":4901941},{"ltp":3.95,"id":58805}]}]}
+{"op":"mcm","clk":"12042827174","pt":1726072894060,"mc":[{"id":"1.232859988","rc":[{"ltp":2.36,"id":4901941},{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12042863334","pt":1726073298324,"mc":[{"id":"1.232859988","rc":[{"ltp":3.75,"id":58805}]}]}
+{"op":"mcm","clk":"12042878186","pt":1726073554736,"mc":[{"id":"1.232859988","rc":[{"ltp":3.15,"id":907526}]}]}
+{"op":"mcm","clk":"12042887297","pt":1726073738998,"mc":[{"id":"1.232859988","rc":[{"ltp":2.4,"id":4901941},{"ltp":3.05,"id":907526}]}]}
+{"op":"mcm","clk":"12042892995","pt":1726073858636,"mc":[{"id":"1.232859988","rc":[{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12042895604","pt":1726073918203,"mc":[{"id":"1.232859988","rc":[{"ltp":4.0,"id":58805}]}]}
+{"op":"mcm","clk":"12042898459","pt":1726073978816,"mc":[{"id":"1.232859988","rc":[{"ltp":3.0,"id":907526},{"ltp":3.65,"id":58805}]}]}
+{"op":"mcm","clk":"12042900039","pt":1726074008319,"mc":[{"id":"1.232859988","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33573304","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T17:00:00.000Z","suspendTime":"2024-09-11T17:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":907526,"name":"VFC Plauen"},{"status":"ACTIVE","sortPriority":2,"id":4901941,"name":"Meuselwitz"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T17:00:00.000Z","version":6131842104,"name":"Match Odds","eventName":"VFC Plauen v Meuselwitz"},"rc":[{"ltp":4.1,"id":58805}]}]}
+{"op":"mcm","clk":"12042916905","pt":1726074304733,"mc":[{"id":"1.232859988","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":false,"persistenceEnabled":false,"marketBaseRate":5.0,"eventId":"33573304","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T17:00:00.000Z","suspendTime":"2024-09-11T17:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":907526,"name":"VFC Plauen"},{"status":"ACTIVE","sortPriority":2,"id":4901941,"name":"Meuselwitz"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T17:00:00.000Z","version":6131850657,"name":"Match Odds","eventName":"VFC Plauen v Meuselwitz"}}]}
+{"op":"mcm","clk":"12043681957","pt":1726083398995,"mc":[{"id":"1.232859988","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":false,"persistenceEnabled":false,"marketBaseRate":5.0,"eventId":"33573304","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-11T17:00:00.000Z","suspendTime":"2024-09-11T17:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":0,"status":"CLOSED","settledTime":"2024-09-11T19:36:30.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":907526,"name":"VFC Plauen"},{"status":"WINNER","sortPriority":2,"id":4901941,"name":"Meuselwitz"},{"status":"LOSER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"DE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-11T17:00:00.000Z","version":6132087766,"name":"Match Odds","eventName":"VFC Plauen v Meuselwitz"}}]}

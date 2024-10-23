@@ -1,0 +1,1663 @@
+{
+    "jogos": [
+        {
+            "evento_id": "33549347",
+            "times": "CD Tepatitlan De Morelos vs Celaya",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "CD Tepatitlan de Morelos",
+                            "back_odds": 4.6,
+                            "lay_odds": 4.8
+                        },
+                        {
+                            "name": "Celaya",
+                            "back_odds": 1.92,
+                            "lay_odds": 1.97
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 3.55,
+                            "lay_odds": 3.75
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 1.92,
+                            "lay_odds": 2.04
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 1.98,
+                            "lay_odds": 2.1
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 11.0,
+                            "lay_odds": 12.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 7.8,
+                            "lay_odds": 8.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 9.6,
+                            "lay_odds": 11.0
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 19.0,
+                            "lay_odds": 21.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 14.0,
+                            "lay_odds": 15.5
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 7.2,
+                            "lay_odds": 7.8
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 9.0,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 19.0,
+                            "lay_odds": 21.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 30.0,
+                            "lay_odds": 36.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 17.0,
+                            "lay_odds": 19.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 19.0,
+                            "lay_odds": 21.0
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 38.0,
+                            "lay_odds": 42.0
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 48.0,
+                            "lay_odds": 120.0
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 55.0,
+                            "lay_odds": 70.0
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 60.0,
+                            "lay_odds": 120.0
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 110.0,
+                            "lay_odds": 130.0
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 19.5,
+                            "lay_odds": 85.0
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 11.5,
+                            "lay_odds": 15.5
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 27.0,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 1.83,
+                            "lay_odds": 1.87
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 2.14,
+                            "lay_odds": 2.2
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "CD Tepatitlan de Morelos",
+                            "back_odds": 5.1,
+                            "lay_odds": 5.4
+                        },
+                        {
+                            "name": "Celaya",
+                            "back_odds": 2.56,
+                            "lay_odds": 2.68
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 2.32,
+                            "lay_odds": 2.38
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 2.98,
+                            "lay_odds": 3.25
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 8.8,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 130.0,
+                            "lay_odds": 200.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 7.2,
+                            "lay_odds": 8.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 34.0,
+                            "lay_odds": 42.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 36.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 4.0,
+                            "lay_odds": 4.5
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 11.5,
+                            "lay_odds": 13.5
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 27.0,
+                            "lay_odds": 32.0
+                        },
+                        {
+                            "name": "Any unquoted",
+                            "back_odds": 20.0,
+                            "lay_odds": 28.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "evento_id": "33548258",
+            "times": "Louisville FC vs Loudoun United FC",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Louisville FC",
+                            "back_odds": 1.43,
+                            "lay_odds": 1.45
+                        },
+                        {
+                            "name": "Loudoun United FC",
+                            "back_odds": 7.6,
+                            "lay_odds": 8.2
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 5.3,
+                            "lay_odds": 5.7
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 1.81,
+                            "lay_odds": 1.93
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 2.08,
+                            "lay_odds": 2.24
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 22.0,
+                            "lay_odds": 24.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 32.0,
+                            "lay_odds": 34.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 60.0,
+                            "lay_odds": 100.0
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 16.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 9.8,
+                            "lay_odds": 11.0
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 11.0,
+                            "lay_odds": 12.5
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 25.0,
+                            "lay_odds": 29.0
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 60.0,
+                            "lay_odds": 100.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 9.0,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 9.2,
+                            "lay_odds": 9.8
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 21.0,
+                            "lay_odds": 25.0
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 60.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 11.5,
+                            "lay_odds": 13.5
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 12.5,
+                            "lay_odds": 14.5
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 25.0,
+                            "lay_odds": 28.0
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 60.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 5.0,
+                            "lay_odds": 5.6
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 15.5,
+                            "lay_odds": 95.0
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 18.5,
+                            "lay_odds": 1000.0
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 2.62,
+                            "lay_odds": 2.74
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 1.57,
+                            "lay_odds": 1.62
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Louisville FC",
+                            "back_odds": 1.91,
+                            "lay_odds": 1.98
+                        },
+                        {
+                            "name": "Loudoun United FC",
+                            "back_odds": 6.8,
+                            "lay_odds": 7.8
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 2.84,
+                            "lay_odds": 2.98
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 4.0,
+                            "lay_odds": 4.5
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 9.0,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 85.0,
+                            "lay_odds": 110.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 3.75,
+                            "lay_odds": 4.2
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 7.6,
+                            "lay_odds": 8.8
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 19.0,
+                            "lay_odds": 21.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 10.0,
+                            "lay_odds": 11.5
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 42.0,
+                            "lay_odds": 60.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 38.0,
+                            "lay_odds": 55.0
+                        },
+                        {
+                            "name": "Any unquoted",
+                            "back_odds": 11.0,
+                            "lay_odds": 13.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "evento_id": "33537632",
+            "times": "Uruguay vs Paraguay",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Uruguay",
+                            "back_odds": 1.57,
+                            "lay_odds": 1.58
+                        },
+                        {
+                            "name": "Paraguay",
+                            "back_odds": 8.6,
+                            "lay_odds": 8.8
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 4.0,
+                            "lay_odds": 4.1
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 2.44,
+                            "lay_odds": 2.52
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 1.66,
+                            "lay_odds": 1.69
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 9.8,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 20.0,
+                            "lay_odds": 23.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 60.0,
+                            "lay_odds": 75.0
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 110.0,
+                            "lay_odds": 330.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 5.5,
+                            "lay_odds": 5.7
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 8.8,
+                            "lay_odds": 9.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 30.0,
+                            "lay_odds": 32.0
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 120.0,
+                            "lay_odds": 160.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 7.4,
+                            "lay_odds": 7.6
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 9.6,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 32.0,
+                            "lay_odds": 34.0
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 140.0,
+                            "lay_odds": 180.0
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 12.5,
+                            "lay_odds": 13.5
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 18.5,
+                            "lay_odds": 20.0
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 55.0,
+                            "lay_odds": 60.0
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 150.0,
+                            "lay_odds": 280.0
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 12.0,
+                            "lay_odds": 13.0
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 110.0,
+                            "lay_odds": 360.0
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 1000.0,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 1.67,
+                            "lay_odds": 1.69
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 2.46,
+                            "lay_odds": 2.5
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Uruguay",
+                            "back_odds": 2.22,
+                            "lay_odds": 2.28
+                        },
+                        {
+                            "name": "Paraguay",
+                            "back_odds": 8.2,
+                            "lay_odds": 9.0
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 2.26,
+                            "lay_odds": 2.34
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 2.76,
+                            "lay_odds": 2.9
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 12.0,
+                            "lay_odds": 14.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 180.0,
+                            "lay_odds": 290.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 3.55,
+                            "lay_odds": 3.7
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 9.4,
+                            "lay_odds": 10.5
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 30.0,
+                            "lay_odds": 36.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 10.5,
+                            "lay_odds": 11.5
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 65.0,
+                            "lay_odds": 85.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 95.0,
+                            "lay_odds": 300.0
+                        },
+                        {
+                            "name": "Any Unquoted ",
+                            "back_odds": 24.0,
+                            "lay_odds": 29.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "evento_id": "33549761",
+            "times": "Junior FC Barranquilla vs Deportivo Pereira",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Junior FC Barranquilla",
+                            "back_odds": 1.43,
+                            "lay_odds": 4.0
+                        },
+                        {
+                            "name": "Deportivo Pereira",
+                            "back_odds": 5.9,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 1.79,
+                            "lay_odds": 4.0
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 1.12,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 1.12,
+                            "lay_odds": 1000.0
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 1.15,
+                            "lay_odds": 13.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 2.62,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 3.4,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 3.4,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 2.62,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 1.27,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 4.1,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 4.1,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 3.4,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 4.1,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 1.27,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 4.1,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 3.4,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 4.1,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 4.1,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 5.6,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 1.27,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 1.27,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 7.2,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 1.27,
+                            "lay_odds": 1.68
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 2.48,
+                            "lay_odds": 9.4
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Junior FC Barranquilla",
+                            "back_odds": "Sem informação de odd para back",
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "Deportivo Pereira",
+                            "back_odds": "Sem informação de odd para back",
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 1.02,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 2.68,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 8.8,
+                            "lay_odds": 10.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 1.18,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 3.85,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 9.6,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 1.14,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 7.2,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 1.18,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 1.16,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "Any unquoted",
+                            "back_odds": 1.19,
+                            "lay_odds": 1000.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "evento_id": "33558758",
+            "times": "Sportivo Belgrano vs CS General San Martin",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Sportivo Belgrano",
+                            "back_odds": 2.06,
+                            "lay_odds": 2.24
+                        },
+                        {
+                            "name": "CS General San Martin",
+                            "back_odds": 4.8,
+                            "lay_odds": 5.9
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 2.74,
+                            "lay_odds": 3.25
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 2.5,
+                            "lay_odds": 2.98
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 1.5,
+                            "lay_odds": 1.67
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 5.6,
+                            "lay_odds": 7.6
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 8.8,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 4.6,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 22.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 4.7,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 6.4,
+                            "lay_odds": 9.4
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 4.4,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 20.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 7.4,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 9.2,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 4.6,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 19.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 4.4,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 4.6,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 7.6,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 170.0,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 4.7,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 17.5,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 5.2,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 1.35,
+                            "lay_odds": 1.44
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 3.3,
+                            "lay_odds": 3.8
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Sportivo Belgrano",
+                            "back_odds": 2.98,
+                            "lay_odds": 3.3
+                        },
+                        {
+                            "name": "CS General San Martin",
+                            "back_odds": 5.5,
+                            "lay_odds": 6.8
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 1.9,
+                            "lay_odds": 2.0
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 2.12,
+                            "lay_odds": 2.46
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 6.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 9.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 3.65,
+                            "lay_odds": 4.6
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 6.4,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 4.3,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 6.6,
+                            "lay_odds": 12.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 5.8,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 4.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "Any unquoted",
+                            "back_odds": 4.4,
+                            "lay_odds": 1000.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "evento_id": "33557130",
+            "times": "Jamaica vs Cuba",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Jamaica",
+                            "back_odds": 1.16,
+                            "lay_odds": 1.18
+                        },
+                        {
+                            "name": "Cuba",
+                            "back_odds": 24.0,
+                            "lay_odds": 29.0
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 9.4,
+                            "lay_odds": 10.0
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 2.98,
+                            "lay_odds": 3.1
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 1.48,
+                            "lay_odds": 1.51
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 23.0,
+                            "lay_odds": 28.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 8.2,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 9.2,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 26.0,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 7.6,
+                            "lay_odds": 8.8
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 17.0,
+                            "lay_odds": 23.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 8.8,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 9.2,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 5.8,
+                            "lay_odds": 7.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 11.0,
+                            "lay_odds": 14.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 50.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 8.6,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 6.8,
+                            "lay_odds": 8.0
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 13.5,
+                            "lay_odds": 17.0
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 8.4,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 200.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 2.84,
+                            "lay_odds": 4.1
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 8.8,
+                            "lay_odds": "Sem informação de odd para lay"
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 9.4,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 2.56,
+                            "lay_odds": 2.6
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 1.63,
+                            "lay_odds": 1.64
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Jamaica",
+                            "back_odds": 1.55,
+                            "lay_odds": 1.59
+                        },
+                        {
+                            "name": "Cuba",
+                            "back_odds": 15.0,
+                            "lay_odds": 22.0
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 3.15,
+                            "lay_odds": 3.35
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 3.55,
+                            "lay_odds": 4.1
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 6.8,
+                            "lay_odds": 20.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 230.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 2.98,
+                            "lay_odds": 3.55
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 5.3,
+                            "lay_odds": 6.4
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 7.8,
+                            "lay_odds": 34.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 7.4,
+                            "lay_odds": 27.0
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 10.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 9.8,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "Any Unquoted ",
+                            "back_odds": 8.2,
+                            "lay_odds": 10.5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "evento_id": "33557146",
+            "times": "Puerto Rico vs Haiti",
+            "mercados": [
+                {
+                    "market": "Match Odds",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Puerto Rico",
+                            "back_odds": 5.7,
+                            "lay_odds": 6.2
+                        },
+                        {
+                            "name": "Haiti",
+                            "back_odds": 1.68,
+                            "lay_odds": 1.71
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 4.0,
+                            "lay_odds": 4.3
+                        }
+                    ]
+                },
+                {
+                    "market": "Both teams to Score?",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Yes",
+                            "back_odds": 1.89,
+                            "lay_odds": 2.02
+                        },
+                        {
+                            "name": "No",
+                            "back_odds": 1.99,
+                            "lay_odds": 2.14
+                        }
+                    ]
+                },
+                {
+                    "market": "Correct Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 14.5,
+                            "lay_odds": 17.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 8.0,
+                            "lay_odds": 9.2
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 8.6,
+                            "lay_odds": 10.5
+                        },
+                        {
+                            "name": "0 - 3",
+                            "back_odds": 13.5,
+                            "lay_odds": 23.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 17.5,
+                            "lay_odds": 21.0
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 8.0,
+                            "lay_odds": 9.4
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 8.8,
+                            "lay_odds": 10.5
+                        },
+                        {
+                            "name": "1 - 3",
+                            "back_odds": 15.5,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 34.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 18.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 18.5,
+                            "lay_odds": 30.0
+                        },
+                        {
+                            "name": "2 - 3",
+                            "back_odds": 29.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 0",
+                            "back_odds": 11.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 1",
+                            "back_odds": 10.5,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 2",
+                            "back_odds": 42.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "3 - 3",
+                            "back_odds": 85.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "Any Other Home Win",
+                            "back_odds": 36.0,
+                            "lay_odds": 980.0
+                        },
+                        {
+                            "name": "Any Other Away Win",
+                            "back_odds": 7.6,
+                            "lay_odds": 9.4
+                        },
+                        {
+                            "name": "Any Other Draw",
+                            "back_odds": 12.0,
+                            "lay_odds": "Sem informação de odd para lay"
+                        }
+                    ]
+                },
+                {
+                    "market": "Over/Under 2.5 Goals",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Under 2.5 Goals",
+                            "back_odds": 2.08,
+                            "lay_odds": 2.18
+                        },
+                        {
+                            "name": "Over 2.5 Goals",
+                            "back_odds": 1.85,
+                            "lay_odds": 1.93
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "Puerto Rico",
+                            "back_odds": 5.6,
+                            "lay_odds": 6.6
+                        },
+                        {
+                            "name": "Haiti",
+                            "back_odds": 2.28,
+                            "lay_odds": 2.4
+                        },
+                        {
+                            "name": "The Draw",
+                            "back_odds": 2.42,
+                            "lay_odds": 2.54
+                        }
+                    ]
+                },
+                {
+                    "market": "Half Time Score",
+                    "status": "OPEN",
+                    "selections": [
+                        {
+                            "name": "0 - 0",
+                            "back_odds": 3.25,
+                            "lay_odds": 3.65
+                        },
+                        {
+                            "name": "1 - 1",
+                            "back_odds": 6.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "2 - 2",
+                            "back_odds": 110.0,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "1 - 0",
+                            "back_odds": 5.7,
+                            "lay_odds": 9.6
+                        },
+                        {
+                            "name": "2 - 0",
+                            "back_odds": 2.36,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "2 - 1",
+                            "back_odds": 5.2,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "0 - 1",
+                            "back_odds": 3.8,
+                            "lay_odds": 4.3
+                        },
+                        {
+                            "name": "0 - 2",
+                            "back_odds": 9.0,
+                            "lay_odds": 11.0
+                        },
+                        {
+                            "name": "1 - 2",
+                            "back_odds": 8.4,
+                            "lay_odds": 1000.0
+                        },
+                        {
+                            "name": "Any Unquoted ",
+                            "back_odds": 7.8,
+                            "lay_odds": 1000.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

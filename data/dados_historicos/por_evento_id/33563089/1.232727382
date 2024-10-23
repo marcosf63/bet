@@ -1,0 +1,49 @@
+{"op":"mcm","clk":"12015698183","pt":1725673080148,"mc":[{"id":"1.232727382","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563089","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":false,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":0,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":6316104,"name":"Vittsjo (W)"},{"status":"ACTIVE","sortPriority":2,"id":23354419,"name":"Djurgardens IF Dff (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"SE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6123162968,"name":"Match Odds","eventName":"Vittsjo (W) v Djurgardens IF DFF (W)"}}]}
+{"op":"mcm","clk":"12021502782","pt":1725734324563,"mc":[{"id":"1.232727382","rc":[{"ltp":2.38,"id":6316104}]}]}
+{"op":"mcm","clk":"12024959877","pt":1725780482192,"mc":[{"id":"1.232727382","rc":[{"ltp":3.4,"id":58805},{"ltp":3.65,"id":23354419}]}]}
+{"op":"mcm","clk":"12025822892","pt":1725793160010,"mc":[{"id":"1.232727382","rc":[{"ltp":3.45,"id":23354419}]}]}
+{"op":"mcm","clk":"12025948908","pt":1725794546711,"mc":[{"id":"1.232727382","rc":[{"ltp":3.15,"id":58805}]}]}
+{"op":"mcm","clk":"12025966888","pt":1725794705660,"mc":[{"id":"1.232727382","rc":[{"ltp":2.48,"id":6316104},{"ltp":3.35,"id":23354419}]}]}
+{"op":"mcm","clk":"12026214499","pt":1725797367773,"mc":[{"id":"1.232727382","rc":[{"ltp":3.2,"id":23354419}]}]}
+{"op":"mcm","clk":"12026293999","pt":1725798190642,"mc":[{"id":"1.232727382","rc":[{"ltp":3.15,"id":23354419}]}]}
+{"op":"mcm","clk":"12026439951","pt":1725799866504,"mc":[{"id":"1.232727382","rc":[{"ltp":3.25,"id":23354419}]}]}
+{"op":"mcm","clk":"12026460152","pt":1725800104486,"mc":[{"id":"1.232727382","rc":[{"ltp":3.5,"id":58805}]}]}
+{"op":"mcm","clk":"12026478107","pt":1725800348992,"mc":[{"id":"1.232727382","rc":[{"ltp":3.25,"id":58805}]}]}
+{"op":"mcm","clk":"12026482861","pt":1725800409903,"mc":[{"id":"1.232727382","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563089","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"OPEN","runners":[{"status":"ACTIVE","sortPriority":1,"id":6316104,"name":"Vittsjo (W)"},{"status":"ACTIVE","sortPriority":2,"id":23354419,"name":"Djurgardens IF Dff (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"SE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6127180915,"name":"Match Odds","eventName":"Vittsjo (W) v Djurgardens IF DFF (W)"}}]}
+{"op":"mcm","clk":"12026517544","pt":1725800767269,"mc":[{"id":"1.232727382","rc":[{"ltp":3.3,"id":58805}]}]}
+{"op":"mcm","clk":"12026564220","pt":1725801249628,"mc":[{"id":"1.232727382","rc":[{"ltp":2.72,"id":6316104},{"ltp":3.2,"id":58805},{"ltp":3.15,"id":23354419}]}]}
+{"op":"mcm","clk":"12026606220","pt":1725801730783,"mc":[{"id":"1.232727382","rc":[{"ltp":3.1,"id":58805}]}]}
+{"op":"mcm","clk":"12026611669","pt":1725801790761,"mc":[{"id":"1.232727382","rc":[{"ltp":2.48,"id":6316104},{"ltp":3.55,"id":23354419}]}]}
+{"op":"mcm","clk":"12026616742","pt":1725801850161,"mc":[{"id":"1.232727382","rc":[{"ltp":3.0,"id":58805},{"ltp":3.65,"id":23354419}]}]}
+{"op":"mcm","clk":"12026643960","pt":1725802150400,"mc":[{"id":"1.232727382","rc":[{"ltp":3.85,"id":23354419}]}]}
+{"op":"mcm","clk":"12026649896","pt":1725802210559,"mc":[{"id":"1.232727382","rc":[{"ltp":2.64,"id":6316104},{"ltp":2.8,"id":58805}]}]}
+{"op":"mcm","clk":"12026684328","pt":1725802570747,"mc":[{"id":"1.232727382","rc":[{"ltp":2.62,"id":58805}]}]}
+{"op":"mcm","clk":"12026717030","pt":1725802931185,"mc":[{"id":"1.232727382","rc":[{"ltp":2.5,"id":58805}]}]}
+{"op":"mcm","clk":"12026751656","pt":1725803230255,"mc":[{"id":"1.232727382","rc":[{"ltp":2.42,"id":58805}]}]}
+{"op":"mcm","clk":"12026757157","pt":1725803290723,"mc":[{"id":"1.232727382","rc":[{"ltp":2.46,"id":58805}]}]}
+{"op":"mcm","clk":"12026787133","pt":1725803710833,"mc":[{"id":"1.232727382","rc":[{"ltp":3.55,"id":23354419}]}]}
+{"op":"mcm","clk":"12026798921","pt":1725803888568,"mc":[{"id":"1.232727382","rc":[{"ltp":2.6,"id":58805}]}]}
+{"op":"mcm","clk":"12026826634","pt":1725804191099,"mc":[{"id":"1.232727382","rc":[{"ltp":2.42,"id":58805},{"ltp":3.7,"id":23354419}]}]}
+{"op":"mcm","clk":"12026833325","pt":1725804250355,"mc":[{"id":"1.232727382","rc":[{"ltp":2.38,"id":58805}]}]}
+{"op":"mcm","clk":"12026840661","pt":1725804311155,"mc":[{"id":"1.232727382","rc":[{"ltp":3.15,"id":6316104},{"ltp":2.36,"id":58805},{"ltp":3.8,"id":23354419}]}]}
+{"op":"mcm","clk":"12026855305","pt":1725804429981,"mc":[{"id":"1.232727382","rc":[{"ltp":2.42,"id":58805},{"ltp":3.7,"id":23354419}]}]}
+{"op":"mcm","clk":"12026877946","pt":1725804611130,"mc":[{"id":"1.232727382","rc":[{"ltp":2.2,"id":58805},{"ltp":4.4,"id":23354419}]}]}
+{"op":"mcm","clk":"12026924446","pt":1725804971139,"mc":[{"id":"1.232727382","rc":[{"ltp":2.02,"id":58805}]}]}
+{"op":"mcm","clk":"12026949335","pt":1725805151131,"mc":[{"id":"1.232727382","rc":[{"ltp":2.0,"id":58805}]}]}
+{"op":"mcm","clk":"12026964902","pt":1725805271107,"mc":[{"id":"1.232727382","rc":[{"ltp":1.93,"id":58805}]}]}
+{"op":"mcm","clk":"12027012458","pt":1725805630180,"mc":[{"id":"1.232727382","rc":[{"ltp":5.5,"id":23354419}]}]}
+{"op":"mcm","clk":"12027027741","pt":1725805750909,"mc":[{"id":"1.232727382","rc":[{"ltp":4.7,"id":6316104}]}]}
+{"op":"mcm","clk":"12027035362","pt":1725805810004,"mc":[{"id":"1.232727382","rc":[{"ltp":4.4,"id":6316104},{"ltp":5.7,"id":23354419}]}]}
+{"op":"mcm","clk":"12027042618","pt":1725805871002,"mc":[{"id":"1.232727382","rc":[{"ltp":1.59,"id":58805}]}]}
+{"op":"mcm","clk":"12027064092","pt":1725806051128,"mc":[{"id":"1.232727382","rc":[{"ltp":5.2,"id":6316104},{"ltp":1.49,"id":58805}]}]}
+{"op":"mcm","clk":"12027071238","pt":1725806109866,"mc":[{"id":"1.232727382","rc":[{"ltp":6.8,"id":23354419}]}]}
+{"op":"mcm","clk":"12027078677","pt":1725806170301,"mc":[{"id":"1.232727382","rc":[{"ltp":1.4,"id":58805}]}]}
+{"op":"mcm","clk":"12027085694","pt":1725806230547,"mc":[{"id":"1.232727382","rc":[{"ltp":1.41,"id":58805},{"ltp":8.0,"id":23354419}]}]}
+{"op":"mcm","clk":"12027109473","pt":1725806410254,"mc":[{"id":"1.232727382","rc":[{"ltp":1.34,"id":58805}]}]}
+{"op":"mcm","clk":"12027132428","pt":1725806591025,"mc":[{"id":"1.232727382","rc":[{"ltp":1.24,"id":58805},{"ltp":11.5,"id":23354419}]}]}
+{"op":"mcm","clk":"12027139895","pt":1725806650411,"mc":[{"id":"1.232727382","rc":[{"ltp":12.0,"id":23354419}]}]}
+{"op":"mcm","clk":"12027155200","pt":1725806770462,"mc":[{"id":"1.232727382","rc":[{"ltp":12.5,"id":6316104},{"ltp":1.16,"id":58805}]}]}
+{"op":"mcm","clk":"12027162138","pt":1725806827955,"mc":[{"id":"1.232727382","rc":[{"ltp":1.15,"id":58805},{"ltp":13.0,"id":23354419}]}]}
+{"op":"mcm","clk":"12027176030","pt":1725806950212,"mc":[{"id":"1.232727382","rc":[{"ltp":1.09,"id":58805}]}]}
+{"op":"mcm","clk":"12027176795","pt":1725806954736,"mc":[{"id":"1.232727382","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563089","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":true,"runnersVoidable":false,"numberOfActiveRunners":3,"betDelay":5,"status":"SUSPENDED","runners":[{"status":"ACTIVE","sortPriority":1,"id":6316104,"name":"Vittsjo (W)"},{"status":"ACTIVE","sortPriority":2,"id":23354419,"name":"Djurgardens IF Dff (W)"},{"status":"ACTIVE","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"SE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6127472313,"name":"Match Odds","eventName":"Vittsjo (W) v Djurgardens IF DFF (W)"}}]}
+{"op":"mcm","clk":"12027185241","pt":1725807035575,"mc":[{"id":"1.232727382","marketDefinition":{"bspMarket":false,"turnInPlayEnabled":true,"persistenceEnabled":true,"marketBaseRate":5.0,"eventId":"33563089","eventTypeId":"1","numberOfWinners":1,"bettingType":"ODDS","marketType":"MATCH_ODDS","marketTime":"2024-09-08T13:00:00.000Z","suspendTime":"2024-09-08T13:00:00.000Z","bspReconciled":false,"complete":true,"inPlay":true,"crossMatching":false,"runnersVoidable":false,"numberOfActiveRunners":0,"betDelay":5,"status":"CLOSED","settledTime":"2024-09-08T14:50:14.000Z","runners":[{"status":"LOSER","sortPriority":1,"id":6316104,"name":"Vittsjo (W)"},{"status":"LOSER","sortPriority":2,"id":23354419,"name":"Djurgardens IF Dff (W)"},{"status":"WINNER","sortPriority":3,"id":58805,"name":"The Draw"}],"regulators":["MR_INT"],"countryCode":"SE","discountAllowed":true,"timezone":"GMT","openDate":"2024-09-08T13:00:00.000Z","version":6127475427,"name":"Match Odds","eventName":"Vittsjo (W) v Djurgardens IF DFF (W)"}}]}
