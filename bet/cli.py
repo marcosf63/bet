@@ -22,17 +22,23 @@ from bet.utils import (
         verificar_tempo_passado,
 )  
 
-from .betfair import busca_odds_mercado, get_match_day, get_odds_event_markets, get_1_gol_segundo_tempo, get_trading
-from .config import settings
-from .utils import (calcula_saida_edge_black_lay, calcula_saida_edge_lay_back,
-                    calcula_saida_freebet_lay, markets_dict)
+#from bet.betfair import busca_odds_mercado, get_match_day, get_odds_event_markets, get_1_gol_segundo_tempo, get_trading
+from bet.config import settings
 from bet.soufascore import get_live_events, get_live_no_gol_events, check_events
 # from rich.table import Table
-
+from bet.betfair import BetfairCliente, BetfairEventos, BetfairMercados, BetfairMonitor
+from bet.notification import run_timer, play_sound, send_notification
 
 main = typer.Typer(name="Bet CLI")
 console = Console()
-trading = get_trading()
+#trading = get_trading()
+cliente = BetfairCliente(
+        username=settings.username, 
+        password=settings.password, 
+        app_key=settings.app_key,
+        certs=settings.certs_dir,
+)
+
 
 @main.command()
 def shell():
@@ -47,13 +53,14 @@ def shell():
         "is_time_greater_than_now": is_time_greater_than_now,
         "verificar_tempo_passado": verificar_tempo_passado,
         "converter_hora_para_datetime": converter_hora_para_datetime,
-        "get_match_day": get_match_day,
-        "get_live_events": get_live_events,
-        "get_live_no_gol_events": get_live_no_gol_events,
-        "check_events": check_events,
         "markets_dict": markets_dict,
-        "get_odds_event_markets": get_odds_event_markets,
-        "get_trading": get_trading,
+        "BetfairCliente": BetfairCliente,
+        "BetfairEventos": BetfairEventos,
+        "BetfairMercados": BetfairMercados,
+        "BetfairMonitor": BetfairMonitor,
+        "run_timer": run_timer,
+        "play_sound": play_sound,
+        "send_notification": send_notification
     }
     typer.echo(f"Auto imports: {list(_vars.keys())}")
     try:
@@ -103,7 +110,9 @@ def mday(no_print: bool = False):
         print("Dados carregados.")
     else:
         print("Buscado dados na Betfair...")
-        lista_jogos = get_match_day()
+        cliente.login()
+        betfair_eventos = BetfairEventos(cliente)
+        lista_jogos = betfair_eventos.get_match_day()
         save_dict_to_json(lista_jogos, file_path)
         print("Dados salvos.")
     if not no_print:
@@ -126,8 +135,10 @@ def godds(
     """
     lista as odds para um evento que seja indormado o event_id e o mercado"
     """
+    cliente.login()
+    betfair_mercados = BetfairMercados(cliente)
 
-    result = get_odds_event_markets(event_id, markets_dict[market], trading)
+    result = betfair_mercados.get_odds_event_markets(event_id, markets_dict[market])
     tabela = Table(
         title=f"Market: {result['market']}",
         show_header=True,
@@ -162,7 +173,9 @@ def l2b(odd_lay: str) -> None:
 
 @main.command()
 def bom():
-    busca_odds_mercado()
+    cliente.login()
+    betfair_mercados = BetfairMercados(cliente)
+    betfair_mercados.busca_odds_mercado()
 
 
 @main.command()
@@ -172,8 +185,10 @@ def all(
     """
     lista as odds para um evento que seja indormado o event_id e o mercado"
     """
+    cliente.login()
+    betfair_mercados = BetfairMercados(cliente)
     for market in ["MO", "BTTS", "O25", "CS"]:
-        result = get_odds_event_markets(event_id, markets_dict[market], trading)
+        result = betfair_mercados.get_odds_event_markets(event_id, markets_dict[market], trading)
 
         tabela = Table(
             title=f"Market: {result['market']}",
@@ -209,6 +224,11 @@ def gzebra():
 @main.command()
 def check_gol():
     """Verifica se em algum jogo 0x0 saiu gol no segundo tempo"""
-    get_1_gol_segundo_tempo(trading)
+    cliente.login()
+    eventos = BetfairEventos(cliente)
+    # Inicializa a classe BetfairMonitor
+    monitor = BetfairMonitor(cliente, eventos)
+    # # Monitorar eventos ao vivo para detectar o primeiro gol no segundo tempo
+    monitor.monitorar_gols_segundo_tempo(intervalo=60)
         
         

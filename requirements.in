@@ -5,3 +5,6 @@ betfairlightweight
 pytz
 pandas
 pydantic
+pygame
+plyer
+dbus-python

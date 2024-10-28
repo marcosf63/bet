@@ -1,293 +1,334 @@
-# from dataclasses import make_dataclass
-import datetime
+import betfairlightweight
+from betfairlightweight.filters import market_filter
+import time
+import logging
+import pytz
 from datetime import datetime, timedelta
 from pathlib import Path
-import json
-import time
 from rich import print
-
-
-from betfairlightweight import APIClient
-import pytz
-from betfairlightweight.filters import market_filter
-
-from bet.config import settings
+from bet.utils import converter_hora_para_datetime, verificar_tempo_passado, country_codes
 from bet.files import load_json_to_dict, save_dict_to_json
-from bet.models import Partida
-from bet.utils import (
-    markets_dict,
-    converter_hora_para_datetime,
-    verificar_tempo_passado,
-    country_codes,
-)
-from bet.evolution import send_message
+#from bet.evolution import send_message
+from bet.notification import start_timer, send_notification, play_sound
+
+# Configuração do logger
+logging.basicConfig(level=logging.INFO, format='\033[92m%(asctime)s - %(levelname)s - %(message)s\033[0m')
 
 
+class BetfairCliente:
+    def __init__(self, username, password, app_key, certs):
+        # Inicializa o cliente Betfair
+        self.username = username
+        self.password = password
+        self.app_key = app_key
+        self.certs = certs
+        self.trading = betfairlightweight.APIClient(username, password, app_key=app_key, certs=certs)
+        self.session_active = False
 
-def get_trading():
-    trading = APIClient(
-        settings.username,
-        settings.password,
-        app_key=settings.app_key,
-        certs=settings.certs_dir,
-    )
-    trading.login()
-    return trading
+        # Configuração do logging
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+    def login(self):
+        try:
+            # Realiza login no Betfair
+            self.trading.login()
+            self.session_active = True
+            logging.info("Login realizado com sucesso.")
+        except Exception as e:
+            logging.error(f"Erro ao tentar fazer login: {e}")
+            self.session_active = False
 
-class NaoExisteMercadoExcecao(Exception):
-    def __init__(self, mensagem):
-        super().__init__(mensagem)
+    def logout(self):
+        if self.session_active:
+            try:
+                # Faz logout da sessão atual
+                self.trading.logout()
+                logging.info("Logout realizado com sucesso.")
+            except Exception as e:
+                logging.error(f"Erro ao tentar fazer logout: {e}")
+        else:
+            logging.warning("Não há sessão ativa para realizar logout.")
 
+class BetfairEventos:
+    def __init__(self, cliente):
+        self.cliente = cliente
 
-def get_match_day(trading: APIClient):
-    timezone = pytz.timezone("UTC")  # Define a timezone como UTC
-    today = datetime.now(timezone).date()
-    start_time = datetime.combine(today, datetime.min.time()).astimezone(timezone)
-    end_time = datetime.combine(today, datetime.max.time()).astimezone(timezone)
-
-    event_filter = market_filter(
-        event_type_ids=["1"],  # ID 1 para Futebol
-        market_start_time={"from": start_time.isoformat(), "to": end_time.isoformat()},
-    )
-    # Lista de eventos
-    events = trading.betting.list_events(filter=event_filter)
-    diferenca_fuso = timedelta(hours=3)
-    # Imprimir os detalhes dos eventos
-    match_day_list = []
-    for event in events:
-        data_hora = event.event.open_date - diferenca_fuso
-        if not " v " in event.event.name:
-            continue
-        home_team, away_team = event.event.name.split(" v ")
-        match_day_list.append(
-            {
-                "evento_id": event.event.id,
-                "data": data_hora.date().strftime("%Y-%m-%d"),
-                "hora": data_hora.time().strftime("%H:%M"),
-                # "data_hora": data_hora.strftime('%d-%m-%Y %H:%M'),
-                # "evento": event.event.name,
-                "home_team": home_team,
-                "away_team": away_team,
-            }
+    def listar_eventos_futebol(self, in_live=False):
+        """
+        Lista eventos de futebol. Se 'in_live' for True, retorna apenas eventos ao vivo.
+        """
+        filtro_evento = market_filter(
+            event_type_ids=["1"],  # O ID do esporte "Futebol" é geralmente 1
+            in_play_only=in_live  # Filtrar eventos ao vivo, se solicitado
         )
-        # match_day_list.append(event.event.__dict__)
-    # Fazer logout
-    trading.logout()
-    match_day_list_ordenada = sorted(match_day_list, key=lambda x: x["hora"])
 
-    return match_day_list_ordenada
+        try:
+            eventos = self.cliente.trading.betting.list_events(filter=filtro_evento)
+            if not eventos:
+                logging.info("Nenhum evento encontrado.")
+                return []
+            return eventos
+        except Exception as e:
+            logging.error(f"Erro ao listar eventos: {e}")
+            return []
 
+    def get_match_day(self):
+        timezone = pytz.timezone("UTC")  # Define a timezone como UTC
+        today = datetime.now(timezone).date()
+        start_time = datetime.combine(today, datetime.min.time()).astimezone(timezone)
+        end_time = datetime.combine(today, datetime.max.time()).astimezone(timezone)
 
-def get_odds_event_markets(event_id: str, market: str, trading: APIClient) -> dict:
-    event_filter = market_filter(event_ids=[event_id])
-
-    market_catalogues = trading.betting.list_market_catalogue(
-        filter=event_filter,
-        market_projection=["EVENT", "MARKET_START_TIME", "RUNNER_DESCRIPTION"],
-        max_results="1000",
-    )
-    if market_catalogues == []:
-        raise NaoExisteMercadoExcecao("Não há mercados para este evento.")
-
-    runner_names = {}
-    for market_catalogue in market_catalogues:
-        for runner in market_catalogue.runners:
-            runner_names[runner.selection_id] = runner.runner_name
-
-    market_names_dict = {}
-    market_ids_dict = {}
-    for market_catalogue in market_catalogues:
-        market_names_dict[market_catalogue.market_id] = market_catalogue.market_name
-        market_ids_dict[market_catalogue.market_name] = market_catalogue.market_id
-
-    if market not in market_ids_dict.keys():
-        raise NaoExisteMercadoExcecao("Mercado não exste para o evento")
-    market_id = market_ids_dict[market]
-    market_books = trading.betting.list_market_book(
-        market_ids=[market_id], price_projection={"priceData": ["EX_BEST_OFFERS"]}
-    )
-    market_odds_back_lay = {}
-    for market_book in market_books:
-        market_odds_back_lay["market"] = market_names_dict[market_book.market_id]
-        market_odds_back_lay["status"] = market_book.status
-        market_odds_back_lay["selections"] = []
-        for runner in market_book.runners:
-            selection_back_lay = {}
-            selection_back_lay["name"] = runner_names[runner.selection_id]
-            if (
-                runner.ex is not None
-                and hasattr(runner.ex, "available_to_back")
-                and runner.ex.available_to_back
-            ):
-                # if runner.ex.available_to_back:
-                # if selection_back_lay["name"] == "2 - 2":
-                # print([r.price for r in runner.ex.available_to_back])
-                selection_back_lay["back_odds"] = runner.ex.available_to_back[0].price
-                # Primeiro preço na lista de back
-            else:
-                selection_back_lay[
-                    "back_odds"
-                ] = "Sem informação de odd para back"  # Primeiro preço na lista de back
-
-            if (
-                runner.ex is not None
-                and hasattr(runner.ex, "available_to_lay")
-                and runner.ex.available_to_lay
-            ):
-                selection_back_lay["lay_odds"] = runner.ex.available_to_lay[
-                    0
-                ].price  # Primeiro preço na lista de back
-            else:
-                selection_back_lay["lay_odds"] = "Sem informação de odd para lay"
-            market_odds_back_lay["selections"].append(
-                selection_back_lay
-            )  # Primeiro preço na lista de back
-    return market_odds_back_lay
-
-
-def busca_odds_mercado(trading: APIClient):
-    jogos_do_dia = get_match_day(trading)  # Busca todos os jogos do dia
-
-    jogos = []
-
-    for jogo in jogos_do_dia:
-        hora = converter_hora_para_datetime(jogo["hora"])
-        minutos_para_inicio_jogo = 4
-        if verificar_tempo_passado(hora, minutos_para_inicio_jogo):
-            jogos.append(jogo)
-
-    dados_dia = {"jogos": []}
-    file_name = f"{settings.data_dir}/jogos/mercados_{jogos_do_dia[0]['data']}.json"
-
-    if Path(file_name).exists():
-        dados_dia = load_json_to_dict(file_name)
-
-    if jogos == []:
-        print(f"Não existe jogos nos proximos {minutos_para_inicio_jogo} minutos")
-        return
-
-    for jogo in jogos:
-        dados_jogo = Partida(**jogo)
-        if dados_dia != []:
-            evento_ids = [jogo["evento_id"] for jogo in dados_dia["jogos"]]
-
-        if dados_jogo.evento_id in evento_ids:  # Jogo já foi processado
-            print(f"Evento {dados_jogo.evento_id} já foi processado")
-            continue
-
-        print(
-            f"Processando {dados_jogo.home_team.replace('/', '')} vs {dados_jogo.away_team.replace('/', '')}"
+        event_filter = market_filter(
+            event_type_ids=["1"],  # ID 1 para Futebol
+            market_start_time={"from": start_time.isoformat(), "to": end_time.isoformat()},
         )
-        dados_jogo_dict = {}
-        dados_jogo_dict["evento_id"] = dados_jogo.evento_id
-        dados_jogo_dict[
-            "times"
-        ] = f"{dados_jogo.home_team.replace('/', '')} vs {dados_jogo.away_team.replace('/', '')}"
-        dados_jogo_dict["mercados"] = []
+        # Lista de eventos
+        events = self.cliente.trading.betting.list_events(filter=event_filter)
+        diferenca_fuso = timedelta(hours=3)
+        # Imprimir os detalhes dos eventos
+        match_day_list = []
+        for event in events:
+            data_hora = event.event.open_date - diferenca_fuso
+            if not " v " in event.event.name:
+                continue
+            home_team, away_team = event.event.name.split(" v ")
+            match_day_list.append(
+                {
+                    "evento_id": event.event.id,
+                    "data": data_hora.date().strftime("%Y-%m-%d"),
+                    "hora": data_hora.time().strftime("%H:%M"),
+                    "home_team": home_team,
+                    "away_team": away_team,
+                }
+            )
+        match_day_list_ordenada = sorted(match_day_list, key=lambda x: x["hora"])
+
+        return match_day_list_ordenada
+
+class BetfairMercados:
+    def __init__(self, cliente):
+        self.cliente = cliente
+
+    def extrair_nomes_corredores(self, market_catalogues):
+        runner_names = {}
+        for market_catalogue in market_catalogues:
+            for runner in market_catalogue.runners:
+                runner_names[runner.selection_id] = runner.runner_name
+        return runner_names
+
+    def verificar_disponibilidade_odd(self, runner, tipo):
+        if tipo == "back":
+            if runner.ex is not None and hasattr(runner.ex, "available_to_back") and runner.ex.available_to_back:
+                return runner.ex.available_to_back[0].price
+            else:
+                return "Sem informação de odd para back"
+        elif tipo == "lay":
+            if runner.ex is not None and hasattr(runner.ex, "available_to_lay") and runner.ex.available_to_lay:
+                return runner.ex.available_to_lay[0].price
+            else:
+                return "Sem informação de odd para lay"
+
+    def get_odds_event_markets(self, event_id: str, market: str) -> dict:
+        event_filter = market_filter(event_ids=[event_id])
+
+        market_catalogues = self.cliente.trading.betting.list_market_catalogue(
+            filter=event_filter,
+            market_projection=["EVENT", "MARKET_START_TIME", "RUNNER_DESCRIPTION"],
+            max_results="1000",
+        )
+        if market_catalogues == []:
+            raise NaoExisteMercadoExcecao("Não há mercados para este evento.")
+
+        runner_names = self.extrair_nomes_corredores(market_catalogues)
+
+        market_names_dict = {}
+        market_ids_dict = {}
+        for market_catalogue in market_catalogues:
+            market_names_dict[market_catalogue.market_id] = market_catalogue.market_name
+            market_ids_dict[market_catalogue.market_name] = market_catalogue.market_id
+
+        if market not in market_ids_dict.keys():
+            raise NaoExisteMercadoExcecao("Mercado não existe para o evento")
+        market_id = market_ids_dict[market]
+        market_books = self.cliente.trading.betting.list_market_book(
+            market_ids=[market_id], price_projection={"priceData": ["EX_BEST_OFFERS"]}
+        )
+        market_odds_back_lay = {}
+        for market_book in market_books:
+            market_odds_back_lay["market"] = market_names_dict[market_book.market_id]
+            market_odds_back_lay["status"] = market_book.status
+            market_odds_back_lay["selections"] = []
+            for runner in market_book.runners:
+                selection_back_lay = {}
+                selection_back_lay["name"] = runner_names[runner.selection_id]
+                selection_back_lay["back_odds"] = self.verificar_disponibilidade_odd(runner, "back")
+                selection_back_lay["lay_odds"] = self.verificar_disponibilidade_odd(runner, "lay")
+                market_odds_back_lay["selections"].append(selection_back_lay)
+        return market_odds_back_lay
+
+    def processar_mercados_para_jogo(self, dados_jogo, markets_dict):
+        dados_jogo_dict = {
+            "evento_id": dados_jogo.evento_id,
+            "times": f"{dados_jogo.home_team.replace('/', '')} vs {dados_jogo.away_team.replace('/', '')}",
+            "mercados": []
+        }
         for mercado in markets_dict.values():
             nao_incluir_dados = True
             try:
-                dados_market = get_odds_event_markets(dados_jogo.evento_id, mercado)
+                dados_market = self.get_odds_event_markets(dados_jogo.evento_id, mercado)
             except NaoExisteMercadoExcecao:
-                print(f"Não existe dados para o jogo{dados_jogo.evento_id}")
+                print(f"Não existe dados para o jogo {dados_jogo.evento_id}")
                 nao_incluir_dados = False
                 continue
-            # file_path = f"{settings.data_dir}/jogos/{dados_jogo.home_team.replace('/', '')}_{dados_jogo.away_team.replace('/', '')}_{dados_jogo.data}_{dados_jogo.hora}_{dados_jogo.evento_id}.json"
             if nao_incluir_dados:
                 dados_jogo_dict["mercados"].append(dados_market)
-                # save_dict_to_json(dados_market, file_path)
-        dados_dia["jogos"].append(dados_jogo_dict)
-    save_dict_to_json(dados_dia, file_name)
+        return dados_jogo_dict
 
+    def busca_odds_mercado(self):
+        eventos = BetfairEventos(self.cliente)
+        jogos_do_dia = eventos.get_match_day()  # Busca todos os jogos do dia
 
-def get_1_gol_segundo_tempo(trading: APIClient):
-    #trading.login()
-    eventos_notificados = []
-    print("Monitorando eventos...")
-    while True:
-        event_exist = False
-        event_filter = market_filter(
-            event_type_ids=["1"],  # ID 1 para Futebol
-            in_play_only=True,
-            # market_start_time={"from": start_time.isoformat(), "to": end_time.isoformat()},
-        )
-        # Lista de eventos
-        events = trading.betting.list_events(filter=event_filter)
-        event_ids = [event.event.id for event in events]
-        scores = trading.in_play_service.get_scores(event_ids=event_ids)
-        event_data_1_gol = []
-        event_data_1_gol_ids = []
-        for score in scores:
-            score_home = score.score.home.score
-            score_away = score.score.away.score
-            if int(score_home) + int(score_away) == 1:
-                score_data = {}
-                score_data["home_score"] = score.score.home.score
-                score_data["away_score"] = score.score.away.score
-                score_data["home_name"] = score.score.home.name
-                score_data["away_name"] = score.score.away.name
-                score_data["event_id"] = score.event_id
-                event_data_1_gol_ids.append(score.event_id)
-                event_data_1_gol.append(score_data)
+        jogos = []
 
-        if event_data_1_gol:
-            for event_data in event_data_1_gol:
-                event_time_line = trading.in_play_service.get_event_timeline(
-                    event_id=event_data["event_id"]
+        for jogo in jogos_do_dia:
+            hora = converter_hora_para_datetime(jogo["hora"])
+            minutos_para_inicio_jogo = 4
+            if verificar_tempo_passado(hora, minutos_para_inicio_jogo):
+                jogos.append(jogo)
+
+        dados_dia = {"jogos": []}
+        file_name = f"{settings.data_dir}/jogos/mercados_{jogos_do_dia[0]['data']}.json"
+
+        if Path(file_name).exists():
+            dados_dia = load_json_to_dict(file_name)
+
+        if jogos == []:
+            print(f"Não existe jogos nos próximos {minutos_para_inicio_jogo} minutos")
+            return
+
+        def jogo_ja_processado(dados_dia, evento_id):
+            if dados_dia != []:
+                evento_ids = [jogo["evento_id"] for jogo in dados_dia["jogos"]]
+                return evento_id in evento_ids
+            return False
+
+        for jogo in jogos:
+            dados_jogo = Partida(**jogo)
+
+            if jogo_ja_processado(dados_dia, dados_jogo.evento_id):  # Jogo já foi processado
+                print(f"Evento {dados_jogo.evento_id} já foi processado")
+                continue
+
+            print(
+                f"Processando {dados_jogo.home_team.replace('/', '')} vs {dados_jogo.away_team.replace('/', '')}"
+            )
+            dados_jogo_dict = self.processar_mercados_para_jogo(dados_jogo, markets_dict)
+            dados_dia["jogos"].append(dados_jogo_dict)
+        save_dict_to_json(dados_dia, file_name)
+
+class BetfairMonitor:
+    def __init__(self, cliente, eventos):
+        self.cliente = cliente
+        self.eventos = eventos
+
+    def monitorar_gols_segundo_tempo(self, intervalo=60):
+        """
+        Monitora os eventos ao vivo para detectar o primeiro gol no segundo tempo.
+        O intervalo entre as verificações é configurável (em segundos).
+        """
+        logging.info("Monitorando eventos ao vivo para detectar gols no segundo tempo...")
+
+        eventos_notificados = []
+
+        #try:
+        while self.cliente.session_active:
+            eventos_ao_vivo = self.eventos.listar_eventos_futebol(in_live=True)
+
+            for evento in eventos_ao_vivo:
+                event_id = evento.event.id
+                nome_evento = evento.event.name
+
+                # Obter o status do mercado e placar do evento ao vivo
+                scores = self.cliente.trading.in_play_service.get_scores(
+                    event_ids=[event_id]
                 )
+
+                if scores == []:
+                    continue
+
+                score = scores[0]
+                score_home = score.score.home.score
+                score_away = score.score.away.score
+                home_name = score.score.home.name
+                away_name = score.score.away.name
+
+                event_time_line = self.cliente.trading.in_play_service.get_event_timeline(
+                    event_id=event_id
+                )
+                # Checa se houve golno segunfo tempo para o evento
                 for update_detail in event_time_line.update_detail:
-                    if (
-                        update_detail.type == "Goal"
-                        and update_detail.match_time > 45
-                        and update_detail.elapsed_regular_time > 45
-                    ):
-                        try:
-                            market_data = get_odds_event_markets(
-                                    str(event_data["event_id"]), 
-                                    'Over/Under 1.5 Goals',
-                                    trading
-                            )
-                        except NaoExisteMercadoExcecao:
-                            continue
-
-                        odds_lay_U15 = market_data["selections"][0]["lay_odds"]
-                        odds_back_U15 = market_data["selections"][0]["back_odds"]
-
-                        country_code = [event.event.country_code for event in events if event.event.id == str(event_data['event_id'])][0]
+                    conditions = []
+                    conditions.append(int(score_home) + int(score_away) == 1)
+                    conditions.append(update_detail.type == "Goal")
+                    conditions.append(update_detail.match_time > 45)
+                    conditions.append(update_detail.elapsed_regular_time > 45)
+                    if all(conditions):
+                        country_code = evento.event.country_code
                         county = country_codes[country_code] if country_code != None and country_code in country_codes.keys() else "Desconhecido"
-                        notification = f"{event_data['home_name']} {event_data['home_score']}"
-                        notification += f" x {event_data['away_score']} {event_data['away_name']}"
+                        notification = f"{home_name} {score_home}"
+                        notification += f" x {score_away} {away_name}"
                         notification += f"\n{update_detail.type} {update_detail.match_time} {update_detail.team_name}"
-                        notification += f"\nId do evento: {event_data['event_id']}"
+                        notification += f"\nId do evento: {event_id}"
                         notification += f"\n{datetime.now().strftime('%H:%M:%S')}"
                         notification += f"\nLocal: {county}"
-                        notification += f"\nOdds: back - {odds_back_U15} / lay - {odds_lay_U15}"
-                        if event_data["event_id"] not in eventos_notificados:
-                            print("*****************************")
-                            print(f"{notification}")
-                            send_message(
-                                number=settings.group_number,
-                                url=settings.instance_url,
-                                text=notification
-                            )
-                            eventos_notificados.append(event_data['event_id'])
-                        event_exist = True
+                        if event_id not in eventos_notificados:
+                            #print("*****************************")
+                            #print(f"{notification}")
+                            send_notification(notification, "Alerta de Gooool!!!", 60)
+                            play_sound("/home/marcos/Música/senna8s.mp3")
+                            # send_message(
+                            #     number=settings.group_number,
+                            #     url=settings.instance_url,
+                            #     text=notification
+                            # )
+                            start_timer(10, notification, "O Tempo Acabou!!!", 10)
+                            logging.info(f"Contando 10 minutos para {nome_evento}")
+                            eventos_notificados.append(event_id)
+            # Esperar o intervalo definido antes de verificar novamente
+            time.sleep(intervalo)
+        # except KeyboardInterrupt:
+        #     logging.info("Monitoramento interrompido pelo usuário.")
+        # except Exception as e:
+        #     logging.error(f"Erro durante o monitoramento: {e}")
+        # finally:
+        #     self.cliente.logout()
 
 
-                    else:
-                        event_exist = False
 
-        #if not event_exist:
-            #print(f"Não há eventos!")
-        time.sleep(60)
-
-
+# Exemplo de uso das classes
 if __name__ == "__main__":
-    # from rich.console import Console
+    from config import settings
+    # Inicializa a classe BetfairCliente
+    cliente = BetfairCliente(
+            username=settings.username, 
+            password=settings.password, 
+            app_key=settings.app_key,
+            certs=settings.certs_dir,
+    )
 
-    # console = Console()
-    # id = "32955574"
-    # market = "Correct Score"
-    # console.print(get_odds_event_markets(id, market))
-    busca_odds_mercado()
+    # Login
+    cliente.login()
+
+    # Inicializa a classe BetfairEventos
+    eventos = BetfairEventos(cliente)
+    # Inicializa a classe BetfairMonitor
+    monitor = BetfairMonitor(cliente, eventos)
+    # # Monitorar eventos ao vivo para detectar o primeiro gol no segundo tempo
+    monitor.monitorar_gols_segundo_tempo(intervalo=60)
+
+    # # Inicializa a classe BetfairMercados
+    # mercados = BetfairMercados(cliente)
+
+    # # Buscar odds do mercado
+    # mercados.busca_odds_mercado()
+
