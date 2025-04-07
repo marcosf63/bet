@@ -9,6 +9,9 @@ from bet.models import (AwayScore, AwayTeam, Event, HomeScore, HomeTeam,
 
 
 def get_live_events() -> List[Event]:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+    }
     resp = requests.get(settings.sofascore_live_url)
     resp.raise_for_status()
     events_list = resp.json()["events"]
