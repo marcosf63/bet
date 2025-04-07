@@ -60,3 +60,1063 @@ Buscado dados na Betfair...
 │ ╰────────────────────────────────────────────────────────────────────╯       │
 ╰──────────────────────────────────────────────────────────────────────────────╯
 NameError: name 'get_match_day' is not defined
+Buscado dados na Betfair...
+2024-10-30 05:00:02,883 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-04 05:00:03,597 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-05 05:00:02,560 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-07 05:00:03,088 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-09 05:00:03,532 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-12 05:00:19,017 - ERROR - Erro ao tentar fazer login: None 
+Params: None 
+Exception: HTTPSConnectionPool(host='identitysso-cert.betfair.com', port=443): Read timed out.
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/urllib3/respons │
+│ e.py:712 in _error_catcher                                                   │
+│                                                                              │
+│    709 │   │                                                                 │
+│    710 │   │   try:                                                          │
+│    711 │   │   │   try:                                                      │
+│ ❱  712 │   │   │   │   yield                                                 │
+│    713 │   │   │                                                             │
+│    714 │   │   │   except SocketTimeout as e:                                │
+│    715 │   │   │   │   # FIXME: Ideally we'd like to include the url in the  │
+│                                                                              │
+│ ╭─────────────────────────────── locals ────────────────────────────────╮    │
+│ │ clean_exit = False                                                    │    │
+│ │       self = <urllib3.response.HTTPResponse object at 0x77cfb40b05e0> │    │
+│ ╰───────────────────────────────────────────────────────────────────────╯    │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/urllib3/respons │
+│ e.py:1071 in read_chunked                                                    │
+│                                                                              │
+│   1068 │   │   │   │   return None                                           │
+│   1069 │   │   │                                                             │
+│   1070 │   │   │   while True:                                               │
+│ ❱ 1071 │   │   │   │   self._update_chunk_length()                           │
+│   1072 │   │   │   │   if self.chunk_left == 0:                              │
+│   1073 │   │   │   │   │   break                                             │
+│   1074 │   │   │   │   chunk = self._handle_chunk(amt)                       │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │            amt = 10240                                                   │ │
+│ │ decode_content = True                                                    │ │
+│ │           self = <urllib3.response.HTTPResponse object at                │ │
+│ │                  0x77cfb40b05e0>                                         │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/urllib3/respons │
+│ e.py:999 in _update_chunk_length                                             │
+│                                                                              │
+│    996 │   │   # we'll try to read it from socket.                           │
+│    997 │   │   if self.chunk_left is not None:                               │
+│    998 │   │   │   return None                                               │
+│ ❱  999 │   │   line = self._fp.fp.readline()  # type: ignore[union-attr]     │
+│   1000 │   │   line = line.split(b";", 1)[0]                                 │
+│   1001 │   │   try:                                                          │
+│   1002 │   │   │   self.chunk_left = int(line, 16)                           │
+│                                                                              │
+│ ╭──────────────────────────── locals ─────────────────────────────╮          │
+│ │ self = <urllib3.response.HTTPResponse object at 0x77cfb40b05e0> │          │
+│ ╰─────────────────────────────────────────────────────────────────╯          │
+│                                                                              │
+│ /usr/lib/python3.11/socket.py:706 in readinto                                │
+│                                                                              │
+│   703 │   │   │   raise OSError("cannot read from timed out object")         │
+│   704 │   │   while True:                                                    │
+│   705 │   │   │   try:                                                       │
+│ ❱ 706 │   │   │   │   return self._sock.recv_into(b)                         │
+│   707 │   │   │   except timeout:                                            │
+│   708 │   │   │   │   self._timeout_occurred = True                          │
+│   709 │   │   │   │   raise                                                  │
+│                                                                              │
+│ ╭───────────────────── locals ──────────────────────╮                        │
+│ │    b = <memory at 0x77cfb4153b80>                 │                        │
+│ │ self = <socket.SocketIO object at 0x77cfb40b06d0> │                        │
+│ ╰───────────────────────────────────────────────────╯                        │
+│                                                                              │
+│ /usr/lib/python3.11/ssl.py:1311 in recv_into                                 │
+│                                                                              │
+│   1308 │   │   │   │   raise ValueError(                                     │
+│   1309 │   │   │   │     "non-zero flags not allowed in calls to recv_into() │
+│   1310 │   │   │   │     self.__class__)                                     │
+│ ❱ 1311 │   │   │   return self.read(nbytes, buffer)                          │
+│   1312 │   │   else:                                                         │
+│   1313 │   │   │   return super().recv_into(buffer, nbytes, flags)           │
+│   1314                                                                       │
+│                                                                              │
+│ ╭────────────────────────────── locals ──────────────────────────────╮       │
+│ │ buffer = <memory at 0x77cfb4153b80>                                │       │
+│ │  flags = 0                                                         │       │
+│ │ nbytes = 8192                                                      │       │
+│ │   self = <ssl.SSLSocket [closed] fd=-1, family=2, type=1, proto=6> │       │
+│ ╰────────────────────────────────────────────────────────────────────╯       │
+│                                                                              │
+│ /usr/lib/python3.11/ssl.py:1167 in read                                      │
+│                                                                              │
+│   1164 │   │   │   raise ValueError("Read on closed or unwrapped SSL socket. │
+│   1165 │   │   try:                                                          │
+│   1166 │   │   │   if buffer is not None:                                    │
+│ ❱ 1167 │   │   │   │   return self._sslobj.read(len, buffer)                 │
+│   1168 │   │   │   else:                                                     │
+│   1169 │   │   │   │   return self._sslobj.read(len)                         │
+│   1170 │   │   except SSLError as x:                                         │
+│                                                                              │
+│ ╭────────────────────────────── locals ──────────────────────────────╮       │
+│ │ buffer = <memory at 0x77cfb4153b80>                                │       │
+│ │    len = 8192                                                      │       │
+│ │   self = <ssl.SSLSocket [closed] fd=-1, family=2, type=1, proto=6> │       │
+│ ╰────────────────────────────────────────────────────────────────────╯       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/models │
+│ .py:816 in generate                                                          │
+│                                                                              │
+│    813 │   │   │   # Special case for urllib3.                               │
+│    814 │   │   │   if hasattr(self.raw, "stream"):                           │
+│    815 │   │   │   │   try:                                                  │
+│ ❱  816 │   │   │   │   │   yield from self.raw.stream(chunk_size, decode_con │
+│    817 │   │   │   │   except ProtocolError as e:                            │
+│    818 │   │   │   │   │   raise ChunkedEncodingError(e)                     │
+│    819 │   │   │   │   except DecodeError as e:                              │
+│                                                                              │
+│ ╭─────────── locals ────────────╮                                            │
+│ │ chunk_size = 10240            │                                            │
+│ │       self = <Response [503]> │                                            │
+│ ╰───────────────────────────────╯                                            │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/urllib3/respons │
+│ e.py:931 in stream                                                           │
+│                                                                              │
+│    928 │   │   │   'content-encoding' header.                                │
+│    929 │   │   """                                                           │
+│    930 │   │   if self.chunked and self.supports_chunked_reads():            │
+│ ❱  931 │   │   │   yield from self.read_chunked(amt, decode_content=decode_c │
+│    932 │   │   else:                                                         │
+│    933 │   │   │   while not is_fp_closed(self._fp) or len(self._decoded_buf │
+│    934 │   │   │   │   data = self.read(amt=amt, decode_content=decode_conte │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │            amt = 10240                                                   │ │
+│ │ decode_content = True                                                    │ │
+│ │           self = <urllib3.response.HTTPResponse object at                │ │
+│ │                  0x77cfb40b05e0>                                         │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/urllib3/respons │
+│ e.py:1059 in read_chunked                                                    │
+│                                                                              │
+│   1056 │   │   │   │   "It should have have an fp attribute which returns ra │
+│   1057 │   │   │   )                                                         │
+│   1058 │   │                                                                 │
+│ ❱ 1059 │   │   with self._error_catcher():                                   │
+│   1060 │   │   │   # Don't bother reading the body of a HEAD request.        │
+│   1061 │   │   │   if self._original_response and is_response_to_head(self._ │
+│   1062 │   │   │   │   self._original_response.close()                       │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │            amt = 10240                                                   │ │
+│ │ decode_content = True                                                    │ │
+│ │           self = <urllib3.response.HTTPResponse object at                │ │
+│ │                  0x77cfb40b05e0>                                         │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /usr/lib/python3.11/contextlib.py:155 in __exit__                            │
+│                                                                              │
+│   152 │   │   │   │   # tell if we get the same exception back               │
+│   153 │   │   │   │   value = typ()                                          │
+│   154 │   │   │   try:                                                       │
+│ ❱ 155 │   │   │   │   self.gen.throw(typ, value, traceback)                  │
+│   156 │   │   │   except StopIteration as exc:                               │
+│   157 │   │   │   │   # Suppress StopIteration *unless* it's the same except │
+│   158 │   │   │   │   # was passed to throw().  This prevents a StopIteratio │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │      self = <contextlib._GeneratorContextManager object at               │ │
+│ │             0x77cfb40bf6d0>                                              │ │
+│ │ traceback = <traceback object at 0x77cfb40ecf80>                         │ │
+│ │       typ = <class 'TimeoutError'>                                       │ │
+│ │     value = TimeoutError('The read operation timed out')                 │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/urllib3/respons │
+│ e.py:717 in _error_catcher                                                   │
+│                                                                              │
+│    714 │   │   │   except SocketTimeout as e:                                │
+│    715 │   │   │   │   # FIXME: Ideally we'd like to include the url in the  │
+│    716 │   │   │   │   # there is yet no clean way to get at it from this co │
+│ ❱  717 │   │   │   │   raise ReadTimeoutError(self._pool, None, "Read timed  │
+│    718 │   │   │                                                             │
+│    719 │   │   │   except BaseSSLError as e:                                 │
+│    720 │   │   │   │   # FIXME: Is there a better way to differentiate betwe │
+│                                                                              │
+│ ╭─────────────────────────────── locals ────────────────────────────────╮    │
+│ │ clean_exit = False                                                    │    │
+│ │       self = <urllib3.response.HTTPResponse object at 0x77cfb40b05e0> │    │
+│ ╰───────────────────────────────────────────────────────────────────────╯    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ReadTimeoutError: HTTPSConnectionPool(host='api.betfair.com', port=443): Read 
+timed out.
+
+During handling of the above exception, another exception occurred:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/baseendpoint.py:35 in request                                  │
+│                                                                              │
+│    32 │   │   request = self.create_req(method, params)                      │
+│    33 │   │   time_sent = time.time()                                        │
+│    34 │   │   try:                                                           │
+│ ❱  35 │   │   │   response = session.post(                                   │
+│    36 │   │   │   │   self.url,                                              │
+│    37 │   │   │   │   data=request,                                          │
+│    38 │   │   │   │   headers=self.client.request_headers,                   │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │    method = 'SportsAPING/v1.0/listEvents'                                │ │
+│ │    params = {                                                            │ │
+│ │             │   'filter': {                                              │ │
+│ │             │   │   'eventTypeIds': ['1'],                               │ │
+│ │             │   │   'marketStartTime': {                                 │ │
+│ │             │   │   │   'from': '2024-11-12T03:00:00+00:00',             │ │
+│ │             │   │   │   'to': '2024-11-13T02:59:59.999999+00:00'         │ │
+│ │             │   │   }                                                    │ │
+│ │             │   }                                                        │ │
+│ │             }                                                            │ │
+│ │   request = '{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEvents", │ │
+│ │             "params": {"filter":'+135                                    │ │
+│ │      self = <betfairlightweight.endpoints.betting.Betting object at      │ │
+│ │             0x77cfb4076290>                                              │ │
+│ │   session = <module 'requests' from                                      │ │
+│ │             '/home/marcos/projetos/bet/.venv/lib/python3.11/site-packag… │ │
+│ │ time_sent = 1731398419.018444                                            │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/api.py │
+│ :115 in post                                                                 │
+│                                                                              │
+│   112 │   :rtype: requests.Response                                          │
+│   113 │   """                                                                │
+│   114 │                                                                      │
+│ ❱ 115 │   return request("post", url, data=data, json=json, **kwargs)        │
+│   116                                                                        │
+│   117                                                                        │
+│   118 def put(url, data=None, **kwargs):                                     │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │   data = '{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEvents",    │ │
+│ │          "params": {"filter":'+135                                       │ │
+│ │   json = None                                                            │ │
+│ │ kwargs = {                                                               │ │
+│ │          │   'headers': {                                                │ │
+│ │          │   │   'X-Application': 'oqkDBDNIsHACh4Cc',                    │ │
+│ │          │   │   'X-Authentication': None,                               │ │
+│ │          │   │   'content-type': 'application/json',                     │ │
+│ │          │   │   'Accept-Encoding': 'gzip, deflate',                     │ │
+│ │          │   │   'Connection': 'keep-alive',                             │ │
+│ │          │   │   'User-Agent': 'betfairlightweight/2.19.1'               │ │
+│ │          │   },                                                          │ │
+│ │          │   'timeout': (3.05, 16)                                       │ │
+│ │          }                                                               │ │
+│ │    url = 'https://api.betfair.com/exchange/betting/json-rpc/v1'          │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/api.py │
+│ :59 in request                                                               │
+│                                                                              │
+│    56 │   # avoid leaving sockets open which can trigger a ResourceWarning i │
+│    57 │   # cases, and look like a memory leak in others.                    │
+│    58 │   with sessions.Session() as session:                                │
+│ ❱  59 │   │   return session.request(method=method, url=url, **kwargs)       │
+│    60                                                                        │
+│    61                                                                        │
+│    62 def get(url, params=None, **kwargs):                                   │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │  kwargs = {                                                              │ │
+│ │           │   'data': '{"jsonrpc": "2.0", "method":                      │ │
+│ │           "SportsAPING/v1.0/listEvents", "params": {"filter":'+135,      │ │
+│ │           │   'json': None,                                              │ │
+│ │           │   'headers': {                                               │ │
+│ │           │   │   'X-Application': 'oqkDBDNIsHACh4Cc',                   │ │
+│ │           │   │   'X-Authentication': None,                              │ │
+│ │           │   │   'content-type': 'application/json',                    │ │
+│ │           │   │   'Accept-Encoding': 'gzip, deflate',                    │ │
+│ │           │   │   'Connection': 'keep-alive',                            │ │
+│ │           │   │   'User-Agent': 'betfairlightweight/2.19.1'              │ │
+│ │           │   },                                                         │ │
+│ │           │   'timeout': (3.05, 16)                                      │ │
+│ │           }                                                              │ │
+│ │  method = 'post'                                                         │ │
+│ │ session = <requests.sessions.Session object at 0x77cfb40a7a50>           │ │
+│ │     url = 'https://api.betfair.com/exchange/betting/json-rpc/v1'         │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/sessio │
+│ ns.py:589 in request                                                         │
+│                                                                              │
+│   586 │   │   │   "allow_redirects": allow_redirects,                        │
+│   587 │   │   }                                                              │
+│   588 │   │   send_kwargs.update(settings)                                   │
+│ ❱ 589 │   │   resp = self.send(prep, **send_kwargs)                          │
+│   590 │   │                                                                  │
+│   591 │   │   return resp                                                    │
+│   592                                                                        │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ allow_redirects = True                                                   │ │
+│ │            auth = None                                                   │ │
+│ │            cert = None                                                   │ │
+│ │         cookies = None                                                   │ │
+│ │            data = '{"jsonrpc": "2.0", "method":                          │ │
+│ │                   "SportsAPING/v1.0/listEvents", "params":               │ │
+│ │                   {"filter":'+135                                        │ │
+│ │           files = None                                                   │ │
+│ │         headers = {                                                      │ │
+│ │                   │   'X-Application': 'oqkDBDNIsHACh4Cc',               │ │
+│ │                   │   'X-Authentication': None,                          │ │
+│ │                   │   'content-type': 'application/json',                │ │
+│ │                   │   'Accept-Encoding': 'gzip, deflate',                │ │
+│ │                   │   'Connection': 'keep-alive',                        │ │
+│ │                   │   'User-Agent': 'betfairlightweight/2.19.1'          │ │
+│ │                   }                                                      │ │
+│ │           hooks = None                                                   │ │
+│ │            json = None                                                   │ │
+│ │          method = 'post'                                                 │ │
+│ │          params = None                                                   │ │
+│ │            prep = <PreparedRequest [POST]>                               │ │
+│ │         proxies = {}                                                     │ │
+│ │             req = <Request [POST]>                                       │ │
+│ │            self = <requests.sessions.Session object at 0x77cfb40a7a50>   │ │
+│ │     send_kwargs = {                                                      │ │
+│ │                   │   'timeout': (3.05, 16),                             │ │
+│ │                   │   'allow_redirects': True,                           │ │
+│ │                   │   'proxies': OrderedDict(),                          │ │
+│ │                   │   'stream': False,                                   │ │
+│ │                   │   'verify': True,                                    │ │
+│ │                   │   'cert': None                                       │ │
+│ │                   }                                                      │ │
+│ │        settings = {                                                      │ │
+│ │                   │   'proxies': OrderedDict(),                          │ │
+│ │                   │   'stream': False,                                   │ │
+│ │                   │   'verify': True,                                    │ │
+│ │                   │   'cert': None                                       │ │
+│ │                   }                                                      │ │
+│ │          stream = None                                                   │ │
+│ │         timeout = (3.05, 16)                                             │ │
+│ │             url = 'https://api.betfair.com/exchange/betting/json-rpc/v1' │ │
+│ │          verify = None                                                   │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/sessio │
+│ ns.py:747 in send                                                            │
+│                                                                              │
+│   744 │   │   │   │   pass                                                   │
+│   745 │   │                                                                  │
+│   746 │   │   if not stream:                                                 │
+│ ❱ 747 │   │   │   r.content                                                  │
+│   748 │   │                                                                  │
+│   749 │   │   return r                                                       │
+│   750                                                                        │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │         adapter = <requests.adapters.HTTPAdapter object at               │ │
+│ │                   0x77cfb40ae290>                                        │ │
+│ │ allow_redirects = True                                                   │ │
+│ │         elapsed = 0.3786191940307617                                     │ │
+│ │             gen = <generator object                                      │ │
+│ │                   SessionRedirectMixin.resolve_redirects at              │ │
+│ │                   0x77cfb41d9f20>                                        │ │
+│ │         history = []                                                     │ │
+│ │           hooks = {'response': []}                                       │ │
+│ │          kwargs = {                                                      │ │
+│ │                   │   'timeout': (3.05, 16),                             │ │
+│ │                   │   'proxies': OrderedDict(),                          │ │
+│ │                   │   'stream': False,                                   │ │
+│ │                   │   'verify': True,                                    │ │
+│ │                   │   'cert': None                                       │ │
+│ │                   }                                                      │ │
+│ │               r = <Response [503]>                                       │ │
+│ │         request = <PreparedRequest [POST]>                               │ │
+│ │            self = <requests.sessions.Session object at 0x77cfb40a7a50>   │ │
+│ │           start = 1731398419.019577                                      │ │
+│ │          stream = False                                                  │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/models │
+│ .py:899 in content                                                           │
+│                                                                              │
+│    896 │   │   │   if self.status_code == 0 or self.raw is None:             │
+│    897 │   │   │   │   self._content = None                                  │
+│    898 │   │   │   else:                                                     │
+│ ❱  899 │   │   │   │   self._content = b"".join(self.iter_content(CONTENT_CH │
+│    900 │   │                                                                 │
+│    901 │   │   self._content_consumed = True                                 │
+│    902 │   │   # don't need to release the connection; that's been handled b │
+│                                                                              │
+│ ╭──────── locals ─────────╮                                                  │
+│ │ self = <Response [503]> │                                                  │
+│ ╰─────────────────────────╯                                                  │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/requests/models │
+│ .py:822 in generate                                                          │
+│                                                                              │
+│    819 │   │   │   │   except DecodeError as e:                              │
+│    820 │   │   │   │   │   raise ContentDecodingError(e)                     │
+│    821 │   │   │   │   except ReadTimeoutError as e:                         │
+│ ❱  822 │   │   │   │   │   raise ConnectionError(e)                          │
+│    823 │   │   │   │   except SSLError as e:                                 │
+│    824 │   │   │   │   │   raise RequestsSSLError(e)                         │
+│    825 │   │   │   else:                                                     │
+│                                                                              │
+│ ╭─────────── locals ────────────╮                                            │
+│ │ chunk_size = 10240            │                                            │
+│ │       self = <Response [503]> │                                            │
+│ ╰───────────────────────────────╯                                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ConnectionError: HTTPSConnectionPool(host='api.betfair.com', port=443): Read 
+timed out.
+
+During handling of the above exception, another exception occurred:
+
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/marcos/projetos/bet/bet/cli.py:115 in mday                             │
+│                                                                              │
+│   112 │   │   print("Buscado dados na Betfair...")                           │
+│   113 │   │   cliente.login()                                                │
+│   114 │   │   betfair_eventos = BetfairEventos(cliente)                      │
+│ ❱ 115 │   │   lista_jogos = betfair_eventos.get_match_day()                  │
+│   116 │   │   save_dict_to_json(lista_jogos, file_path)                      │
+│   117 │   │   print("Dados salvos.")                                         │
+│   118 │   if not no_print:                                                   │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ betfair_eventos = <bet.betfair.BetfairEventos object at 0x77cfb4b44bd0>  │ │
+│ │            data = datetime.date(2024, 11, 12)                            │ │
+│ │       file_path = '/home/marcos/projetos/bet/data/jogos/12-11-2024.json' │ │
+│ │        no_print = True                                                   │ │
+│ │          tabela = <rich.table.Table object at 0x77cfb40a7810>            │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/bet/betfair.py:86 in get_match_day                 │
+│                                                                              │
+│    83 │   │   │   market_start_time={"from": start_time.isoformat(), "to": e │
+│    84 │   │   )                                                              │
+│    85 │   │   # Lista de eventos                                             │
+│ ❱  86 │   │   events = self.cliente.trading.betting.list_events(filter=event │
+│    87 │   │   diferenca_fuso = timedelta(hours=3)                            │
+│    88 │   │   # Imprimir os detalhes dos eventos                             │
+│    89 │   │   match_day_list = []                                            │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │     end_time = datetime.datetime(2024, 11, 13, 2, 59, 59, 999999,        │ │
+│ │                tzinfo=<UTC>)                                             │ │
+│ │ event_filter = {                                                         │ │
+│ │                │   'eventTypeIds': ['1'],                                │ │
+│ │                │   'marketStartTime': {                                  │ │
+│ │                │   │   'from': '2024-11-12T03:00:00+00:00',              │ │
+│ │                │   │   'to': '2024-11-13T02:59:59.999999+00:00'          │ │
+│ │                │   }                                                     │ │
+│ │                }                                                         │ │
+│ │         self = <bet.betfair.BetfairEventos object at 0x77cfb4b44bd0>     │ │
+│ │   start_time = datetime.datetime(2024, 11, 12, 3, 0, tzinfo=<UTC>)       │ │
+│ │     timezone = <UTC>                                                     │ │
+│ │        today = datetime.date(2024, 11, 12)                               │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/betting.py:123 in list_events                                  │
+│                                                                              │
+│   120 │   │   """                                                            │
+│   121 │   │   params = clean_locals(locals())                                │
+│   122 │   │   method = "%s%s" % (self.URI, "listEvents")                     │
+│ ❱ 123 │   │   (response, response_json, elapsed_time) = self.request(method, │
+│   124 │   │   return self.process_response(                                  │
+│   125 │   │   │   response_json, resources.EventResult, elapsed_time, lightw │
+│   126 │   │   )                                                              │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │      filter = {                                                          │ │
+│ │               │   'eventTypeIds': ['1'],                                 │ │
+│ │               │   'marketStartTime': {                                   │ │
+│ │               │   │   'from': '2024-11-12T03:00:00+00:00',               │ │
+│ │               │   │   'to': '2024-11-13T02:59:59.999999+00:00'           │ │
+│ │               │   }                                                      │ │
+│ │               }                                                          │ │
+│ │ lightweight = None                                                       │ │
+│ │      locale = None                                                       │ │
+│ │      method = 'SportsAPING/v1.0/listEvents'                              │ │
+│ │      params = {                                                          │ │
+│ │               │   'filter': {                                            │ │
+│ │               │   │   'eventTypeIds': ['1'],                             │ │
+│ │               │   │   'marketStartTime': {                               │ │
+│ │               │   │   │   'from': '2024-11-12T03:00:00+00:00',           │ │
+│ │               │   │   │   'to': '2024-11-13T02:59:59.999999+00:00'       │ │
+│ │               │   │   }                                                  │ │
+│ │               │   }                                                      │ │
+│ │               }                                                          │ │
+│ │        self = <betfairlightweight.endpoints.betting.Betting object at    │ │
+│ │               0x77cfb4076290>                                            │ │
+│ │     session = None                                                       │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/baseendpoint.py:42 in request                                  │
+│                                                                              │
+│    39 │   │   │   │   timeout=(self.connect_timeout, self.read_timeout),     │
+│    40 │   │   │   )                                                          │
+│    41 │   │   except requests.ConnectionError as e:                          │
+│ ❱  42 │   │   │   raise APIError(None, method, params, e)                    │
+│    43 │   │   except Exception as e:                                         │
+│    44 │   │   │   raise APIError(None, method, params, e)                    │
+│    45 │   │   elapsed_time = time.time() - time_sent                         │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │    method = 'SportsAPING/v1.0/listEvents'                                │ │
+│ │    params = {                                                            │ │
+│ │             │   'filter': {                                              │ │
+│ │             │   │   'eventTypeIds': ['1'],                               │ │
+│ │             │   │   'marketStartTime': {                                 │ │
+│ │             │   │   │   'from': '2024-11-12T03:00:00+00:00',             │ │
+│ │             │   │   │   'to': '2024-11-13T02:59:59.999999+00:00'         │ │
+│ │             │   │   }                                                    │ │
+│ │             │   }                                                        │ │
+│ │             }                                                            │ │
+│ │   request = '{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEvents", │ │
+│ │             "params": {"filter":'+135                                    │ │
+│ │      self = <betfairlightweight.endpoints.betting.Betting object at      │ │
+│ │             0x77cfb4076290>                                              │ │
+│ │   session = <module 'requests' from                                      │ │
+│ │             '/home/marcos/projetos/bet/.venv/lib/python3.11/site-packag… │ │
+│ │ time_sent = 1731398419.018444                                            │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+╰──────────────────────────────────────────────────────────────────────────────╯
+APIError: SportsAPING/v1.0/listEvents 
+Params: {'filter': {'eventTypeIds': ['1'], 'marketStartTime': {'from': 
+'2024-11-12T03:00:00+00:00', 'to': '2024-11-13T02:59:59.999999+00:00'}}} 
+Exception: HTTPSConnectionPool(host='api.betfair.com', port=443): Read timed 
+out.
+Buscado dados na Betfair...
+2024-11-14 05:00:03,506 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-15 05:00:02,888 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-19 05:00:03,075 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-20 05:00:03,274 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-11-30 05:00:03,522 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-12-01 05:00:02,902 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-12-12 05:00:03,113 - INFO - Login realizado com sucesso.
+Dados salvos.
+Buscado dados na Betfair...
+2024-12-23 05:00:02,799 - INFO - Login realizado com sucesso.
+Dados salvos.
+2025-01-07 05:00:03,377 - ERROR - Erro ao tentar fazer login: API login: CLOSED
+Buscado dados na Betfair...
+2025-01-07 05:00:04,401 - ERROR - Erro ao tentar fazer login: API login: CLOSED
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/marcos/projetos/bet/bet/cli.py:122 in mday                             │
+│                                                                              │
+│   119 │   """Lista as partidas do dia com data/hora e id do evento"""        │
+│   120 │   dat = datetime.strptime(data, "%d/%m/%Y").date() if data is not No │
+│   121 │   file_path = f"{settings.data_dir}/jogos/{dat.day}-{dat.month}-{dat │
+│ ❱ 122 │   lista_jogos = get_lista_jogos(file_path, cliente)                  │
+│   123 │   # if Path(file_path).exists():                                     │
+│   124 │   #     lista_jogos = load_json_to_dict(file_path)                   │
+│   125 │   #     print("Dados carregados.")                                   │
+│                                                                              │
+│ ╭───────────────────────────── locals ─────────────────────────────╮         │
+│ │       dat = datetime.date(2025, 1, 7)                            │         │
+│ │      data = None                                                 │         │
+│ │ file_path = '/home/marcos/projetos/bet/data/jogos/7-1-2025.json' │         │
+│ │  no_print = True                                                 │         │
+│ ╰──────────────────────────────────────────────────────────────────╯         │
+│                                                                              │
+│ /home/marcos/projetos/bet/bet/cli.py:53 in get_lista_jogos                   │
+│                                                                              │
+│    50 │   │   if cliente.session_active == False:                            │
+│    51 │   │   │   cliente.login()                                            │
+│    52 │   │   betfair_eventos = BetfairEventos(cliente)                      │
+│ ❱  53 │   │   lista_jogos = betfair_eventos.get_match_day()                  │
+│    54 │   │   save_dict_to_json(lista_jogos, file_path)                      │
+│    55 │   │   print("Dados salvos.")                                         │
+│    56 │   return lista_jogos                                                 │
+│                                                                              │
+│ ╭──────────────────────────────── locals ─────────────────────────────────╮  │
+│ │ betfair_eventos = <bet.betfair.BetfairEventos object at 0x75a217059950> │  │
+│ │         cliente = <bet.betfair.BetfairCliente object at 0x75a216eef910> │  │
+│ │       file_path = '/home/marcos/projetos/bet/data/jogos/7-1-2025.json'  │  │
+│ ╰─────────────────────────────────────────────────────────────────────────╯  │
+│                                                                              │
+│ /home/marcos/projetos/bet/bet/betfair.py:88 in get_match_day                 │
+│                                                                              │
+│    85 │   │   │   market_start_time={"from": start_time.isoformat(), "to": e │
+│    86 │   │   )                                                              │
+│    87 │   │   # Lista de eventos                                             │
+│ ❱  88 │   │   events = self.cliente.trading.betting.list_events(filter=event │
+│    89 │   │   diferenca_fuso = timedelta(hours=3)                            │
+│    90 │   │   # Imprimir os detalhes dos eventos                             │
+│    91 │   │   match_day_list = []                                            │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │     end_time = datetime.datetime(2025, 1, 8, 2, 59, 59, 999999,          │ │
+│ │                tzinfo=<UTC>)                                             │ │
+│ │ event_filter = {                                                         │ │
+│ │                │   'eventTypeIds': ['1'],                                │ │
+│ │                │   'marketStartTime': {                                  │ │
+│ │                │   │   'from': '2025-01-07T03:00:00+00:00',              │ │
+│ │                │   │   'to': '2025-01-08T02:59:59.999999+00:00'          │ │
+│ │                │   }                                                     │ │
+│ │                }                                                         │ │
+│ │         self = <bet.betfair.BetfairEventos object at 0x75a217059950>     │ │
+│ │   start_time = datetime.datetime(2025, 1, 7, 3, 0, tzinfo=<UTC>)         │ │
+│ │     timezone = <UTC>                                                     │ │
+│ │        today = datetime.date(2025, 1, 7)                                 │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/betting.py:123 in list_events                                  │
+│                                                                              │
+│   120 │   │   """                                                            │
+│   121 │   │   params = clean_locals(locals())                                │
+│   122 │   │   method = "%s%s" % (self.URI, "listEvents")                     │
+│ ❱ 123 │   │   (response, response_json, elapsed_time) = self.request(method, │
+│   124 │   │   return self.process_response(                                  │
+│   125 │   │   │   response_json, resources.EventResult, elapsed_time, lightw │
+│   126 │   │   )                                                              │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │      filter = {                                                          │ │
+│ │               │   'eventTypeIds': ['1'],                                 │ │
+│ │               │   'marketStartTime': {                                   │ │
+│ │               │   │   'from': '2025-01-07T03:00:00+00:00',               │ │
+│ │               │   │   'to': '2025-01-08T02:59:59.999999+00:00'           │ │
+│ │               │   }                                                      │ │
+│ │               }                                                          │ │
+│ │ lightweight = None                                                       │ │
+│ │      locale = None                                                       │ │
+│ │      method = 'SportsAPING/v1.0/listEvents'                              │ │
+│ │      params = {                                                          │ │
+│ │               │   'filter': {                                            │ │
+│ │               │   │   'eventTypeIds': ['1'],                             │ │
+│ │               │   │   'marketStartTime': {                               │ │
+│ │               │   │   │   'from': '2025-01-07T03:00:00+00:00',           │ │
+│ │               │   │   │   'to': '2025-01-08T02:59:59.999999+00:00'       │ │
+│ │               │   │   }                                                  │ │
+│ │               │   }                                                      │ │
+│ │               }                                                          │ │
+│ │        self = <betfairlightweight.endpoints.betting.Betting object at    │ │
+│ │               0x75a216f7fc90>                                            │ │
+│ │     session = None                                                       │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/baseendpoint.py:47 in request                                  │
+│                                                                              │
+│    44 │   │   │   raise APIError(None, method, params, e)                    │
+│    45 │   │   elapsed_time = time.time() - time_sent                         │
+│    46 │   │                                                                  │
+│ ❱  47 │   │   check_status_code(response)                                    │
+│    48 │   │   try:                                                           │
+│    49 │   │   │   response_json = json.loads(response.content.decode("utf-8" │
+│    50 │   │   except ValueError:                                             │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ elapsed_time = 0.5101919174194336                                        │ │
+│ │       method = 'SportsAPING/v1.0/listEvents'                             │ │
+│ │       params = {                                                         │ │
+│ │                │   'filter': {                                           │ │
+│ │                │   │   'eventTypeIds': ['1'],                            │ │
+│ │                │   │   'marketStartTime': {                              │ │
+│ │                │   │   │   'from': '2025-01-07T03:00:00+00:00',          │ │
+│ │                │   │   │   'to': '2025-01-08T02:59:59.999999+00:00'      │ │
+│ │                │   │   }                                                 │ │
+│ │                │   }                                                     │ │
+│ │                }                                                         │ │
+│ │      request = '{"jsonrpc": "2.0", "method":                             │ │
+│ │                "SportsAPING/v1.0/listEvents", "params": {"filter":'+135  │ │
+│ │     response = <Response [400]>                                          │ │
+│ │         self = <betfairlightweight.endpoints.betting.Betting object at   │ │
+│ │                0x75a216f7fc90>                                           │ │
+│ │      session = <module 'requests' from                                   │ │
+│ │                '/home/marcos/projetos/bet/.venv/lib/python3.11/site-pac… │ │
+│ │    time_sent = 1736236804.4029515                                        │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/utils.py:37 in check_status_code                                         │
+│                                                                              │
+│   34 │   """                                                                 │
+│   35 │   codes = codes or [200]                                              │
+│   36 │   if response.status_code not in codes:                               │
+│ ❱ 37 │   │   raise StatusCodeError(response.status_code)                     │
+│   38                                                                         │
+│   39                                                                         │
+│   40 def clean_locals(data: dict) -> dict:                                   │
+│                                                                              │
+│ ╭────────── locals ───────────╮                                              │
+│ │    codes = [200]            │                                              │
+│ │ response = <Response [400]> │                                              │
+│ ╰─────────────────────────────╯                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+StatusCodeError: Status code error: 400
+2025-01-08 05:00:03,066 - ERROR - Erro ao tentar fazer login: API login: CLOSED
+Buscado dados na Betfair...
+2025-01-08 05:00:03,881 - ERROR - Erro ao tentar fazer login: API login: CLOSED
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/marcos/projetos/bet/bet/cli.py:122 in mday                             │
+│                                                                              │
+│   119 │   """Lista as partidas do dia com data/hora e id do evento"""        │
+│   120 │   dat = datetime.strptime(data, "%d/%m/%Y").date() if data is not No │
+│   121 │   file_path = f"{settings.data_dir}/jogos/{dat.day}-{dat.month}-{dat │
+│ ❱ 122 │   lista_jogos = get_lista_jogos(file_path, cliente)                  │
+│   123 │   # if Path(file_path).exists():                                     │
+│   124 │   #     lista_jogos = load_json_to_dict(file_path)                   │
+│   125 │   #     print("Dados carregados.")                                   │
+│                                                                              │
+│ ╭───────────────────────────── locals ─────────────────────────────╮         │
+│ │       dat = datetime.date(2025, 1, 8)                            │         │
+│ │      data = None                                                 │         │
+│ │ file_path = '/home/marcos/projetos/bet/data/jogos/8-1-2025.json' │         │
+│ │  no_print = True                                                 │         │
+│ ╰──────────────────────────────────────────────────────────────────╯         │
+│                                                                              │
+│ /home/marcos/projetos/bet/bet/cli.py:53 in get_lista_jogos                   │
+│                                                                              │
+│    50 │   │   if cliente.session_active == False:                            │
+│    51 │   │   │   cliente.login()                                            │
+│    52 │   │   betfair_eventos = BetfairEventos(cliente)                      │
+│ ❱  53 │   │   lista_jogos = betfair_eventos.get_match_day()                  │
+│    54 │   │   save_dict_to_json(lista_jogos, file_path)                      │
+│    55 │   │   print("Dados salvos.")                                         │
+│    56 │   return lista_jogos                                                 │
+│                                                                              │
+│ ╭──────────────────────────────── locals ─────────────────────────────────╮  │
+│ │ betfair_eventos = <bet.betfair.BetfairEventos object at 0x7597c65779d0> │  │
+│ │         cliente = <bet.betfair.BetfairCliente object at 0x7597c64cb650> │  │
+│ │       file_path = '/home/marcos/projetos/bet/data/jogos/8-1-2025.json'  │  │
+│ ╰─────────────────────────────────────────────────────────────────────────╯  │
+│                                                                              │
+│ /home/marcos/projetos/bet/bet/betfair.py:88 in get_match_day                 │
+│                                                                              │
+│    85 │   │   │   market_start_time={"from": start_time.isoformat(), "to": e │
+│    86 │   │   )                                                              │
+│    87 │   │   # Lista de eventos                                             │
+│ ❱  88 │   │   events = self.cliente.trading.betting.list_events(filter=event │
+│    89 │   │   diferenca_fuso = timedelta(hours=3)                            │
+│    90 │   │   # Imprimir os detalhes dos eventos                             │
+│    91 │   │   match_day_list = []                                            │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │     end_time = datetime.datetime(2025, 1, 9, 2, 59, 59, 999999,          │ │
+│ │                tzinfo=<UTC>)                                             │ │
+│ │ event_filter = {                                                         │ │
+│ │                │   'eventTypeIds': ['1'],                                │ │
+│ │                │   'marketStartTime': {                                  │ │
+│ │                │   │   'from': '2025-01-08T03:00:00+00:00',              │ │
+│ │                │   │   'to': '2025-01-09T02:59:59.999999+00:00'          │ │
+│ │                │   }                                                     │ │
+│ │                }                                                         │ │
+│ │         self = <bet.betfair.BetfairEventos object at 0x7597c65779d0>     │ │
+│ │   start_time = datetime.datetime(2025, 1, 8, 3, 0, tzinfo=<UTC>)         │ │
+│ │     timezone = <UTC>                                                     │ │
+│ │        today = datetime.date(2025, 1, 8)                                 │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/betting.py:123 in list_events                                  │
+│                                                                              │
+│   120 │   │   """                                                            │
+│   121 │   │   params = clean_locals(locals())                                │
+│   122 │   │   method = "%s%s" % (self.URI, "listEvents")                     │
+│ ❱ 123 │   │   (response, response_json, elapsed_time) = self.request(method, │
+│   124 │   │   return self.process_response(                                  │
+│   125 │   │   │   response_json, resources.EventResult, elapsed_time, lightw │
+│   126 │   │   )                                                              │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │      filter = {                                                          │ │
+│ │               │   'eventTypeIds': ['1'],                                 │ │
+│ │               │   'marketStartTime': {                                   │ │
+│ │               │   │   'from': '2025-01-08T03:00:00+00:00',               │ │
+│ │               │   │   'to': '2025-01-09T02:59:59.999999+00:00'           │ │
+│ │               │   }                                                      │ │
+│ │               }                                                          │ │
+│ │ lightweight = None                                                       │ │
+│ │      locale = None                                                       │ │
+│ │      method = 'SportsAPING/v1.0/listEvents'                              │ │
+│ │      params = {                                                          │ │
+│ │               │   'filter': {                                            │ │
+│ │               │   │   'eventTypeIds': ['1'],                             │ │
+│ │               │   │   'marketStartTime': {                               │ │
+│ │               │   │   │   'from': '2025-01-08T03:00:00+00:00',           │ │
+│ │               │   │   │   'to': '2025-01-09T02:59:59.999999+00:00'       │ │
+│ │               │   │   }                                                  │ │
+│ │               │   }                                                      │ │
+│ │               }                                                          │ │
+│ │        self = <betfairlightweight.endpoints.betting.Betting object at    │ │
+│ │               0x7597c655f9d0>                                            │ │
+│ │     session = None                                                       │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/endpoints/baseendpoint.py:47 in request                                  │
+│                                                                              │
+│    44 │   │   │   raise APIError(None, method, params, e)                    │
+│    45 │   │   elapsed_time = time.time() - time_sent                         │
+│    46 │   │                                                                  │
+│ ❱  47 │   │   check_status_code(response)                                    │
+│    48 │   │   try:                                                           │
+│    49 │   │   │   response_json = json.loads(response.content.decode("utf-8" │
+│    50 │   │   except ValueError:                                             │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ elapsed_time = 0.502166748046875                                         │ │
+│ │       method = 'SportsAPING/v1.0/listEvents'                             │ │
+│ │       params = {                                                         │ │
+│ │                │   'filter': {                                           │ │
+│ │                │   │   'eventTypeIds': ['1'],                            │ │
+│ │                │   │   'marketStartTime': {                              │ │
+│ │                │   │   │   'from': '2025-01-08T03:00:00+00:00',          │ │
+│ │                │   │   │   'to': '2025-01-09T02:59:59.999999+00:00'      │ │
+│ │                │   │   }                                                 │ │
+│ │                │   }                                                     │ │
+│ │                }                                                         │ │
+│ │      request = '{"jsonrpc": "2.0", "method":                             │ │
+│ │                "SportsAPING/v1.0/listEvents", "params": {"filter":'+135  │ │
+│ │     response = <Response [400]>                                          │ │
+│ │         self = <betfairlightweight.endpoints.betting.Betting object at   │ │
+│ │                0x7597c655f9d0>                                           │ │
+│ │      session = <module 'requests' from                                   │ │
+│ │                '/home/marcos/projetos/bet/.venv/lib/python3.11/site-pac… │ │
+│ │    time_sent = 1736323203.8827462                                        │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /home/marcos/projetos/bet/.venv/lib/python3.11/site-packages/betfairlightwei │
+│ ght/utils.py:37 in check_status_code                                         │
+│                                                                              │
+│   34 │   """                                                                 │
+│   35 │   codes = codes or [200]                                              │
+│   36 │   if response.status_code not in codes:                               │
+│ ❱ 37 │   │   raise StatusCodeError(response.status_code)                     │
+│   38                                                                         │
+│   39                                                                         │
+│   40 def clean_locals(data: dict) -> dict:                                   │
+│                                                                              │
+│ ╭────────── locals ───────────╮                                              │
+│ │    codes = [200]            │                                              │
+│ │ response = <Response [400]> │                                              │
+│ ╰─────────────────────────────╯                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+StatusCodeError: Status code error: 400
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 33, in <module>
+    sys.exit(load_entry_point('bet', 'console_scripts', 'bet')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marcos/projetos/bet/.venv/bin/bet", line 22, in importlib_load_entry_point
+    for entry_point in distribution(dist_name).entry_points
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bet

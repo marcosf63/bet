@@ -1,0 +1,695 @@
+[
+    {
+        "evento_id": "33779210",
+        "data": "2024-11-14",
+        "hora": "03:15",
+        "home_team": "Persipura Jayapura",
+        "away_team": "RANS Nusantara FC"
+    },
+    {
+        "evento_id": "33782289",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "USM Alger U21",
+        "away_team": "JS Saoura U21"
+    },
+    {
+        "evento_id": "33778823",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "ES Setif U21",
+        "away_team": "AC Paradou U21"
+    },
+    {
+        "evento_id": "33778822",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "NC Magra U21",
+        "away_team": "ES Mostaganem U21"
+    },
+    {
+        "evento_id": "33778827",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "USM Khenchela U21",
+        "away_team": "CS Constantine U21"
+    },
+    {
+        "evento_id": "33778826",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "CR Belouizdad U21",
+        "away_team": "JS Kabylie U21"
+    },
+    {
+        "evento_id": "33778825",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "Olympique Akbou U21",
+        "away_team": "MC Oran U21"
+    },
+    {
+        "evento_id": "33778824",
+        "data": "2024-11-14",
+        "hora": "06:00",
+        "home_team": "US Biskra U21",
+        "away_team": "ASO Chlef U21"
+    },
+    {
+        "evento_id": "33757675",
+        "data": "2024-11-14",
+        "hora": "06:10",
+        "home_team": "Australia",
+        "away_team": "Saudi Arabia"
+    },
+    {
+        "evento_id": "33782519",
+        "data": "2024-11-14",
+        "hora": "07:00",
+        "home_team": "Portugal U19",
+        "away_team": "Poland U19"
+    },
+    {
+        "evento_id": "33781628",
+        "data": "2024-11-14",
+        "hora": "07:30",
+        "home_team": "SCR Altach",
+        "away_team": "FC Wil"
+    },
+    {
+        "evento_id": "33779104",
+        "data": "2024-11-14",
+        "hora": "08:00",
+        "home_team": "Binh Dinh",
+        "away_team": "Hai Phong"
+    },
+    {
+        "evento_id": "33778871",
+        "data": "2024-11-14",
+        "hora": "08:00",
+        "home_team": "Braunschweig",
+        "away_team": "St Pauli"
+    },
+    {
+        "evento_id": "33778870",
+        "data": "2024-11-14",
+        "hora": "08:30",
+        "home_team": "Hannover",
+        "away_team": "FC Magdeburg"
+    },
+    {
+        "evento_id": "33779933",
+        "data": "2024-11-14",
+        "hora": "08:30",
+        "home_team": "FC Fratria",
+        "away_team": "Beroe Stara Za"
+    },
+    {
+        "evento_id": "33780854",
+        "data": "2024-11-14",
+        "hora": "08:50",
+        "home_team": "Al Sahel",
+        "away_team": "Hajer Club"
+    },
+    {
+        "evento_id": "33757699",
+        "data": "2024-11-14",
+        "hora": "09:00",
+        "home_team": "North Korea",
+        "away_team": "Iran"
+    },
+    {
+        "evento_id": "33780147",
+        "data": "2024-11-14",
+        "hora": "09:00",
+        "home_team": "North Macedonia U21",
+        "away_team": "Kosovo U21"
+    },
+    {
+        "evento_id": "33777859",
+        "data": "2024-11-14",
+        "hora": "09:00",
+        "home_team": "Singapore",
+        "away_team": "Myanmar"
+    },
+    {
+        "evento_id": "33777866",
+        "data": "2024-11-14",
+        "hora": "09:00",
+        "home_team": "Hong Kong",
+        "away_team": "Philippines"
+    },
+    {
+        "evento_id": "33779440",
+        "data": "2024-11-14",
+        "hora": "09:00",
+        "home_team": "Millwall U21",
+        "away_team": "Sheff Wed U21"
+    },
+    {
+        "evento_id": "33779105",
+        "data": "2024-11-14",
+        "hora": "09:15",
+        "home_team": "Ha Noi T and T",
+        "away_team": "Binh Duong"
+    },
+    {
+        "evento_id": "33779993",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Cyprus U21",
+        "away_team": "Hungary U21"
+    },
+    {
+        "evento_id": "33778987",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Telecom Egypt SC",
+        "away_team": "Aswan FC"
+    },
+    {
+        "evento_id": "33778986",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "El Daklyeh",
+        "away_team": "Raya Sporting FC"
+    },
+    {
+        "evento_id": "33778990",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Baladeyet Al-Mahalla",
+        "away_team": "Suez Montakhab"
+    },
+    {
+        "evento_id": "33778989",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Asyut Petroleum",
+        "away_team": "Dayrout"
+    },
+    {
+        "evento_id": "33778988",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Al Mokawloon",
+        "away_team": "Proxy Work Club"
+    },
+    {
+        "evento_id": "33778995",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Olympic El Qanal",
+        "away_team": "Wadi Degla"
+    },
+    {
+        "evento_id": "33779003",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "El Seka Elhadeed",
+        "away_team": "Abo Qair Semads"
+    },
+    {
+        "evento_id": "33779002",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Sporting Club",
+        "away_team": "El Mansurah"
+    },
+    {
+        "evento_id": "33777855",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Thailand",
+        "away_team": "Lebanon"
+    },
+    {
+        "evento_id": "33777858",
+        "data": "2024-11-14",
+        "hora": "09:30",
+        "home_team": "Laos",
+        "away_team": "Malaysia"
+    },
+    {
+        "evento_id": "33769289",
+        "data": "2024-11-14",
+        "hora": "09:45",
+        "home_team": "Danubio",
+        "away_team": "Cerro"
+    },
+    {
+        "evento_id": "33780756",
+        "data": "2024-11-14",
+        "hora": "10:00",
+        "home_team": "Bochum",
+        "away_team": "Den Bosch"
+    },
+    {
+        "evento_id": "33780765",
+        "data": "2024-11-14",
+        "hora": "10:00",
+        "home_team": "Augsburg",
+        "away_team": "Ingolstadt"
+    },
+    {
+        "evento_id": "33758010",
+        "data": "2024-11-14",
+        "hora": "10:00",
+        "home_team": "Lesotho",
+        "away_team": "Central African Republic"
+    },
+    {
+        "evento_id": "33758375",
+        "data": "2024-11-14",
+        "hora": "10:00",
+        "home_team": "Equatorial Guinea",
+        "away_team": "Algeria"
+    },
+    {
+        "evento_id": "33758373",
+        "data": "2024-11-14",
+        "hora": "10:00",
+        "home_team": "South Sudan",
+        "away_team": "Congo"
+    },
+    {
+        "evento_id": "33757714",
+        "data": "2024-11-14",
+        "hora": "11:00",
+        "home_team": "Kuwait",
+        "away_team": "South Korea"
+    },
+    {
+        "evento_id": "33780903",
+        "data": "2024-11-14",
+        "hora": "11:00",
+        "home_team": "Romania U19",
+        "away_team": "Czech Rep U19"
+    },
+    {
+        "evento_id": "33757673",
+        "data": "2024-11-14",
+        "hora": "11:00",
+        "home_team": "Bahrain",
+        "away_team": "China"
+    },
+    {
+        "evento_id": "33754931",
+        "data": "2024-11-14",
+        "hora": "12:00",
+        "home_team": "Kazakhstan",
+        "away_team": "Austria"
+    },
+    {
+        "evento_id": "33779001",
+        "data": "2024-11-14",
+        "hora": "12:00",
+        "home_team": "Tersana SC",
+        "away_team": "Tanta"
+    },
+    {
+        "evento_id": "33758008",
+        "data": "2024-11-14",
+        "hora": "12:00",
+        "home_team": "Burundi",
+        "away_team": "Malawi"
+    },
+    {
+        "evento_id": "33757706",
+        "data": "2024-11-14",
+        "hora": "13:00",
+        "home_team": "Oman",
+        "away_team": "Palestine"
+    },
+    {
+        "evento_id": "33757726",
+        "data": "2024-11-14",
+        "hora": "13:00",
+        "home_team": "Rwanda",
+        "away_team": "Libya"
+    },
+    {
+        "evento_id": "33757998",
+        "data": "2024-11-14",
+        "hora": "13:00",
+        "home_team": "Madagascar",
+        "away_team": "Tunisia"
+    },
+    {
+        "evento_id": "33779116",
+        "data": "2024-11-14",
+        "hora": "13:00",
+        "home_team": "Niger",
+        "away_team": "Sudan"
+    },
+    {
+        "evento_id": "33778127",
+        "data": "2024-11-14",
+        "hora": "13:00",
+        "home_team": "Varazdin",
+        "away_team": "HNK Gorica"
+    },
+    {
+        "evento_id": "33757698",
+        "data": "2024-11-14",
+        "hora": "13:15",
+        "home_team": "Qatar",
+        "away_team": "Uzbekistan"
+    },
+    {
+        "evento_id": "33757703",
+        "data": "2024-11-14",
+        "hora": "13:15",
+        "home_team": "UAE",
+        "away_team": "Kyrgyzstan"
+    },
+    {
+        "evento_id": "33757705",
+        "data": "2024-11-14",
+        "hora": "13:15",
+        "home_team": "Iraq",
+        "away_team": "Jordan"
+    },
+    {
+        "evento_id": "33780909",
+        "data": "2024-11-14",
+        "hora": "13:30",
+        "home_team": "Hapoel Petach Tikva (W)",
+        "away_team": "Maccabi Kishronot Hadera"
+    },
+    {
+        "evento_id": "33777127",
+        "data": "2024-11-14",
+        "hora": "13:30",
+        "home_team": "Slovakia U21",
+        "away_team": "Netherlands U21"
+    },
+    {
+        "evento_id": "33755149",
+        "data": "2024-11-14",
+        "hora": "14:00",
+        "home_team": "Armenia",
+        "away_team": "Faroe Islands"
+    },
+    {
+        "evento_id": "33778203",
+        "data": "2024-11-14",
+        "hora": "14:00",
+        "home_team": "Spartak Trnava",
+        "away_team": "Podbrezova"
+    },
+    {
+        "evento_id": "33778247",
+        "data": "2024-11-14",
+        "hora": "14:00",
+        "home_team": "SD Ejea",
+        "away_team": "Hercules"
+    },
+    {
+        "evento_id": "33780377",
+        "data": "2024-11-14",
+        "hora": "14:00",
+        "home_team": "France U20",
+        "away_team": "South Korea U20"
+    },
+    {
+        "evento_id": "33779170",
+        "data": "2024-11-14",
+        "hora": "14:00",
+        "home_team": "Romania U20",
+        "away_team": "Portugal U20"
+    },
+    {
+        "evento_id": "33779613",
+        "data": "2024-11-14",
+        "hora": "15:00",
+        "home_team": "Valladolid",
+        "away_team": "AVS Futebol SAD"
+    },
+    {
+        "evento_id": "33777874",
+        "data": "2024-11-14",
+        "hora": "15:00",
+        "home_team": "Malta",
+        "away_team": "Liechtenstein"
+    },
+    {
+        "evento_id": "33781125",
+        "data": "2024-11-14",
+        "hora": "15:30",
+        "home_team": "Hapoel Jerusalem (W)",
+        "away_team": "Hapoel Tel Aviv (W)"
+    },
+    {
+        "evento_id": "33781130",
+        "data": "2024-11-14",
+        "hora": "15:30",
+        "home_team": "Ramat Hasharon (W)",
+        "away_team": "FC Kiryat Gat (W)"
+    },
+    {
+        "evento_id": "33781135",
+        "data": "2024-11-14",
+        "hora": "15:30",
+        "home_team": "Asa Tel Aviv (W)",
+        "away_team": "Hapoel Beer Sheva (W)"
+    },
+    {
+        "evento_id": "33781151",
+        "data": "2024-11-14",
+        "hora": "15:30",
+        "home_team": "Uruguay U20",
+        "away_team": "Peru U20"
+    },
+    {
+        "evento_id": "33780003",
+        "data": "2024-11-14",
+        "hora": "16:00",
+        "home_team": "Sweden U21",
+        "away_team": "Rep of Ireland U21"
+    },
+    {
+        "evento_id": "33757987",
+        "data": "2024-11-14",
+        "hora": "16:00",
+        "home_team": "Burkina Faso",
+        "away_team": "Senegal"
+    },
+    {
+        "evento_id": "33757942",
+        "data": "2024-11-14",
+        "hora": "16:00",
+        "home_team": "Benin",
+        "away_team": "Nigeria"
+    },
+    {
+        "evento_id": "33770903",
+        "data": "2024-11-14",
+        "hora": "16:30",
+        "home_team": "Boston River",
+        "away_team": "Rampla Juniors"
+    },
+    {
+        "evento_id": "33755137",
+        "data": "2024-11-14",
+        "hora": "16:45",
+        "home_team": "North Macedonia",
+        "away_team": "Latvia"
+    },
+    {
+        "evento_id": "33754880",
+        "data": "2024-11-14",
+        "hora": "16:45",
+        "home_team": "Republic of Ireland",
+        "away_team": "Finland"
+    },
+    {
+        "evento_id": "33754926",
+        "data": "2024-11-14",
+        "hora": "16:45",
+        "home_team": "Slovenia",
+        "away_team": "Norway"
+    },
+    {
+        "evento_id": "33761138",
+        "data": "2024-11-14",
+        "hora": "16:45",
+        "home_team": "France",
+        "away_team": "Israel"
+    },
+    {
+        "evento_id": "33754832",
+        "data": "2024-11-14",
+        "hora": "16:45",
+        "home_team": "Greece",
+        "away_team": "England"
+    },
+    {
+        "evento_id": "33754858",
+        "data": "2024-11-14",
+        "hora": "16:45",
+        "home_team": "Belgium",
+        "away_team": "Italy"
+    },
+    {
+        "evento_id": "33779498",
+        "data": "2024-11-14",
+        "hora": "17:00",
+        "home_team": "Montserrat",
+        "away_team": "St Vincent & Grenadines"
+    },
+    {
+        "evento_id": "33780142",
+        "data": "2024-11-14",
+        "hora": "17:00",
+        "home_team": "CSD Muniz",
+        "away_team": "Juventud Unida San Miguel"
+    },
+    {
+        "evento_id": "33754564",
+        "data": "2024-11-14",
+        "hora": "18:00",
+        "home_team": "Venezuela",
+        "away_team": "Brazil"
+    },
+    {
+        "evento_id": "33773092",
+        "data": "2024-11-14",
+        "hora": "19:30",
+        "home_team": "Wanderers (Uru)",
+        "away_team": "Penarol"
+    },
+    {
+        "evento_id": "33779454",
+        "data": "2024-11-14",
+        "hora": "20:00",
+        "home_team": "St Kitts & Nevis",
+        "away_team": "Cuba"
+    },
+    {
+        "evento_id": "33754561",
+        "data": "2024-11-14",
+        "hora": "20:30",
+        "home_team": "Paraguay",
+        "away_team": "Argentina"
+    },
+    {
+        "evento_id": "33779100",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Fortaleza FC",
+        "away_team": "Aguilas Doradas"
+    },
+    {
+        "evento_id": "33779122",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Deportivo Pasto",
+        "away_team": "Boyaca Patriotas"
+    },
+    {
+        "evento_id": "33754559",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Ecuador",
+        "away_team": "Bolivia"
+    },
+    {
+        "evento_id": "33778923",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Santa Fe",
+        "away_team": "Jaguares de Cordoba"
+    },
+    {
+        "evento_id": "33778922",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Tolima",
+        "away_team": "Atletico Nacional Medellin"
+    },
+    {
+        "evento_id": "33778921",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Junior FC Barranquilla",
+        "away_team": "Deportivo Cali"
+    },
+    {
+        "evento_id": "33778927",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Alianza Petrolera",
+        "away_team": "Atletico Bucaramanga"
+    },
+    {
+        "evento_id": "33778925",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Ind Medellin",
+        "away_team": "Envigado"
+    },
+    {
+        "evento_id": "33778924",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Deportivo Pereira",
+        "away_team": "La Equidad"
+    },
+    {
+        "evento_id": "33778928",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "America de Cali S.A",
+        "away_team": "Once Caldas"
+    },
+    {
+        "evento_id": "33778932",
+        "data": "2024-11-14",
+        "hora": "21:00",
+        "home_team": "Boyaca Chico",
+        "away_team": "Millonarios"
+    },
+    {
+        "evento_id": "33777016",
+        "data": "2024-11-14",
+        "hora": "21:30",
+        "home_team": "Celaya",
+        "away_team": "Atlante"
+    },
+    {
+        "evento_id": "33779986",
+        "data": "2024-11-14",
+        "hora": "22:00",
+        "home_team": "Bonaire",
+        "away_team": "El Salvador"
+    },
+    {
+        "evento_id": "33779935",
+        "data": "2024-11-14",
+        "hora": "22:00",
+        "home_team": "Belize",
+        "away_team": "French Guyana"
+    },
+    {
+        "evento_id": "33772539",
+        "data": "2024-11-14",
+        "hora": "22:00",
+        "home_team": "Jamaica",
+        "away_team": "USA"
+    },
+    {
+        "evento_id": "33772541",
+        "data": "2024-11-14",
+        "hora": "23:00",
+        "home_team": "Costa Rica",
+        "away_team": "Panama"
+    },
+    {
+        "evento_id": "33777015",
+        "data": "2024-11-14",
+        "hora": "23:35",
+        "home_team": "Universidad Guadalajara",
+        "away_team": "Tapatio"
+    }
+]

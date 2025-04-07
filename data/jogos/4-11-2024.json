@@ -1,0 +1,793 @@
+[
+    {
+        "evento_id": "33731540",
+        "data": "2024-11-04",
+        "hora": "05:00",
+        "home_team": "Western United",
+        "away_team": "Melbourne City"
+    },
+    {
+        "evento_id": "33732625",
+        "data": "2024-11-04",
+        "hora": "05:30",
+        "home_team": "Persita Tangerang",
+        "away_team": "Malut United"
+    },
+    {
+        "evento_id": "33750895",
+        "data": "2024-11-04",
+        "hora": "06:00",
+        "home_team": "Myawady FC",
+        "away_team": "Ayeyawady United"
+    },
+    {
+        "evento_id": "33751514",
+        "data": "2024-11-04",
+        "hora": "06:00",
+        "home_team": "Bodrumspor U19",
+        "away_team": "Boluspor U19"
+    },
+    {
+        "evento_id": "33750901",
+        "data": "2024-11-04",
+        "hora": "06:30",
+        "home_team": "Ispe FC",
+        "away_team": "Dagon FC"
+    },
+    {
+        "evento_id": "33750539",
+        "data": "2024-11-04",
+        "hora": "08:00",
+        "home_team": "Alashkert",
+        "away_team": "FC Shirak"
+    },
+    {
+        "evento_id": "33739568",
+        "data": "2024-11-04",
+        "hora": "08:00",
+        "home_team": "Obolon-Brovar Kiev",
+        "away_team": "Veres Rivne"
+    },
+    {
+        "evento_id": "33732470",
+        "data": "2024-11-04",
+        "hora": "08:00",
+        "home_team": "Academica",
+        "away_team": "SC Lusitania Dos Acores"
+    },
+    {
+        "evento_id": "33732744",
+        "data": "2024-11-04",
+        "hora": "08:00",
+        "home_team": "PAE Chania",
+        "away_team": "Panachaiki"
+    },
+    {
+        "evento_id": "33751477",
+        "data": "2024-11-04",
+        "hora": "08:00",
+        "home_team": "Anadolu Selcukluspor",
+        "away_team": "Osmaniyespor 2011"
+    },
+    {
+        "evento_id": "33748506",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "Radnik Surdulica",
+        "away_team": "FK Sloboda Point"
+    },
+    {
+        "evento_id": "33751321",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "KF Feronikeli",
+        "away_team": "KF Ballkani"
+    },
+    {
+        "evento_id": "33751325",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "Malisheva",
+        "away_team": "KF Llapi"
+    },
+    {
+        "evento_id": "33732181",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "Lamphun Warrior",
+        "away_team": "BG Pathumthani United"
+    },
+    {
+        "evento_id": "33732734",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "AEK Athens B",
+        "away_team": "Panargiakos"
+    },
+    {
+        "evento_id": "33734830",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "PSM Makassar",
+        "away_team": "Persik Kediri"
+    },
+    {
+        "evento_id": "33751014",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "FK Graficar",
+        "away_team": "Indija"
+    },
+    {
+        "evento_id": "33751015",
+        "data": "2024-11-04",
+        "hora": "09:00",
+        "home_team": "FK Radnicki Sremska",
+        "away_team": "FK Javor Ivanjica"
+    },
+    {
+        "evento_id": "33751068",
+        "data": "2024-11-04",
+        "hora": "09:30",
+        "home_team": "Kaforsum",
+        "away_team": "Etihad Al Ramtha"
+    },
+    {
+        "evento_id": "33750442",
+        "data": "2024-11-04",
+        "hora": "09:30",
+        "home_team": "Sporting Club",
+        "away_team": "Dayrout"
+    },
+    {
+        "evento_id": "33750459",
+        "data": "2024-11-04",
+        "hora": "09:30",
+        "home_team": "Al-Jndal",
+        "away_team": "Al Taee"
+    },
+    {
+        "evento_id": "33750470",
+        "data": "2024-11-04",
+        "hora": "09:30",
+        "home_team": "Baladeyet Al-Mahalla",
+        "away_team": "Proxy Work Club"
+    },
+    {
+        "evento_id": "33750471",
+        "data": "2024-11-04",
+        "hora": "09:30",
+        "home_team": "El Daklyeh",
+        "away_team": "Aswan FC"
+    },
+    {
+        "evento_id": "33750473",
+        "data": "2024-11-04",
+        "hora": "09:30",
+        "home_team": "Asyut Petroleum",
+        "away_team": "Al Mokawloon"
+    },
+    {
+        "evento_id": "33750537",
+        "data": "2024-11-04",
+        "hora": "10:00",
+        "home_team": "Crewe U21",
+        "away_team": "Coventry City U21"
+    },
+    {
+        "evento_id": "33750542",
+        "data": "2024-11-04",
+        "hora": "10:00",
+        "home_team": "Brentford U21",
+        "away_team": "Millwall U21"
+    },
+    {
+        "evento_id": "33750543",
+        "data": "2024-11-04",
+        "hora": "10:00",
+        "home_team": "Watford U21",
+        "away_team": "Queens Park Rangers U21"
+    },
+    {
+        "evento_id": "33753149",
+        "data": "2024-11-04",
+        "hora": "10:00",
+        "home_team": "Bylis Ballsh",
+        "away_team": "KF Laci"
+    },
+    {
+        "evento_id": "33732735",
+        "data": "2024-11-04",
+        "hora": "10:00",
+        "home_team": "Kalamata",
+        "away_team": "Kifisias FC"
+    },
+    {
+        "evento_id": "33739569",
+        "data": "2024-11-04",
+        "hora": "10:30",
+        "home_team": "Kryvbas Krivyi Rih",
+        "away_team": "Rukh Vynnyky"
+    },
+    {
+        "evento_id": "33751063",
+        "data": "2024-11-04",
+        "hora": "11:00",
+        "home_team": "Yarmouk",
+        "away_team": "Dar Al-Dawaa"
+    },
+    {
+        "evento_id": "33750142",
+        "data": "2024-11-04",
+        "hora": "11:00",
+        "home_team": "Al Wasl",
+        "away_team": "Al-Sadd"
+    },
+    {
+        "evento_id": "33750652",
+        "data": "2024-11-04",
+        "hora": "11:00",
+        "home_team": "Cardiff City U21",
+        "away_team": "Bristol City U21"
+    },
+    {
+        "evento_id": "33750457",
+        "data": "2024-11-04",
+        "hora": "11:00",
+        "home_team": "Sorrento",
+        "away_team": "Casertana"
+    },
+    {
+        "evento_id": "33742324",
+        "data": "2024-11-04",
+        "hora": "11:00",
+        "home_team": "Jamshedpur FC",
+        "away_team": "Chennaiyin FC"
+    },
+    {
+        "evento_id": "33750792",
+        "data": "2024-11-04",
+        "hora": "12:00",
+        "home_team": "Al-Hazm (KSA)",
+        "away_team": "Al-Zulfi SC"
+    },
+    {
+        "evento_id": "33750820",
+        "data": "2024-11-04",
+        "hora": "12:00",
+        "home_team": "USM Alger U21",
+        "away_team": "MC Alger U21"
+    },
+    {
+        "evento_id": "33750472",
+        "data": "2024-11-04",
+        "hora": "12:00",
+        "home_team": "Tersana SC",
+        "away_team": "Raya Sporting FC"
+    },
+    {
+        "evento_id": "33750734",
+        "data": "2024-11-04",
+        "hora": "12:25",
+        "home_team": "Jeddah Club",
+        "away_team": "Al-Adalh"
+    },
+    {
+        "evento_id": "33708650",
+        "data": "2024-11-04",
+        "hora": "12:30",
+        "home_team": "Asteras Tripolis",
+        "away_team": "OFI"
+    },
+    {
+        "evento_id": "33736081",
+        "data": "2024-11-04",
+        "hora": "12:30",
+        "home_team": "Mladost Lucani",
+        "away_team": "FK Spartak"
+    },
+    {
+        "evento_id": "33715626",
+        "data": "2024-11-04",
+        "hora": "12:30",
+        "home_team": "Septemvri",
+        "away_team": "Botev Plovdiv"
+    },
+    {
+        "evento_id": "33739573",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Zorya",
+        "away_team": "LNZ-Lebedyn"
+    },
+    {
+        "evento_id": "33731178",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Atlante",
+        "away_team": "Tampico Madero"
+    },
+    {
+        "evento_id": "33732732",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Polonia Warszawa",
+        "away_team": "Stal Rzeszow"
+    },
+    {
+        "evento_id": "33750150",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Al Ahli",
+        "away_team": "AL Shorta Baghdad"
+    },
+    {
+        "evento_id": "33750164",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Persepolis",
+        "away_team": "Al Gharafa"
+    },
+    {
+        "evento_id": "33739449",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Podbeskidzie B-B",
+        "away_team": "KKS Kalisz"
+    },
+    {
+        "evento_id": "33736391",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Rudar",
+        "away_team": "Dravinja Kostroj"
+    },
+    {
+        "evento_id": "33733871",
+        "data": "2024-11-04",
+        "hora": "13:00",
+        "home_team": "Unirea Slobozia",
+        "away_team": "Botosani"
+    },
+    {
+        "evento_id": "33732922",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Genclerbirligi",
+        "away_team": "Istanbulspor"
+    },
+    {
+        "evento_id": "33753153",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "AF Elbasani",
+        "away_team": "Dinamo Tirana"
+    },
+    {
+        "evento_id": "33732936",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Samsunspor",
+        "away_team": "Antalyaspor"
+    },
+    {
+        "evento_id": "33732949",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Pendikspor",
+        "away_team": "Manisa FK"
+    },
+    {
+        "evento_id": "33735787",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "GKS Katowice",
+        "away_team": "Korona Kielce"
+    },
+    {
+        "evento_id": "33741956",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Radnik Bijeljina",
+        "away_team": "GOSK Gabela"
+    },
+    {
+        "evento_id": "33736127",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Zlin",
+        "away_team": "MFK Chrudim"
+    },
+    {
+        "evento_id": "33753834",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Paide Linnameeskond II",
+        "away_team": "Tabasalu JK"
+    },
+    {
+        "evento_id": "33751021",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Vozdovac",
+        "away_team": "Zemun"
+    },
+    {
+        "evento_id": "33752051",
+        "data": "2024-11-04",
+        "hora": "14:00",
+        "home_team": "Partizani Tirana",
+        "away_team": "KS Teuta Durres"
+    },
+    {
+        "evento_id": "33729350",
+        "data": "2024-11-04",
+        "hora": "14:30",
+        "home_team": "Parma",
+        "away_team": "Genoa"
+    },
+    {
+        "evento_id": "33736042",
+        "data": "2024-11-04",
+        "hora": "14:30",
+        "home_team": "FK Jedinstvo Ub",
+        "away_team": "OFK Beograd"
+    },
+    {
+        "evento_id": "33729417",
+        "data": "2024-11-04",
+        "hora": "14:30",
+        "home_team": "Empoli",
+        "away_team": "Como"
+    },
+    {
+        "evento_id": "33736079",
+        "data": "2024-11-04",
+        "hora": "14:30",
+        "home_team": "Cukaricki",
+        "away_team": "Zeleznicar Pancevo"
+    },
+    {
+        "evento_id": "33729814",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "FC Copenhagen",
+        "away_team": "Silkeborg"
+    },
+    {
+        "evento_id": "33737774",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Uai Urquiza",
+        "away_team": "Argentino de Merlo"
+    },
+    {
+        "evento_id": "33750924",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "BK Hacken (W)",
+        "away_team": "KIF Orebro Dff (W)"
+    },
+    {
+        "evento_id": "33737621",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Flandria",
+        "away_team": "Villa Dalmine"
+    },
+    {
+        "evento_id": "33737630",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Deportivo Merlo",
+        "away_team": "CA Fenix"
+    },
+    {
+        "evento_id": "33738410",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Deportivo Laferrere",
+        "away_team": "FC Midland"
+    },
+    {
+        "evento_id": "33751248",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Deportivo Espanol",
+        "away_team": "Sportivo Barracas"
+    },
+    {
+        "evento_id": "33750231",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Al-Hilal",
+        "away_team": "Esteghlal FC"
+    },
+    {
+        "evento_id": "33737692",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "CS Dock Sud",
+        "away_team": "Villa San Carlos"
+    },
+    {
+        "evento_id": "33746653",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "CSR Espanol BA",
+        "away_team": "Club Lujan"
+    },
+    {
+        "evento_id": "33733092",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Orgryte",
+        "away_team": "Ostersunds FK"
+    },
+    {
+        "evento_id": "33733103",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Tondela",
+        "away_team": "Oliveirense"
+    },
+    {
+        "evento_id": "33733107",
+        "data": "2024-11-04",
+        "hora": "15:00",
+        "home_team": "Wisla Krakow",
+        "away_team": "GKS Tychy"
+    },
+    {
+        "evento_id": "33733081",
+        "data": "2024-11-04",
+        "hora": "15:10",
+        "home_team": "Norrkoping",
+        "away_team": "AIK"
+    },
+    {
+        "evento_id": "33751965",
+        "data": "2024-11-04",
+        "hora": "15:30",
+        "home_team": "Hapoel Haifa",
+        "away_team": "Maccabi Haifa"
+    },
+    {
+        "evento_id": "33739584",
+        "data": "2024-11-04",
+        "hora": "16:00",
+        "home_team": "Vasas",
+        "away_team": "Szentlorinc"
+    },
+    {
+        "evento_id": "33733227",
+        "data": "2024-11-04",
+        "hora": "16:00",
+        "home_team": "Jong PSV Eindhoven",
+        "away_team": "Emmen"
+    },
+    {
+        "evento_id": "33733228",
+        "data": "2024-11-04",
+        "hora": "16:00",
+        "home_team": "Jong FC Utrecht",
+        "away_team": "MVV Maastricht"
+    },
+    {
+        "evento_id": "33734552",
+        "data": "2024-11-04",
+        "hora": "16:00",
+        "home_team": "Rapid Bucharest",
+        "away_team": "Hermannstadt"
+    },
+    {
+        "evento_id": "33750990",
+        "data": "2024-11-04",
+        "hora": "16:00",
+        "home_team": "Orsomarso",
+        "away_team": "Quindio"
+    },
+    {
+        "evento_id": "33750995",
+        "data": "2024-11-04",
+        "hora": "16:00",
+        "home_team": "Ipswich Town U21",
+        "away_team": "Bournemouth U21"
+    },
+    {
+        "evento_id": "33722414",
+        "data": "2024-11-04",
+        "hora": "16:15",
+        "home_team": "Chesham Utd",
+        "away_team": "Lincoln"
+    },
+    {
+        "evento_id": "33742192",
+        "data": "2024-11-04",
+        "hora": "16:30",
+        "home_team": "LR Vicenza Virtus",
+        "away_team": "Lecco"
+    },
+    {
+        "evento_id": "33733263",
+        "data": "2024-11-04",
+        "hora": "16:30",
+        "home_team": "Levante",
+        "away_team": "Malaga"
+    },
+    {
+        "evento_id": "33733266",
+        "data": "2024-11-04",
+        "hora": "16:30",
+        "home_team": "Zaglebie Lubin",
+        "away_team": "Slask Wroclaw"
+    },
+    {
+        "evento_id": "33750451",
+        "data": "2024-11-04",
+        "hora": "16:30",
+        "home_team": "Benevento",
+        "away_team": "AP Turris Calcio"
+    },
+    {
+        "evento_id": "33750454",
+        "data": "2024-11-04",
+        "hora": "16:30",
+        "home_team": "Cavese 1919",
+        "away_team": "Foggia"
+    },
+    {
+        "evento_id": "33750453",
+        "data": "2024-11-04",
+        "hora": "16:30",
+        "home_team": "Monopoli",
+        "away_team": "AZ Picerno ASD"
+    },
+    {
+        "evento_id": "33729346",
+        "data": "2024-11-04",
+        "hora": "16:45",
+        "home_team": "Lazio",
+        "away_team": "Cagliari"
+    },
+    {
+        "evento_id": "33736937",
+        "data": "2024-11-04",
+        "hora": "16:45",
+        "home_team": "AC Ajaccio",
+        "away_team": "Metz"
+    },
+    {
+        "evento_id": "33704976",
+        "data": "2024-11-04",
+        "hora": "17:00",
+        "home_team": "Fulham",
+        "away_team": "Brentford"
+    },
+    {
+        "evento_id": "33751076",
+        "data": "2024-11-04",
+        "hora": "17:00",
+        "home_team": "Juventud De Las Piedras",
+        "away_team": "Plaza Colonia"
+    },
+    {
+        "evento_id": "33708720",
+        "data": "2024-11-04",
+        "hora": "17:00",
+        "home_team": "Celta Vigo",
+        "away_team": "Getafe"
+    },
+    {
+        "evento_id": "33732329",
+        "data": "2024-11-04",
+        "hora": "17:00",
+        "home_team": "Tecnico Universitario",
+        "away_team": "Univ Catolica (Ecu)"
+    },
+    {
+        "evento_id": "33733507",
+        "data": "2024-11-04",
+        "hora": "17:15",
+        "home_team": "CD Nacional Funchal",
+        "away_team": "Santa Clara"
+    },
+    {
+        "evento_id": "33751960",
+        "data": "2024-11-04",
+        "hora": "18:00",
+        "home_team": "Sol de America",
+        "away_team": "Nacional (Par)"
+    },
+    {
+        "evento_id": "33751329",
+        "data": "2024-11-04",
+        "hora": "18:05",
+        "home_team": "Union Magdalena",
+        "away_team": "Cucuta Deportivo"
+    },
+    {
+        "evento_id": "33740842",
+        "data": "2024-11-04",
+        "hora": "19:00",
+        "home_team": "Atl Tucuman",
+        "away_team": "Sarmiento de Junin"
+    },
+    {
+        "evento_id": "33735346",
+        "data": "2024-11-04",
+        "hora": "19:00",
+        "home_team": "Operario PR",
+        "away_team": "Sport Recife"
+    },
+    {
+        "evento_id": "33733741",
+        "data": "2024-11-04",
+        "hora": "19:30",
+        "home_team": "Wanderers (Uru)",
+        "away_team": "Defensor Sporting"
+    },
+    {
+        "evento_id": "33716921",
+        "data": "2024-11-04",
+        "hora": "20:00",
+        "home_team": "Corinthians",
+        "away_team": "SE Palmeiras"
+    },
+    {
+        "evento_id": "33751284",
+        "data": "2024-11-04",
+        "hora": "20:10",
+        "home_team": "Llaneros FC",
+        "away_team": "Real Cartagena"
+    },
+    {
+        "evento_id": "33751966",
+        "data": "2024-11-04",
+        "hora": "20:30",
+        "home_team": "Cerro Porteno",
+        "away_team": "Tacuary"
+    },
+    {
+        "evento_id": "33740846",
+        "data": "2024-11-04",
+        "hora": "21:00",
+        "home_team": "Independiente Rivadavia",
+        "away_team": "Rosario Central"
+    },
+    {
+        "evento_id": "33733983",
+        "data": "2024-11-04",
+        "hora": "21:00",
+        "home_team": "Ponte Preta",
+        "away_team": "Paysandu"
+    },
+    {
+        "evento_id": "33736298",
+        "data": "2024-11-04",
+        "hora": "21:10",
+        "home_team": "All Boys",
+        "away_team": "Colon"
+    },
+    {
+        "evento_id": "33733984",
+        "data": "2024-11-04",
+        "hora": "21:15",
+        "home_team": "Ituano",
+        "away_team": "CRB"
+    },
+    {
+        "evento_id": "33752292",
+        "data": "2024-11-04",
+        "hora": "21:30",
+        "home_team": "Waterhouse FC",
+        "away_team": "Montego Bay United"
+    },
+    {
+        "evento_id": "33735054",
+        "data": "2024-11-04",
+        "hora": "22:15",
+        "home_team": "Atletico Nacional Medellin",
+        "away_team": "Santa Fe"
+    }
+]

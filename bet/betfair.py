@@ -5,11 +5,13 @@ import logging
 import pytz
 from datetime import datetime, timedelta
 from pathlib import Path
+from typing import List, Dict
 from rich import print
 from bet.utils import converter_hora_para_datetime, verificar_tempo_passado, country_codes
 from bet.files import load_json_to_dict, save_dict_to_json
 #from bet.evolution import send_message
 from bet.notification import start_timer, send_notification, play_sound
+from bet.exceptions import NaoExisteMercadoExcecao
 
 # Configuração do logger
 logging.basicConfig(level=logging.INFO, format='\033[92m%(asctime)s - %(levelname)s - %(message)s\033[0m')
@@ -138,6 +140,7 @@ class BetfairMercados:
         )
         if market_catalogues == []:
             raise NaoExisteMercadoExcecao("Não há mercados para este evento.")
+            #print("Não há mercados para este evento.")
 
         runner_names = self.extrair_nomes_corredores(market_catalogues)
 
@@ -148,7 +151,8 @@ class BetfairMercados:
             market_ids_dict[market_catalogue.market_name] = market_catalogue.market_id
 
         if market not in market_ids_dict.keys():
-            raise NaoExisteMercadoExcecao("Mercado não existe para o evento")
+            raise NaoExisteMercadoExcecao(f"Mercado {market} não existe para o evento")
+            #print(f"Mercado {market} não existe para o evento")
         market_id = market_ids_dict[market]
         market_books = self.cliente.trading.betting.list_market_book(
             market_ids=[market_id], price_projection={"priceData": ["EX_BEST_OFFERS"]}
@@ -285,13 +289,13 @@ class BetfairMonitor:
                             #print("*****************************")
                             #print(f"{notification}")
                             send_notification(notification, "Alerta de Gooool!!!", 60)
-                            play_sound("/home/marcos/Música/senna8s.mp3")
+                            #play_sound("/home/marcos/Música/senna8s.mp3")
                             # send_message(
                             #     number=settings.group_number,
                             #     url=settings.instance_url,
                             #     text=notification
                             # )
-                            start_timer(10, notification, "O Tempo Acabou!!!", 10)
+                            start_timer(7, notification, "O Tempo Acabou!!!", 10)
                             logging.info(f"Contando 10 minutos para {nome_evento}")
                             eventos_notificados.append(event_id)
             # Esperar o intervalo definido antes de verificar novamente
@@ -302,6 +306,65 @@ class BetfairMonitor:
         #     logging.error(f"Erro durante o monitoramento: {e}")
         # finally:
         #     self.cliente.logout()
+
+
+class BetfairResulados:
+    def __init__(self, cliente: BetfairCliente):
+        self.cliente = cliente
+
+    def get_lucros_perdas(self, data_inicio: str, data_fim: str) -> List[Dict[str, float]]:
+        """
+            Obtém os lucros e perdas de apostas liquidadas em um período.
+
+            Args:
+                client (APIClient): Cliente autenticado da API Betfair.
+                data_inicio (str): Data de início no formato "DD/MM/YYYY".
+                data_fim (str): Data de fim no formato "DD/MM/YYYY".
+
+            Returns:
+                List[Dict[str, float]]: Lista de dicionários contendo informações de lucros e perdas por mercado.
+        """
+        # Converter datas para o formato ISO8601 com início e fim do dia
+        inicio_iso = datetime.strptime(data_inicio, "%d/%m/%Y").strftime("%Y-%m-%dT00:00:00")
+        fim_iso = datetime.strptime(data_fim, "%d/%m/%Y").strftime("%Y-%m-%dT23:59:59")
+
+        resultados = []
+
+        try:
+            # Solicita os dados de ordens liquidadas
+            response = self.cliente.trading.betting.list_cleared_orders(
+                bet_status="SETTLED",
+                from_record=0,
+                record_count=1000,
+                settled_date_range={
+                    "from": inicio_iso,
+                    "to": fim_iso
+                },
+            )
+
+            # Processa os resultados retornados
+            if response.orders:
+                for order in response.orders:
+                    #print(dir(order))
+                    #return []
+                    resultados.append({
+                         "evento": order.event_id,
+                         "mercado": order.market_id,
+                         "selecao": order.selection_id,
+                         "lado": order.side,
+                         "bet_outcome": order.bet_outcome,
+                         "bet_id": order.bet_id,
+                         "odd": order.price_matched,
+                         "lucro_prejuizo": order.profit,
+                         "data_liquidacao": order.settled_date.isoformat() if order.settled_date else None
+                    })
+            else:
+                print("Nenhuma ordem encontrada no período especificado.")
+
+        except Exception as e:
+            print(f"Erro ao buscar lucros e perdas: {e}")
+
+        return resultados
 
 
 

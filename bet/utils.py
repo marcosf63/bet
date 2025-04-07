@@ -1,4 +1,7 @@
 from datetime import datetime, time, timedelta
+from rich.console import Console
+from rich.table import Table
+from typing import List
 
 
 markets_dict = {
@@ -6,6 +9,7 @@ markets_dict = {
     "BTTS": "Both teams to Score?",
     "CS": "Correct Score",
     "O25": "Over/Under 2.5 Goals",
+    "O15": "Over/Under 1.5 Goals",
     "HT": "Half Time",
     "HTS": "Half Time Score",
 }
@@ -341,6 +345,33 @@ country_codes = {
     'ZM': 'Zâmbia',
     'ZW': 'Zimbábue'
 }
+def is_time_greater_than_now(time_str: str) -> bool:
+    # Converte a string de hora para um objeto datetime.time
+    try:
+        input_time = datetime.strptime(time_str, "%H:%M").time()
+    except ValueError:
+        raise ValueError("Formato inválido de hora. Use 'HH:MM'.")
+    
+    # Obtém a hora atual
+    current_time = datetime.now().time()
+    
+    # Compara as horas
+    return input_time > current_time
+
+
+
+def print_table(lista_dicionarios: List):
+    """Imprime uma lista de dicionários no formato de tabela"""
+    tabela = Table(show_header=True, header_style="bold magenta")
+    console = Console()
+    
+    for chave in lista_dicionarios[0].keys():
+        tabela.add_column(chave)
+    for linha in lista_dicionarios:
+        tabela.add_row(*linha.values())
+
+    console.print(tabela)
+    console.print(f"[bold green]Total de jogos = {len(lista_dicionarios)}[/bold green]")
 
 
 if __name__ == "__main__":
@@ -351,4 +382,3 @@ if __name__ == "__main__":
     hora = time(11, 00)
     print(is_time_greater_than_now(hora))
     print(is_time_greater_than_now(time_thirty_minutes_later))
-

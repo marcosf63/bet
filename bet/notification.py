@@ -48,9 +48,6 @@ def run_timer(duration: int, message: str, title: str, timeout: int) -> None:
 
 def start_timer(duration: int, message: str, title: str, timeout: int) -> None:
     """Inicia um timer em um processo separado"""
-    try:
-        p = Process(target=run_timer, args=(duration, message, title, timeout))
-        p.start()
-    except KeyboardInterrupt:
-        print("Saida solicitada pelo usuário.")
+    p = Process(target=run_timer, args=(duration, message, title, timeout))
+    p.start()
 
