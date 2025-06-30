@@ -139,7 +139,7 @@ def godds(
     ord: bool = typer.Option(False, help="Ordena CS por da menor para maior odd."),
 ):
     """
-    lista as odds para um evento que seja indormado o event_id e o mercado"
+    lista as odds para um evento que seja informado o event_id e o mercado"
     """
     cliente.login()
     betfair_mercados = BetfairMercados(cliente)
