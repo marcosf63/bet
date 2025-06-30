@@ -1,5 +1,4 @@
 import json
-from datetime import date, timedelta, datetime
 from pathlib import Path
 from typing import List, Dict
 import typer
@@ -19,14 +18,11 @@ from bet.utils import (
         is_time_smaller_than_now_plus30min,
         converter_hora_para_datetime,
         verificar_tempo_passado, 
-        is_time_greater_than_now,
         print_table,
 )  
 
 #from bet.betfair import busca_odds_mercado, get_match_day, get_odds_event_markets, get_1_gol_segundo_tempo, get_trading
 from bet.config import settings
-from bet.soufascore import get_live_events, get_live_no_gol_events, check_events
-# from rich.table import Table
 from bet.betfair import BetfairCliente, BetfairEventos, BetfairMercados, BetfairMonitor, BetfairResulados
 from bet.notification import run_timer, play_sound, send_notification
 
@@ -39,15 +35,16 @@ cliente = BetfairCliente(
         app_key=settings.app_key,
         certs=settings.certs_dir,
 )
-cliente.login()
+
+
 
 def get_lista_jogos(file_path: str, cliente: BetfairCliente) -> List[Dict]:
     if Path(file_path).exists():
-        lista_jogos = load_json_to_dict(file_path)
+        lista_jogos: List[Dict[str, str]] = load_json_to_dict(file_path)
         print("Dados carregados.")
     else:
         print("Buscado dados na Betfair...")
-        if cliente.session_active == False:
+        if not cliente.session_active:
             cliente.login()
         betfair_eventos = BetfairEventos(cliente)
         lista_jogos = betfair_eventos.get_match_day()
