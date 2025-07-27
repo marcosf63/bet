@@ -115,9 +115,14 @@ def is_time_smaller_than_now_plus30min(other_time: time) -> bool:
     Returns:
     - bool: True if other_time is before the current time plus 30 minutes, False otherwise.
     """
-    current_time = datetime.now().time()
-    time_thirty_minutes_later = add_thirty_minutes_to_time_hm_only(current_time)
-    return other_time <  time_thirty_minutes_later
+    current_datetime = datetime.now().replace(second=0, microsecond=0)
+    future_datetime = current_datetime + timedelta(minutes=30)
+
+    other_datetime = datetime.combine(current_datetime.date(), other_time)
+    if other_datetime < current_datetime:
+        other_datetime += timedelta(days=1)
+
+    return other_datetime < future_datetime
     
 
 def converter_hora_para_datetime(hora_str):
