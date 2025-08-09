@@ -4,8 +4,7 @@ import requests
 from rich import print
 
 from bet.config import settings
-from bet.models import (AwayScore, AwayTeam, Event, HomeScore, HomeTeam,
-                        Status, Tournament)
+from bet.models import Event
 
 
 def get_live_events() -> List[Event]:
@@ -17,16 +16,20 @@ def get_live_events() -> List[Event]:
     events_list = resp.json()["events"]
     return [Event(**event) for event in events_list]
 
+
 def get_live_no_gol_events(all_events: List[Event]) -> List[Event]:
     no_gol_events = []
     for event in all_events:
-        if event.homeScore.current  + event.awayScore.current == 0:
-            #print(f'{event.homeTeam.name} {event.homeScore.current} x {event.awayScore.current} {event.awayTeam.name}')
+        if event.homeScore.current + event.awayScore.current == 0:
+            # print(f'{event.homeTeam.name} {event.homeScore.current} x {event.awayScore.current} {event.awayTeam.name}')
             no_gol_events.append(event)
     return no_gol_events
 
+
 def check_events():
-    previous_no_gol_events = set()  # Conjunto vazio para armazenar os eventos "parados" da iteração anterior
+    previous_no_gol_events = (
+        set()
+    )  # Conjunto vazio para armazenar os eventos "parados" da iteração anterior
 
     while True:
         all_events = get_live_events()
@@ -40,13 +43,17 @@ def check_events():
         if one_gol_events:
             for event in one_gol_events:
                 if event.status.description == "2nd half":
-                    print(f"Eventos com 1 gol no segundo tempo")
-                    if event.tournament.category['country']:
-                        print(f"{event.tournament.name} - {event.tournament.category['country']['name']}")
+                    print("Eventos com 1 gol no segundo tempo")
+                    if event.tournament.category["country"]:
+                        print(
+                            f"{event.tournament.name} - {event.tournament.category['country']['name']}"
+                        )
                     else:
                         print(f"{event.tournament.name}")
 
-                    print(f'[bold green]{event.homeTeam.name} {event.homeScore.current} x {event.awayScore.current} {event.awayTeam.name}[/bold green]')
+                    print(
+                        f"[bold green]{event.homeTeam.name} {event.homeScore.current} x {event.awayScore.current} {event.awayTeam.name}[/bold green]"
+                    )
 
         else:
             print("Nenhum evento saiu gol.")
@@ -56,7 +63,6 @@ def check_events():
 
         # Aguarda 60 segundos antes da próxima verificação
         time.sleep(60)
-
 
 
 if __name__ == "__main__":

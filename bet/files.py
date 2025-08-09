@@ -1,5 +1,8 @@
 import json
 from pathlib import Path
+import csv
+import io
+from typing import List, Dict
 
 
 def save_dict_to_json(data: list[dict], file_path: str) -> None:
@@ -39,3 +42,17 @@ def load_json_to_dict(file_path: str) -> dict:
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
     return data
+
+
+def csv_string_to_json_list(csv_str: str) -> List[Dict[str, str]]:
+    """
+    Converte uma string CSV para uma lista de dicionários (formato JSON).
+
+    Args:
+        csv_str (str): A string contendo dados em formato CSV (com cabeçalho).
+
+    Returns:
+        List[Dict[str, str]]: Lista de dicionários representando cada linha do CSV.
+    """
+    reader = csv.DictReader(io.StringIO(csv_str.strip()))
+    return list(reader)

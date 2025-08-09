@@ -8,3 +8,4 @@ pydantic
 pygame
 plyer
 dbus-python
+requests

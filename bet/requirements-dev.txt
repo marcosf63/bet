@@ -8,3 +8,5 @@ httpx            # request async para testes
 black            # auto formatação
 flake8           # linter
 jedi             # autocomplete
+pandas           # fazer análises de dados
+jupyter    

@@ -7,14 +7,22 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict
 from rich import print
-from bet.utils import converter_hora_para_datetime, verificar_tempo_passado, country_codes
+from bet.utils import (
+    converter_hora_para_datetime,
+    verificar_tempo_passado,
+    country_codes,
+)
 from bet.files import load_json_to_dict, save_dict_to_json
-#from bet.evolution import send_message
-from bet.notification import start_timer, send_notification, play_sound
+
+# from bet.evolution import send_message
+from bet.notification import start_timer, send_notification
 from bet.exceptions import NaoExisteMercadoExcecao
 
 # Configuração do logger
-logging.basicConfig(level=logging.INFO, format='\033[92m%(asctime)s - %(levelname)s - %(message)s\033[0m')
+logging.basicConfig(
+    level=logging.INFO,
+    format="\033[92m%(asctime)s - %(levelname)s - %(message)s\033[0m",
+)
 
 
 class BetfairCliente:
@@ -24,11 +32,15 @@ class BetfairCliente:
         self.password = password
         self.app_key = app_key
         self.certs = certs
-        self.trading = betfairlightweight.APIClient(username, password, app_key=app_key, certs=certs)
+        self.trading = betfairlightweight.APIClient(
+            username, password, app_key=app_key, certs=certs
+        )
         self.session_active = False
 
         # Configuração do logging
-        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+        logging.basicConfig(
+            level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+        )
 
     def login(self):
         try:
@@ -51,6 +63,7 @@ class BetfairCliente:
         else:
             logging.warning("Não há sessão ativa para realizar logout.")
 
+
 class BetfairEventos:
     def __init__(self, cliente):
         self.cliente = cliente
@@ -61,7 +74,7 @@ class BetfairEventos:
         """
         filtro_evento = market_filter(
             event_type_ids=["1"],  # O ID do esporte "Futebol" é geralmente 1
-            in_play_only=in_live  # Filtrar eventos ao vivo, se solicitado
+            in_play_only=in_live,  # Filtrar eventos ao vivo, se solicitado
         )
 
         try:
@@ -82,7 +95,10 @@ class BetfairEventos:
 
         event_filter = market_filter(
             event_type_ids=["1"],  # ID 1 para Futebol
-            market_start_time={"from": start_time.isoformat(), "to": end_time.isoformat()},
+            market_start_time={
+                "from": start_time.isoformat(),
+                "to": end_time.isoformat(),
+            },
         )
         # Lista de eventos
         events = self.cliente.trading.betting.list_events(filter=event_filter)
@@ -91,7 +107,7 @@ class BetfairEventos:
         match_day_list = []
         for event in events:
             data_hora = event.event.open_date - diferenca_fuso
-            if not " v " in event.event.name:
+            if " v " not in event.event.name:
                 continue
             home_team, away_team = event.event.name.split(" v ")
             match_day_list.append(
@@ -107,6 +123,7 @@ class BetfairEventos:
 
         return match_day_list_ordenada
 
+
 class BetfairMercados:
     def __init__(self, cliente):
         self.cliente = cliente
@@ -120,12 +137,20 @@ class BetfairMercados:
 
     def verificar_disponibilidade_odd(self, runner, tipo):
         if tipo == "back":
-            if runner.ex is not None and hasattr(runner.ex, "available_to_back") and runner.ex.available_to_back:
+            if (
+                runner.ex is not None
+                and hasattr(runner.ex, "available_to_back")
+                and runner.ex.available_to_back
+            ):
                 return runner.ex.available_to_back[0].price
             else:
                 return "Sem informação de odd para back"
         elif tipo == "lay":
-            if runner.ex is not None and hasattr(runner.ex, "available_to_lay") and runner.ex.available_to_lay:
+            if (
+                runner.ex is not None
+                and hasattr(runner.ex, "available_to_lay")
+                and runner.ex.available_to_lay
+            ):
                 return runner.ex.available_to_lay[0].price
             else:
                 return "Sem informação de odd para lay"
@@ -140,7 +165,7 @@ class BetfairMercados:
         )
         if market_catalogues == []:
             raise NaoExisteMercadoExcecao("Não há mercados para este evento.")
-            #print("Não há mercados para este evento.")
+            # print("Não há mercados para este evento.")
 
         runner_names = self.extrair_nomes_corredores(market_catalogues)
 
@@ -152,7 +177,7 @@ class BetfairMercados:
 
         if market not in market_ids_dict.keys():
             raise NaoExisteMercadoExcecao(f"Mercado {market} não existe para o evento")
-            #print(f"Mercado {market} não existe para o evento")
+            # print(f"Mercado {market} não existe para o evento")
         market_id = market_ids_dict[market]
         market_books = self.cliente.trading.betting.list_market_book(
             market_ids=[market_id], price_projection={"priceData": ["EX_BEST_OFFERS"]}
@@ -165,8 +190,12 @@ class BetfairMercados:
             for runner in market_book.runners:
                 selection_back_lay = {}
                 selection_back_lay["name"] = runner_names[runner.selection_id]
-                selection_back_lay["back_odds"] = self.verificar_disponibilidade_odd(runner, "back")
-                selection_back_lay["lay_odds"] = self.verificar_disponibilidade_odd(runner, "lay")
+                selection_back_lay["back_odds"] = self.verificar_disponibilidade_odd(
+                    runner, "back"
+                )
+                selection_back_lay["lay_odds"] = self.verificar_disponibilidade_odd(
+                    runner, "lay"
+                )
                 market_odds_back_lay["selections"].append(selection_back_lay)
         return market_odds_back_lay
 
@@ -174,12 +203,14 @@ class BetfairMercados:
         dados_jogo_dict = {
             "evento_id": dados_jogo.evento_id,
             "times": f"{dados_jogo.home_team.replace('/', '')} vs {dados_jogo.away_team.replace('/', '')}",
-            "mercados": []
+            "mercados": [],
         }
         for mercado in markets_dict.values():
             nao_incluir_dados = True
             try:
-                dados_market = self.get_odds_event_markets(dados_jogo.evento_id, mercado)
+                dados_market = self.get_odds_event_markets(
+                    dados_jogo.evento_id, mercado
+                )
             except NaoExisteMercadoExcecao:
                 print(f"Não existe dados para o jogo {dados_jogo.evento_id}")
                 nao_incluir_dados = False
@@ -219,16 +250,21 @@ class BetfairMercados:
         for jogo in jogos:
             dados_jogo = Partida(**jogo)
 
-            if jogo_ja_processado(dados_dia, dados_jogo.evento_id):  # Jogo já foi processado
+            if jogo_ja_processado(
+                dados_dia, dados_jogo.evento_id
+            ):  # Jogo já foi processado
                 print(f"Evento {dados_jogo.evento_id} já foi processado")
                 continue
 
             print(
                 f"Processando {dados_jogo.home_team.replace('/', '')} vs {dados_jogo.away_team.replace('/', '')}"
             )
-            dados_jogo_dict = self.processar_mercados_para_jogo(dados_jogo, markets_dict)
+            dados_jogo_dict = self.processar_mercados_para_jogo(
+                dados_jogo, markets_dict
+            )
             dados_dia["jogos"].append(dados_jogo_dict)
         save_dict_to_json(dados_dia, file_name)
+
 
 class BetfairMonitor:
     def __init__(self, cliente, eventos):
@@ -240,11 +276,13 @@ class BetfairMonitor:
         Monitora os eventos ao vivo para detectar o primeiro gol no segundo tempo.
         O intervalo entre as verificações é configurável (em segundos).
         """
-        logging.info("Monitorando eventos ao vivo para detectar gols no segundo tempo...")
+        logging.info(
+            "Monitorando eventos ao vivo para detectar gols no segundo tempo..."
+        )
 
         eventos_notificados = []
 
-        #try:
+        # try:
         while self.cliente.session_active:
             eventos_ao_vivo = self.eventos.listar_eventos_futebol(in_live=True)
 
@@ -266,8 +304,10 @@ class BetfairMonitor:
                 home_name = score.score.home.name
                 away_name = score.score.away.name
 
-                event_time_line = self.cliente.trading.in_play_service.get_event_timeline(
-                    event_id=event_id
+                event_time_line = (
+                    self.cliente.trading.in_play_service.get_event_timeline(
+                        event_id=event_id
+                    )
                 )
                 # Checa se houve golno segunfo tempo para o evento
                 for update_detail in event_time_line.update_detail:
@@ -278,7 +318,12 @@ class BetfairMonitor:
                     conditions.append(update_detail.elapsed_regular_time > 45)
                     if all(conditions):
                         country_code = evento.event.country_code
-                        county = country_codes[country_code] if country_code != None and country_code in country_codes.keys() else "Desconhecido"
+                        county = (
+                            country_codes[country_code]
+                            if country_code != None
+                            and country_code in country_codes.keys()
+                            else "Desconhecido"
+                        )
                         notification = f"{home_name} {score_home}"
                         notification += f" x {score_away} {away_name}"
                         notification += f"\n{update_detail.type} {update_detail.match_time} {update_detail.team_name}"
@@ -286,10 +331,10 @@ class BetfairMonitor:
                         notification += f"\n{datetime.now().strftime('%H:%M:%S')}"
                         notification += f"\nLocal: {county}"
                         if event_id not in eventos_notificados:
-                            #print("*****************************")
-                            #print(f"{notification}")
+                            # print("*****************************")
+                            # print(f"{notification}")
                             send_notification(notification, "Alerta de Gooool!!!", 60)
-                            #play_sound("/home/marcos/Música/senna8s.mp3")
+                            # play_sound("/home/marcos/Música/senna8s.mp3")
                             # send_message(
                             #     number=settings.group_number,
                             #     url=settings.instance_url,
@@ -312,20 +357,24 @@ class BetfairResulados:
     def __init__(self, cliente: BetfairCliente):
         self.cliente = cliente
 
-    def get_lucros_perdas(self, data_inicio: str, data_fim: str) -> List[Dict[str, float]]:
+    def get_lucros_perdas(
+        self, data_inicio: str, data_fim: str
+    ) -> List[Dict[str, float]]:
         """
-            Obtém os lucros e perdas de apostas liquidadas em um período.
+        Obtém os lucros e perdas de apostas liquidadas em um período.
 
-            Args:
-                client (APIClient): Cliente autenticado da API Betfair.
-                data_inicio (str): Data de início no formato "DD/MM/YYYY".
-                data_fim (str): Data de fim no formato "DD/MM/YYYY".
+        Args:
+            client (APIClient): Cliente autenticado da API Betfair.
+            data_inicio (str): Data de início no formato "DD/MM/YYYY".
+            data_fim (str): Data de fim no formato "DD/MM/YYYY".
 
-            Returns:
-                List[Dict[str, float]]: Lista de dicionários contendo informações de lucros e perdas por mercado.
+        Returns:
+            List[Dict[str, float]]: Lista de dicionários contendo informações de lucros e perdas por mercado.
         """
         # Converter datas para o formato ISO8601 com início e fim do dia
-        inicio_iso = datetime.strptime(data_inicio, "%d/%m/%Y").strftime("%Y-%m-%dT00:00:00")
+        inicio_iso = datetime.strptime(data_inicio, "%d/%m/%Y").strftime(
+            "%Y-%m-%dT00:00:00"
+        )
         fim_iso = datetime.strptime(data_fim, "%d/%m/%Y").strftime("%Y-%m-%dT23:59:59")
 
         resultados = []
@@ -336,28 +385,29 @@ class BetfairResulados:
                 bet_status="SETTLED",
                 from_record=0,
                 record_count=1000,
-                settled_date_range={
-                    "from": inicio_iso,
-                    "to": fim_iso
-                },
+                settled_date_range={"from": inicio_iso, "to": fim_iso},
             )
 
             # Processa os resultados retornados
             if response.orders:
                 for order in response.orders:
-                    #print(dir(order))
-                    #return []
-                    resultados.append({
-                         "evento": order.event_id,
-                         "mercado": order.market_id,
-                         "selecao": order.selection_id,
-                         "lado": order.side,
-                         "bet_outcome": order.bet_outcome,
-                         "bet_id": order.bet_id,
-                         "odd": order.price_matched,
-                         "lucro_prejuizo": order.profit,
-                         "data_liquidacao": order.settled_date.isoformat() if order.settled_date else None
-                    })
+                    # print(dir(order))
+                    # return []
+                    resultados.append(
+                        {
+                            "evento": order.event_id,
+                            "mercado": order.market_id,
+                            "selecao": order.selection_id,
+                            "lado": order.side,
+                            "bet_outcome": order.bet_outcome,
+                            "bet_id": order.bet_id,
+                            "odd": order.price_matched,
+                            "lucro_prejuizo": order.profit,
+                            "data_liquidacao": order.settled_date.isoformat()
+                            if order.settled_date
+                            else None,
+                        }
+                    )
             else:
                 print("Nenhuma ordem encontrada no período especificado.")
 
@@ -367,16 +417,16 @@ class BetfairResulados:
         return resultados
 
 
-
 # Exemplo de uso das classes
 if __name__ == "__main__":
     from config import settings
+
     # Inicializa a classe BetfairCliente
     cliente = BetfairCliente(
-            username=settings.username, 
-            password=settings.password, 
-            app_key=settings.app_key,
-            certs=settings.certs_dir,
+        username=settings.username,
+        password=settings.password,
+        app_key=settings.app_key,
+        certs=settings.certs_dir,
     )
 
     # Login
@@ -394,4 +444,3 @@ if __name__ == "__main__":
 
     # # Buscar odds do mercado
     # mercados.busca_odds_mercado()
-

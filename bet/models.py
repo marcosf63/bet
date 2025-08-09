@@ -10,29 +10,36 @@ class Partida(BaseModel):
     home_team: str
     away_team: str
 
+
 class Tournament(BaseModel):
     name: str
     category: Dict
+
 
 class Status(BaseModel):
     description: str
     type: str
 
+
 class HomeTeam(BaseModel):
     name: str
     slug: str
     shortName: str
-    
+
+
 class AwayTeam(BaseModel):
     name: str
     slug: str
     shortName: str
 
+
 class HomeScore(BaseModel):
     current: int
 
+
 class AwayScore(BaseModel):
     current: int
+
 
 class Event(BaseModel):
     tournament: Tournament
@@ -48,4 +55,3 @@ class Event(BaseModel):
 
     def __hash__(self):
         return hash(self.id)
-
