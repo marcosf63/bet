@@ -9,3 +9,6 @@ pygame
 plyer
 dbus-python
 requests
+scipy
+matplotlib
+seaborn

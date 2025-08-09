@@ -12,6 +12,7 @@ Uma aplicação CLI em Python para análise automatizada de dados de apostas esp
 - **Integração com APIs**: Betfair Exchange e SofaScore para dados em tempo real
 - **Notificações**: Alertas sonoros e visuais para oportunidades identificadas
 - **Análise Histórica**: Backtesting de estratégias com dados históricos
+- **Analytics Avançados**: Métricas financeiras, simulação Monte Carlo e análise de risco
 
 ## 📋 Pré-requisitos
 
@@ -61,6 +62,12 @@ bet ht0x0 --odd_over 2.5 --odd_btts 2.0
 
 # Abrir shell interativo com funções pré-carregadas
 bet shell
+
+# Analisar estratégia de trading com métricas avançadas
+bet analise
+
+# Análise com gráficos e simulações customizadas
+bet analise --salvar --simulacoes 20000 --operacoes-futuras 1000
 ```
 
 ### Exemplos de Uso
@@ -74,6 +81,9 @@ bet ht0x0 --odd_over 3.0 --odd_btts 2.5 --horai 15
 
 # Salvar análise completa do dia
 bet mday --data 2024-12-25 --salvar
+
+# Análise completa de estratégia com relatório detalhado
+bet analise --arquivo data/minha_estrategia.csv --coluna "Retorno" --salvar
 ```
 
 ## 📊 Estrutura de Dados
@@ -104,6 +114,14 @@ Busca jogos com odds altas para Over 2.5 e BTTS, sugerindo maior probabilidade d
 
 ### Análise Over 1.5
 Avalia mercados de gols com foco em estratégias de Under/Over.
+
+### Analytics de Trading
+Análise quantitativa completa de estratégias com métricas como:
+- **Sharpe Ratio**: Relação risco-retorno ajustada
+- **Drawdown**: Máxima perda acumulada
+- **Simulação Monte Carlo**: Projeções probabilísticas
+- **Value at Risk (VaR)**: Quantificação de risco de cauda
+- **Critério de Kelly**: Sizing optimal de posições
 
 ## 📁 Estrutura do Projeto
 
