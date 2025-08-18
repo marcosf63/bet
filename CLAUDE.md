@@ -11,6 +11,9 @@ pip install -r requirements.txt
 
 # Install in development mode
 pip install -e .
+
+# Update dependencies (when requirements.in changes)
+pip-compile requirements.in
 ```
 
 ### Running the Application
@@ -23,6 +26,13 @@ bet mday        # List all matches for today
 bet fav         # List games with clear favorites
 bet ht0x0       # Find games with 0x0 potential at halftime
 bet shell       # Interactive shell with pre-loaded functions
+bet analise     # Advanced trading analytics with statistical analysis
+
+# Examples with options:
+bet mday --data 2024-12-25 --salvar                    # Save daily data to CSV
+bet fav --oddmax 1.5 --liga "Premier League"           # Filter favorites by league
+bet ht0x0 --odd_over 3.0 --odd_btts 2.5                # Custom odds thresholds
+bet analise --salvar --simulacoes 20000                # Generate analysis with charts
 ```
 
 ### Testing
@@ -55,14 +65,17 @@ This is a **betting analysis CLI application** that fetches and analyzes footbal
 
 **bet/soufascore.py**: SofaScore API integration for live match data.
 
+**bet/analytics.py**: Advanced trading analytics module with statistical analysis, Monte Carlo simulations, and risk metrics.
+
 ### Data Sources
 - Remote CSV files from futpythontrader/Jogos_do_Dia GitHub repository
 - Betfair Exchange API for live odds and market data
 - SofaScore API for match events and scores
 
 ### Configuration
-- **settings.toml**: Application configuration using Dynaconf
-- **requirements.txt**: Dependencies managed with pip-compile
+- **settings.toml**: Application configuration using Dynaconf with paths and API URLs
+- **requirements.txt**: Dependencies managed with pip-compile from requirements.in
+- **setup.py**: Package configuration with console script entry point
 - Data stored in `/data/` directory with various betting analysis results
 
 ### Key Features
@@ -70,3 +83,10 @@ This is a **betting analysis CLI application** that fetches and analyzes footbal
 - Jupyter notebooks for strategy backtesting in `notebooks/`
 - Certificate-based Betfair API authentication in `certs/`
 - Automated betting strategy scripts in `scripts/`
+- Advanced analytics with metrics: Sharpe ratio, VaR, Kelly criterion, Monte Carlo simulations
+
+### Development Workflow
+- Dependencies defined in `requirements.in` and compiled to `requirements.txt`
+- Entry point configured through setuptools console_scripts: `bet = bet.cli:main`
+- Analytics module optional (graceful degradation if scipy/matplotlib not available)
+- CSV data auto-saved to `data/mday/` folder when using `--salvar` option

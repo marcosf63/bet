@@ -25,11 +25,25 @@ try:
 except ImportError:
     ANALYTICS_AVAILABLE = False
 
-URL_TEMPLATE = "https://raw.githubusercontent.com/futpythontrader/Jogos_do_Dia/refs/heads/main/Betfair/Jogos_do_Dia_Betfair_Back_Lay_{data}.csv"
-COLUNAS_PRINCIPAIS = [
-    "Date", "Time", "League", "Home", "Away", "Odd_H_Back", "Odd_D_Back",
-    "Odd_A_Back", "Odd_Over25_FT_Back", "Odd_BTTS_Yes_Back", "Odd_Over15_FT_Back"
-]
+URL_TEMPLATES = {
+    "betfair": "https://raw.githubusercontent.com/futpythontrader/Jogos_do_Dia/refs/heads/main/Betfair/Jogos_do_Dia_Betfair_Back_Lay_{data}.csv",
+    "footystats": "https://github.com/futpythontrader/Jogos_do_Dia/raw/refs/heads/main/FootyStats/Jogos_do_Dia_FootyStats_{data}.csv",
+    "flashscore": "https://github.com/futpythontrader/Jogos_do_Dia/raw/refs/heads/main/FlashScore/Jogos_do_Dia_FlashScore_{data}.csv"
+}
+COLUNAS_PRINCIPAIS = {
+    "betfair": [
+        "Date", "Time", "League", "Home", "Away", "Odd_H_Back", "Odd_D_Back",
+        "Odd_A_Back", "Odd_Over25_FT_Back", "Odd_BTTS_Yes_Back", "Odd_Over15_FT_Back"
+    ],
+    "footystats": [
+        "Date", "Time", "League", "Home", "Away", "Odd_H_FT", "Odd_D_FT", 
+        "Odd_A_FT", "Odd_Over05_HT", "Odd_BTTS_No", "XG_Home_Pre"
+    ],
+    "flashscore": [
+        "Date", "Time", "League", "Home", "Away", "Odd_H_FT", "Odd_D_FT", 
+        "Odd_A_FT", "Odd_Over05_HT", "Odd_BTTS_No", "XG_Home_Pre"
+    ]
+}
 
 
 # --- Funções Auxiliares ---
@@ -41,25 +55,34 @@ def _safe_float(value: any, default: float = 0.0) -> float:
         return default
 
 
-def _get_daily_games(data: str) -> List[Dict]:
+def _get_daily_games(data: str, fonte: str = "betfair") -> List[Dict]:
     """Busca e processa os jogos do dia a partir da fonte de dados remota."""
-    url = URL_TEMPLATE.format(data=data)
+    if fonte not in URL_TEMPLATES:
+        console.print(f"[bold red]Fonte '{fonte}' não disponível. Fontes válidas: {', '.join(URL_TEMPLATES.keys())}[/bold red]")
+        return []
+    
+    url = URL_TEMPLATES[fonte].format(data=data)
     try:
         response = requests.get(url)
         response.raise_for_status()  # Lança uma exceção para respostas 4xx/5xx
         return csv_string_to_json_list(response.text)
     except requests.exceptions.RequestException as e:
-        console.print(f"[bold red]Erro ao buscar dados para {data}: {e}[/bold red]")
+        console.print(f"[bold red]Erro ao buscar dados da fonte '{fonte}' para {data}: {e}[/bold red]")
         return []
 
 
-def _filter_games(games: List[Dict]):
+def _filter_games(games: List[Dict], fonte: str = "betfair"):
     """Filtra as colunas."""
     if not games:
         console.print("[yellow]Nenhum jogo encontrado para os critérios fornecidos.[/yellow]")
-        return
+        return []
 
-    jogos_filtrados = [{k: d.get(k, '') for k in COLUNAS_PRINCIPAIS} for d in games]
+    if fonte not in COLUNAS_PRINCIPAIS:
+        console.print(f"[bold red]Fonte '{fonte}' não configurada para colunas. Usando padrão betfair.[/bold red]")
+        fonte = "betfair"
+
+    colunas = COLUNAS_PRINCIPAIS[fonte]
+    jogos_filtrados = [{k: d.get(k, '') for k in colunas} for d in games]
     return jogos_filtrados
 
 def _save_csv_to_file(data: List[Dict], date_str: str):
@@ -91,6 +114,7 @@ def shell():
         "play_sound": play_sound,
         "send_notification": send_notification,
         "get_daily_games": _get_daily_games,
+        "URL_TEMPLATES": URL_TEMPLATES,
     }
     typer.echo(f"Auto imports: {list(_vars.keys())}")
     try:
@@ -107,13 +131,17 @@ def mday(
         date.today().strftime("%Y-%m-%d"),
         help="Data dos jogos no formato AAAA-MM-DD.",
     ),
+    fonte: str = typer.Option(
+        "betfair",
+        help="Fonte dos dados: betfair, footystats ou flashscore.",
+    ),
     salvar: bool = typer.Option(False, help="Se verdadeiro, salva o resultado em CSV."),
 ):
     """Lista todas as partidas do dia."""
-    jogos_do_dia = _get_daily_games(data)
-    jogos_filtrados = _filter_games(jogos_do_dia)
+    jogos_do_dia = _get_daily_games(data, fonte)
+    jogos_filtrados = _filter_games(jogos_do_dia, fonte)
     if salvar:
-        _save_csv_to_file(jogos_filtrados, data)
+        _save_csv_to_file(jogos_filtrados, f"{data}_{fonte}")
     print_table(jogos_filtrados)
 
 
@@ -124,16 +152,28 @@ def fav(
         date.today().strftime("%Y-%m-%d"),
         help="Data dos jogos no formato AAAA-MM-DD.",
     ),
+    fonte: str = typer.Option(
+        "betfair",
+        help="Fonte dos dados: betfair, footystats ou flashscore.",
+    ),
     horai: int = typer.Option(0, help="Hora inicial para filtrar os jogos."),
     horaf: int = typer.Option(23, help="Hora final para filtrar os jogos."),
     liga: str = typer.Option(None, help="Filtra jogos por uma liga específica (busca parcial)."),
 ):
     """Lista jogos com um favorito claro (odd <= oddmax) em um determinado horário e liga."""
-    jogos_do_dia = _get_daily_games(data)
+    jogos_do_dia = _get_daily_games(data, fonte)
     
+    # Definir colunas de odds baseado na fonte
+    if fonte == "betfair":
+        odd_home_col = "Odd_H_Back"
+        odd_away_col = "Odd_A_Back"
+    else:  # footystats e flashscore
+        odd_home_col = "Odd_H_FT"
+        odd_away_col = "Odd_A_FT"
+
     jogos_filtrados = [
         jogo for jogo in jogos_do_dia
-        if (_safe_float(jogo.get("Odd_H_Back")) <= oddmax or _safe_float(jogo.get("Odd_A_Back")) <= oddmax)
+        if (_safe_float(jogo.get(odd_home_col)) <= oddmax or _safe_float(jogo.get(odd_away_col)) <= oddmax)
         and (horai <= int(jogo.get("Time", "0:0").split(":")[0]) <= horaf)
     ]
 
@@ -142,7 +182,7 @@ def fav(
             jogo for jogo in jogos_filtrados if liga.lower() in jogo.get("League", "").lower()
         ]
 
-    jogos_filtrados = _filter_games(jogos_filtrados)
+    jogos_filtrados = _filter_games(jogos_filtrados, fonte)
 
     print_table(jogos_filtrados)
 
@@ -153,20 +193,32 @@ def ht0x0(
         date.today().strftime("%Y-%m-%d"),
         help="Data dos jogos no formato AAAA-MM-DD.",
     ),
+    fonte: str = typer.Option(
+        "betfair",
+        help="Fonte dos dados: betfair, footystats ou flashscore.",
+    ),
     odd_over: float = typer.Option(2.0, help="Odd mínima para o mercado Over 2.5 FT."),
     odd_btts: float = typer.Option(2.0, help="Odd mínima para o mercado BTTS (Ambos Marcam)."),
     horai: int = typer.Option(0, help="Hora inicial para filtrar os jogos."),
 ):
     """Busca jogos com potencial de 0x0 no intervalo (HT) baseado em odds altas de Over 2.5 e BTTS."""
-    jogos_do_dia = _get_daily_games(data)
+    jogos_do_dia = _get_daily_games(data, fonte)
+
+    # Definir colunas baseado na fonte
+    if fonte == "betfair":
+        odd_over_col = "Odd_Over25_FT_Back"
+        odd_btts_col = "Odd_BTTS_Yes_Back"
+    else:  # footystats e flashscore
+        odd_over_col = "Odd_Over05_HT"  # Over 0.5 HT para footystats/flashscore
+        odd_btts_col = "Odd_BTTS_No"    # BTTS No para footystats/flashscore
 
     jogos_filtrados = [
         jogo for jogo in jogos_do_dia
-        if (_safe_float(jogo.get("Odd_Over25_FT_Back")) > odd_over and
-            _safe_float(jogo.get("Odd_BTTS_Yes_Back")) > odd_btts)
+        if (_safe_float(jogo.get(odd_over_col)) > odd_over and
+            _safe_float(jogo.get(odd_btts_col)) > odd_btts)
         and int(jogo.get("Time", "0:0").split(":")[0]) >= horai
     ]
-    jogos_filtrados = _filter_games(jogos_filtrados)
+    jogos_filtrados = _filter_games(jogos_filtrados, fonte)
     print_table(jogos_filtrados)
 
 

@@ -376,6 +376,10 @@ def print_table(lista_dicionarios: List):
     tabela = Table(show_header=True, header_style="bold magenta")
     console = Console()
 
+    if not lista_dicionarios:
+        console.print("[yellow]Nenhum dado para exibir.[/yellow]")
+        return
+
     for chave in lista_dicionarios[0].keys():
         tabela.add_column(chave)
     for linha in lista_dicionarios:
