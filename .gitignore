@@ -9,3 +9,4 @@ certs/
 .venv/
 .ipynb_checkpoints/
 tmp/
+notebooks/dados/
