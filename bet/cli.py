@@ -136,9 +136,33 @@ def mday(
         help="Fonte dos dados: betfair, footystats ou flashscore.",
     ),
     salvar: bool = typer.Option(False, help="Se verdadeiro, salva o resultado em CSV."),
+    odd_home_max: float = typer.Option(None, help="Filtra jogos com odd do time da casa menor ou igual ao valor especificado."),
+    odd_home_min: float = typer.Option(None, help="Filtra jogos com odd do time da casa maior ou igual ao valor especificado."),
 ):
     """Lista todas as partidas do dia."""
     jogos_do_dia = _get_daily_games(data, fonte)
+    
+    # Filtrar por odd do time da casa se especificado
+    # Definir coluna de odd home baseado na fonte
+    if fonte == "betfair":
+        odd_home_col = "Odd_H_Back"
+    else:  # footystats e flashscore
+        odd_home_col = "Odd_H_FT"
+    
+    # Filtrar por odd máxima do time da casa
+    if odd_home_max is not None:
+        jogos_do_dia = [
+            jogo for jogo in jogos_do_dia
+            if _safe_float(jogo.get(odd_home_col)) <= odd_home_max
+        ]
+    
+    # Filtrar por odd mínima do time da casa
+    if odd_home_min is not None:
+        jogos_do_dia = [
+            jogo for jogo in jogos_do_dia
+            if _safe_float(jogo.get(odd_home_col)) >= odd_home_min
+        ]
+    
     jogos_filtrados = _filter_games(jogos_do_dia, fonte)
     if salvar:
         _save_csv_to_file(jogos_filtrados, f"{data}_{fonte}")
