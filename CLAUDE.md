@@ -2,6 +2,13 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Version
+**Current Version**: 0.2.0
+
+### Version History
+- **0.2.0** (2025-10-04): Add ISC calculation, home odds filtering (min/max), SofaScore integration, profit/lay analysis
+- **0.1.0** (Initial): Base betting analysis CLI with Betfair integration
+
 ## Development Commands
 
 ### Environment Setup
@@ -35,10 +42,16 @@ bet ht0x0 --odd_over 3.0 --odd_btts 2.5                # Custom odds thresholds
 bet analise --salvar --simulacoes 20000                # Generate analysis with charts
 ```
 
-### Testing
+### Testing and Code Quality
 ```bash
 # Run tests (minimal test suite available)
 python -m pytest tests/
+
+# Run specific test file
+python -m pytest tests/test_utils.py
+
+# Lint and type checking commands (if available)
+# Check project for linting commands with: grep -r "lint\|flake8\|black\|ruff" .
 ```
 
 ## Architecture Overview
@@ -68,9 +81,12 @@ This is a **betting analysis CLI application** that fetches and analyzes footbal
 **bet/analytics.py**: Advanced trading analytics module with statistical analysis, Monte Carlo simulations, and risk metrics.
 
 ### Data Sources
-- Remote CSV files from futpythontrader/Jogos_do_Dia GitHub repository
-- Betfair Exchange API for live odds and market data
-- SofaScore API for match events and scores
+- **Remote CSV files**: Multiple sources from futpythontrader/Jogos_do_Dia GitHub repository:
+  - Betfair: `/Betfair/Jogos_do_Dia_Betfair_Back_Lay_{data}.csv`
+  - FootyStats: `/FootyStats/Jogos_do_Dia_FootyStats_{data}.csv` 
+  - FlashScore: `/FlashScore/Jogos_do_Dia_FlashScore_{data}.csv`
+- **Betfair Exchange API**: Live odds and market data via betfairlightweight
+- **SofaScore API**: Live match events and scores (`soufascore.py`)
 
 ### Configuration
 - **settings.toml**: Application configuration using Dynaconf with paths and API URLs
@@ -86,7 +102,14 @@ This is a **betting analysis CLI application** that fetches and analyzes footbal
 - Advanced analytics with metrics: Sharpe ratio, VaR, Kelly criterion, Monte Carlo simulations
 
 ### Development Workflow
-- Dependencies defined in `requirements.in` and compiled to `requirements.txt`
-- Entry point configured through setuptools console_scripts: `bet = bet.cli:main`
-- Analytics module optional (graceful degradation if scipy/matplotlib not available)
-- CSV data auto-saved to `data/mday/` folder when using `--salvar` option
+- **Dependencies**: Defined in `requirements.in` and compiled to `requirements.txt` using `pip-compile`
+- **Entry point**: Configured through setuptools console_scripts: `bet = bet.cli:main`
+- **Analytics module**: Optional (graceful degradation if scipy/matplotlib not available)
+- **Data persistence**: CSV data auto-saved to `data/mday/` folder when using `--salvar` option
+- **Betfair authentication**: Uses certificate-based authentication (certs/ directory)
+
+### Development Notes
+- **Multiple data sources**: CLI supports switching between Betfair, FootyStats, and FlashScore data
+- **Jupyter integration**: Notebooks in `notebooks/` for strategy analysis and backtesting
+- **Historical data**: Stored in `data/dados_historicos/` with event-based organization
+- **Configuration**: Uses Dynaconf for settings management via `settings.toml`
