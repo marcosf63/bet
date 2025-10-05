@@ -29,6 +29,6 @@ setup(
     include_package_data=True,
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["bet = bet.cli:main"]
+        "console_scripts": ["bet = bet.cli.main:main"]
     }
 )
