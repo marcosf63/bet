@@ -3,9 +3,14 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Version
-**Current Version**: 0.2.0
+**Current Version**: 0.3.0-dev (Refactored Architecture)
 
 ### Version History
+- **0.3.0-dev** (2025-10-05): Major refactoring - modular architecture
+  - Reorganized into core/, services/, cli/, analysis/ packages
+  - Created strategy pattern for betting strategies
+  - Extracted metrics (ISC, profit calculations)
+  - Modularized CLI commands
 - **0.2.0** (2025-10-04): Add ISC calculation, home odds filtering (min/max), SofaScore integration, profit/lay analysis
 - **0.1.0** (Initial): Base betting analysis CLI with Betfair integration
 
@@ -56,29 +61,66 @@ python -m pytest tests/test_utils.py
 
 ## Architecture Overview
 
-This is a **betting analysis CLI application** that fetches and analyzes football match data, primarily from Betfair exchange markets.
+This is a **betting analysis CLI application** with a modular architecture for analyzing football match data from multiple sources.
+
+### Project Structure (Refactored v0.3.0)
+
+```
+bet/
+├── core/                    # Core business logic
+│   ├── models.py           # Pydantic data models
+│   ├── exceptions.py       # Custom exceptions
+│   └── constants.py        # Application constants
+│
+├── services/               # External services integration
+│   ├── betfair/           # Betfair API client
+│   ├── sofascore/         # SofaScore API integration
+│   └── data_sources/      # Remote CSV data sources
+│
+├── cli/                    # Modular CLI structure
+│   ├── main.py            # CLI entry point
+│   ├── helpers.py         # Shared helper functions
+│   ├── validators.py      # Input validators
+│   └── commands/          # Individual command modules
+│       ├── daily.py       # mday command
+│       ├── favorites.py   # fav command
+│       └── halftime.py    # ht0x0 command
+│
+├── analysis/              # Analysis and strategies
+│   ├── analytics.py       # Advanced analytics (Monte Carlo, etc.)
+│   ├── strategies/        # Betting strategies
+│   │   ├── base.py        # BaseStrategy abstract class
+│   │   ├── favorites.py   # Favorites strategy
+│   │   ├── halftime_zero.py  # 0x0 HT strategy
+│   │   └── lay_away.py    # Lay Away strategy (ISC-based)
+│   └── metrics/           # Calculation metrics
+│       ├── isc.py         # ISC calculator
+│       └── profit.py      # Profit/loss calculations
+│
+└── utils.py               # Utility functions
+```
 
 ### Core Components
 
-**bet/cli.py**: Main CLI interface using Typer. Contains commands for analyzing different betting scenarios:
-- `mday`: Fetches daily matches from remote CSV data
-- `fav`: Filters games with clear favorites (low odds)  
-- `ht0x0`: Identifies matches likely to be 0-0 at halftime based on high Over 2.5 and BTTS odds
-- `shell`: Interactive IPython shell with betting utilities
+**bet/core/**: Business logic foundation
+- `models.py`: Pydantic models for data validation
+- `exceptions.py`: Custom exceptions
+- `constants.py`: URL templates, column definitions
 
-**bet/betfair.py**: Betfair API client wrapper using betfairlightweight library. Handles authentication and market data retrieval.
+**bet/services/**: External integrations
+- `betfair/client.py`: Betfair API wrapper (betfairlightweight)
+- `sofascore/client.py`: SofaScore API for live data
+- `data_sources/`: Remote CSV data handling
 
-**bet/models.py**: Pydantic models for data validation, including match data structures and SofaScore API responses.
+**bet/cli/**: Modular CLI
+- `main.py`: Typer app with command registration
+- `commands/`: Individual command modules (daily, favorites, halftime)
+- `helpers.py`: Shared functions (get_daily_games, filter_games, ISC calculation)
 
-**bet/utils.py**: Utility functions for time conversion, data formatting, and table printing.
-
-**bet/files.py**: File I/O operations, CSV processing, and JSON handling.
-
-**bet/notification.py**: System notifications and sound alerts using plyer and pygame.
-
-**bet/soufascore.py**: SofaScore API integration for live match data.
-
-**bet/analytics.py**: Advanced trading analytics module with statistical analysis, Monte Carlo simulations, and risk metrics.
+**bet/analysis/**: Strategies and analytics
+- `strategies/`: Pluggable betting strategies (Favorites, Lay Away, HT 0x0)
+- `metrics/`: ISC calculator, profit calculations, Kelly Criterion
+- `analytics.py`: Statistical analysis, Monte Carlo simulations
 
 ### Data Sources
 - **Remote CSV files**: Multiple sources from futpythontrader/Jogos_do_Dia GitHub repository:
@@ -113,3 +155,45 @@ This is a **betting analysis CLI application** that fetches and analyzes footbal
 - **Jupyter integration**: Notebooks in `notebooks/` for strategy analysis and backtesting
 - **Historical data**: Stored in `data/dados_historicos/` with event-based organization
 - **Configuration**: Uses Dynaconf for settings management via `settings.toml`
+- **Modular strategies**: Easy to add new strategies by extending `BaseStrategy`
+- **Entry point**: CLI entry point moved to `bet.cli.main:main`
+
+### Using New Features (v0.3.0)
+
+#### Strategy Pattern
+```python
+from bet.analysis import FavoritesStrategy, LayAwayStrategy
+
+# Create and use strategies
+fav_strategy = FavoritesStrategy(max_odd=1.5)
+games_filtered = fav_strategy.analyze(games)
+recommendation = fav_strategy.get_recommendation(game)
+```
+
+#### Metrics Calculators
+```python
+from bet.analysis.metrics import ISCCalculator, ProfitCalculator
+
+# Calculate ISC
+isc = ISCCalculator.calculate(odd_home_back=1.45, odd_away_lay=3.5, odd_draw_back=3.8)
+
+# Calculate profit
+profit = ProfitCalculator.calculate_lay_profit(stake=100, odd_lay=2.5, win=True)
+kelly_stake = ProfitCalculator.calculate_kelly_criterion(probability=0.65, odd=2.5, bankroll=1000)
+```
+
+#### Modular CLI Commands
+```bash
+# Old cli.py still works for backward compatibility
+python -m bet.cli --help
+
+# New modular structure
+python -m bet.cli.main --help
+
+# Commands are now in separate modules:
+# - bet/cli/commands/daily.py (mday)
+# - bet/cli/commands/favorites.py (fav)
+# - bet/cli/commands/halftime.py (ht0x0)
+```
+
+See `docs/usage_examples.md` for complete examples.
