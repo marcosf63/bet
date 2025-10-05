@@ -16,7 +16,7 @@ from bet.files import load_json_to_dict, save_dict_to_json
 
 # from bet.evolution import send_message
 from bet.notification import start_timer, send_notification
-from bet.exceptions import NaoExisteMercadoExcecao
+from bet.core.exceptions import NaoExisteMercadoExcecao
 
 # Configuração do logger
 logging.basicConfig(

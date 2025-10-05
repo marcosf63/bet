@@ -893,7 +893,7 @@ def comparar_mday_sofa(data: str = None, fonte_mday: str = "betfair", limiar_sim
         Dict com resultados da comparação
     """
     from bet.cli import _get_daily_games
-    from bet.soufascore import get_scheduled_events
+    from bet.services.sofascore.client import get_scheduled_events
     
     if data is None:
         from datetime import date

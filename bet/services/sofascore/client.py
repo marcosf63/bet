@@ -7,7 +7,7 @@ import requests
 from rich import print
 
 from bet.config import settings
-from bet.models import Event, ScheduledEvent
+from bet.core.models import Event, ScheduledEvent
 
 try:
     from playwright.async_api import async_playwright
