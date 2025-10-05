@@ -1,3 +1,5 @@
+"""Evolution API messaging service."""
+
 import requests
 from bet.config import settings
 

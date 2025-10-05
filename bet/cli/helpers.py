@@ -7,7 +7,7 @@ import csv
 import requests
 from rich.console import Console
 
-from bet.files import csv_string_to_json_list
+from bet.storage import csv_string_to_json_list
 from bet.core.constants import URL_TEMPLATES, COLUNAS_PRINCIPAIS
 
 console = Console()

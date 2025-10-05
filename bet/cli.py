@@ -7,7 +7,7 @@ import typer
 from rich.console import Console
 import glob
 
-from bet.files import csv_string_to_json_list
+from bet.storage import csv_string_to_json_list
 from bet.utils import (
     converter_hora_para_datetime,
     print_table,
@@ -15,7 +15,7 @@ from bet.utils import (
     calcular_lucro_lay,
 )
 from bet.config import settings
-from bet.notification import run_timer, play_sound, send_notification
+from bet.utils.notifications import run_timer, play_sound, send_notification
 from bet.services.sofascore.client import get_scheduled_events, get_scheduled_events_demo
 from bet.core.constants import URL_TEMPLATES, COLUNAS_PRINCIPAIS
 

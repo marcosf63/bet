@@ -12,10 +12,10 @@ from bet.utils import (
     verificar_tempo_passado,
     country_codes,
 )
-from bet.files import load_json_to_dict, save_dict_to_json
+from bet.storage import load_json_to_dict, save_dict_to_json
 
-# from bet.evolution import send_message
-from bet.notification import start_timer, send_notification
+# from bet.services.messaging import send_message
+from bet.utils.notifications import start_timer, send_notification
 from bet.core.exceptions import NaoExisteMercadoExcecao
 
 # Configuração do logger
