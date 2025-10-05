@@ -3,14 +3,16 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Version
-**Current Version**: 0.3.0-dev (Refactored Architecture)
+**Current Version**: 0.3.0-dev (Refactored Architecture - CLI Migration Complete)
 
 ### Version History
 - **0.3.0-dev** (2025-10-05): Major refactoring - modular architecture
-  - Reorganized into core/, services/, cli/, analysis/ packages
-  - Created strategy pattern for betting strategies
-  - Extracted metrics (ISC, profit calculations)
-  - Modularized CLI commands
+  - ✅ Reorganized into core/, services/, cli/, analysis/, storage/, utils/ packages
+  - ✅ Created strategy pattern for betting strategies
+  - ✅ Extracted metrics (ISC, profit calculations)
+  - ✅ Modularized ALL CLI commands (10/10 = 100%)
+  - ✅ Removed monolithic cli.py (1,400+ lines → modular structure)
+  - ✅ Full backward compatibility maintained
 - **0.2.0** (2025-10-04): Add ISC calculation, home odds filtering (min/max), SofaScore integration, profit/lay analysis
 - **0.1.0** (Initial): Base betting analysis CLI with Betfair integration
 
@@ -33,18 +35,25 @@ pip-compile requirements.in
 # CLI entry point (after installation)
 bet --help
 
-# Available commands:
+# Available commands (all modularized):
 bet mday        # List all matches for today
 bet fav         # List games with clear favorites
 bet ht0x0       # Find games with 0x0 potential at halftime
 bet shell       # Interactive shell with pre-loaded functions
+bet diff        # Compare MDAY vs SOFA data with match results
+bet sofa        # Fetch SofaScore scheduled events
+bet relatorio   # Generate consolidated profit reports
+bet layaway     # Calculate Lay Away strategy profit/loss
 bet analise     # Advanced trading analytics with statistical analysis
+bet api         # Discover APIs from web pages
 
 # Examples with options:
-bet mday --data 2024-12-25 --salvar                    # Save daily data to CSV
+bet mday --data 2024-12-25 --salvar --isc excelente    # Save daily data filtered by ISC
 bet fav --oddmax 1.5 --liga "Premier League"           # Filter favorites by league
 bet ht0x0 --odd_over 3.0 --odd_btts 2.5                # Custom odds thresholds
 bet analise --salvar --simulacoes 20000                # Generate analysis with charts
+bet relatorio --periodo 2025-08 --salvar               # Monthly profit report
+bet layaway --odd-home-max 1.6 --isc bom               # Lay Away with filters
 ```
 
 ### Testing and Code Quality
@@ -77,14 +86,21 @@ bet/
 │   ├── sofascore/         # SofaScore API integration
 │   └── data_sources/      # Remote CSV data sources
 │
-├── cli/                    # Modular CLI structure
-│   ├── main.py            # CLI entry point
+├── cli/                    # Modular CLI structure (100% migrated)
+│   ├── main.py            # CLI entry point - registers all commands
 │   ├── helpers.py         # Shared helper functions
 │   ├── validators.py      # Input validators
-│   └── commands/          # Individual command modules
-│       ├── daily.py       # mday command
-│       ├── favorites.py   # fav command
-│       └── halftime.py    # ht0x0 command
+│   └── commands/          # Individual command modules (10 commands)
+│       ├── daily.py       # mday - daily matches
+│       ├── favorites.py   # fav - clear favorites
+│       ├── halftime.py    # ht0x0 - 0x0 HT potential
+│       ├── shell.py       # shell - interactive IPython
+│       ├── diff.py        # diff - MDAY vs SOFA comparison
+│       ├── sofa.py        # sofa - SofaScore events
+│       ├── report.py      # relatorio - profit reports
+│       ├── layaway.py     # layaway - Lay Away strategy
+│       ├── analysis.py    # analise - trading analytics
+│       └── api.py         # api - API discovery
 │
 ├── analysis/              # Analysis and strategies
 │   ├── analytics.py       # Advanced analytics (Monte Carlo, etc.)
