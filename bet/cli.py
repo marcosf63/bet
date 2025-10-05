@@ -25,7 +25,7 @@ console = Console()
 
 # Analytics import
 try:
-    from bet.analytics import TradingAnalyzer
+    from bet.analysis.analytics import TradingAnalyzer
     ANALYTICS_AVAILABLE = True
 except ImportError:
     ANALYTICS_AVAILABLE = False
