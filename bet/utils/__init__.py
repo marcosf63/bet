@@ -7,6 +7,8 @@ from bet.utils.core import (
     print_table,
     buscar_resultado_partida,
     calcular_lucro_lay,
+    obter_apis_sofascore,
+    testar_interceptador_sofascore,
     country_codes,
     markets_dict,
 )
@@ -26,6 +28,8 @@ __all__ = [
     "print_table",
     "buscar_resultado_partida",
     "calcular_lucro_lay",
+    "obter_apis_sofascore",
+    "testar_interceptador_sofascore",
     "country_codes",
     "markets_dict",
     # Notifications
