@@ -3,21 +3,21 @@
 # Import analytics module (if available)
 try:
     from bet.analysis.analytics import TradingAnalyzer
+
     ANALYTICS_AVAILABLE = True
 except ImportError:
     TradingAnalyzer = None
     ANALYTICS_AVAILABLE = False
 
 # Import strategies
+# Import metrics
+from bet.analysis.metrics import ISCCalculator, ProfitCalculator
 from bet.analysis.strategies import (
     BaseStrategy,
     FavoritesStrategy,
     HalftimeZeroStrategy,
     LayAwayStrategy,
 )
-
-# Import metrics
-from bet.analysis.metrics import ISCCalculator, ProfitCalculator
 
 __all__ = [
     "TradingAnalyzer",

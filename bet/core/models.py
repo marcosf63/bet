@@ -1,5 +1,5 @@
 from datetime import date, time
-from typing import Dict, Optional
+
 from pydantic import BaseModel
 
 
@@ -13,7 +13,7 @@ class Partida(BaseModel):
 
 class Tournament(BaseModel):
     name: str
-    category: Dict
+    category: dict
 
 
 class Status(BaseModel):
@@ -24,21 +24,21 @@ class Status(BaseModel):
 class HomeTeam(BaseModel):
     name: str
     slug: str
-    shortName: Optional[str] = None
+    shortName: str | None = None
 
 
 class AwayTeam(BaseModel):
     name: str
     slug: str
-    shortName: Optional[str] = None
+    shortName: str | None = None
 
 
 class HomeScore(BaseModel):
-    current: Optional[int] = None
+    current: int | None = None
 
 
 class AwayScore(BaseModel):
-    current: Optional[int] = None
+    current: int | None = None
 
 
 class Event(BaseModel):
@@ -65,7 +65,7 @@ class ScheduledEvent(BaseModel):
     awayTeam: AwayTeam
     id: int
     startTimestamp: int
-    homeScore: Optional[HomeScore] = None
-    awayScore: Optional[AwayScore] = None
-    customId: Optional[str] = None
-    slug: Optional[str] = None
+    homeScore: HomeScore | None = None
+    awayScore: AwayScore | None = None
+    customId: str | None = None
+    slug: str | None = None

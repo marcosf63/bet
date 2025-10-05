@@ -1,17 +1,12 @@
 """Profit calculation metrics for betting strategies."""
 
-from typing import Dict, Optional
-
 
 class ProfitCalculator:
     """Calculator for profit/loss in betting operations."""
 
     @staticmethod
     def calculate_lay_profit(
-        stake: float,
-        odd_lay: float,
-        commission: float = 0.05,
-        win: bool = True
+        stake: float, odd_lay: float, commission: float = 0.05, win: bool = True
     ) -> float:
         """
         Calculate profit/loss for a lay bet.
@@ -35,11 +30,7 @@ class ProfitCalculator:
             return round(loss, 2)
 
     @staticmethod
-    def calculate_back_profit(
-        stake: float,
-        odd_back: float,
-        win: bool = True
-    ) -> float:
+    def calculate_back_profit(stake: float, odd_back: float, win: bool = True) -> float:
         """
         Calculate profit/loss for a back bet.
 
@@ -61,11 +52,8 @@ class ProfitCalculator:
 
     @staticmethod
     def calculate_green_up(
-        stake_back: float,
-        odd_back: float,
-        odd_lay: float,
-        commission: float = 0.05
-    ) -> Dict[str, float]:
+        stake_back: float, odd_back: float, odd_lay: float, commission: float = 0.05
+    ) -> dict[str, float]:
         """
         Calculate green up (equal profit) strategy.
 
@@ -94,7 +82,7 @@ class ProfitCalculator:
             "stake_lay": round(stake_lay, 2),
             "profit_if_back_wins": round(profit_if_back_wins, 2),
             "profit_if_lay_wins": round(profit_if_lay_wins, 2),
-            "average_profit": round((profit_if_back_wins + profit_if_lay_wins) / 2, 2)
+            "average_profit": round((profit_if_back_wins + profit_if_lay_wins) / 2, 2),
         }
 
     @staticmethod
@@ -114,11 +102,7 @@ class ProfitCalculator:
         return round((profit / stake) * 100, 2)
 
     @staticmethod
-    def calculate_kelly_criterion(
-        probability: float,
-        odd: float,
-        bankroll: float
-    ) -> Optional[float]:
+    def calculate_kelly_criterion(probability: float, odd: float, bankroll: float) -> float | None:
         """
         Calculate optimal stake using Kelly Criterion.
 

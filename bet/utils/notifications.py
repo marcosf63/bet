@@ -1,14 +1,13 @@
-import time
 import logging
-from plyer import notification
-from multiprocessing import Process
 import os
 import sys
+import time
+from multiprocessing import Process
+
+from plyer import notification
 
 # Configuração do logger
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 
 def send_notification(message: str, title: str, timeout: int = 10) -> None:

@@ -1,6 +1,5 @@
 """Favorites strategy - games with clear favorites."""
 
-from typing import List, Dict
 from bet.analysis.strategies.base import BaseStrategy
 
 
@@ -16,8 +15,7 @@ class FavoritesStrategy(BaseStrategy):
             fonte: Data source (betfair, footystats, flashscore)
         """
         super().__init__(
-            name="Favorites",
-            description=f"Find games with clear favorites (odd <= {max_odd})"
+            name="Favorites", description=f"Find games with clear favorites (odd <= {max_odd})"
         )
         self.max_odd = max_odd
         self.fonte = fonte
@@ -30,7 +28,7 @@ class FavoritesStrategy(BaseStrategy):
             self.odd_home_col = "Odd_H_FT"
             self.odd_away_col = "Odd_A_FT"
 
-    def validate_game(self, game: Dict) -> bool:
+    def validate_game(self, game: dict) -> bool:
         """Check if game has a clear favorite."""
         try:
             odd_home = float(game.get(self.odd_home_col, 999))
@@ -39,11 +37,11 @@ class FavoritesStrategy(BaseStrategy):
         except (ValueError, TypeError):
             return False
 
-    def analyze(self, games: List[Dict]) -> List[Dict]:
+    def analyze(self, games: list[dict]) -> list[dict]:
         """Filter games with clear favorites."""
         return [game for game in games if self.validate_game(game)]
 
-    def get_recommendation(self, game: Dict) -> str:
+    def get_recommendation(self, game: dict) -> str:
         """Get specific recommendation for favorites."""
         if not self.validate_game(game):
             return None

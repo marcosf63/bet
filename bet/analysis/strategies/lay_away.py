@@ -1,6 +1,5 @@
 """Lay Away strategy - based on ISC (Indice de Supremacia Casa)."""
 
-from typing import List, Dict
 from bet.analysis.strategies.base import BaseStrategy
 
 
@@ -28,14 +27,13 @@ class LayAwayStrategy(BaseStrategy):
             min_home_odd: Minimum home odd
         """
         super().__init__(
-            name="Lay Away",
-            description=f"Lay away team when home has ISC >= {min_isc}"
+            name="Lay Away", description=f"Lay away team when home has ISC >= {min_isc}"
         )
         self.min_isc = min_isc
         self.max_home_odd = max_home_odd
         self.min_home_odd = min_home_odd
 
-    def validate_game(self, game: Dict) -> bool:
+    def validate_game(self, game: dict) -> bool:
         """Check if game matches Lay Away criteria."""
         try:
             isc_str = game.get("ISC", "N/A")
@@ -59,7 +57,7 @@ class LayAwayStrategy(BaseStrategy):
         except (ValueError, TypeError):
             return False
 
-    def analyze(self, games: List[Dict]) -> List[Dict]:
+    def analyze(self, games: list[dict]) -> list[dict]:
         """Filter games suitable for Lay Away."""
         return [game for game in games if self.validate_game(game)]
 
@@ -74,7 +72,7 @@ class LayAwayStrategy(BaseStrategy):
         else:
             return "fraco"
 
-    def get_recommendation(self, game: Dict) -> str:
+    def get_recommendation(self, game: dict) -> str:
         """Get specific recommendation for Lay Away."""
         if not self.validate_game(game):
             return None

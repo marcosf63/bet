@@ -1,15 +1,16 @@
 """Daily matches command (mday)."""
 
 from datetime import date
+
 import typer
 from rich.console import Console
 
 from bet.cli.helpers import (
-    get_daily_games,
     filter_games,
-    save_csv_to_file,
+    get_daily_games,
     print_isc_legend,
     safe_float,
+    save_csv_to_file,
 )
 from bet.utils import print_table
 
@@ -26,9 +27,15 @@ def mday_command(
         help="Fonte dos dados: betfair, footystats ou flashscore.",
     ),
     salvar: bool = typer.Option(False, help="Se verdadeiro, salva o resultado em CSV."),
-    odd_home_max: float = typer.Option(None, help="Filtra jogos com odd do time da casa menor ou igual ao valor especificado."),
-    odd_home_min: float = typer.Option(None, help="Filtra jogos com odd do time da casa maior ou igual ao valor especificado."),
-    isc: str = typer.Option(None, help="Filtra jogos por ISC: excelente (>75), bom (≥65), moderado (≥55), fraco (<55)."),
+    odd_home_max: float = typer.Option(
+        None, help="Filtra jogos com odd do time da casa menor ou igual ao valor especificado."
+    ),
+    odd_home_min: float = typer.Option(
+        None, help="Filtra jogos com odd do time da casa maior ou igual ao valor especificado."
+    ),
+    isc: str = typer.Option(
+        None, help="Filtra jogos por ISC: excelente (>75), bom (≥65), moderado (≥55), fraco (<55)."
+    ),
 ):
     """Lista todas as partidas do dia."""
     jogos_do_dia = get_daily_games(data, fonte)
@@ -43,15 +50,13 @@ def mday_command(
     # Filtrar por odd máxima do time da casa
     if odd_home_max is not None:
         jogos_do_dia = [
-            jogo for jogo in jogos_do_dia
-            if safe_float(jogo.get(odd_home_col)) <= odd_home_max
+            jogo for jogo in jogos_do_dia if safe_float(jogo.get(odd_home_col)) <= odd_home_max
         ]
 
     # Filtrar por odd mínima do time da casa
     if odd_home_min is not None:
         jogos_do_dia = [
-            jogo for jogo in jogos_do_dia
-            if safe_float(jogo.get(odd_home_col)) >= odd_home_min
+            jogo for jogo in jogos_do_dia if safe_float(jogo.get(odd_home_col)) >= odd_home_min
         ]
 
     jogos_filtrados = filter_games(jogos_do_dia, fonte)
@@ -71,13 +76,16 @@ def mday_command(
                     # bom: ISC >= 65 (inclui bom e excelente)
                     # moderado: ISC >= 55 (inclui moderado, bom e excelente)
                     # fraco: ISC < 55 (inclui apenas fraco)
-                    if isc_lower == "excelente" and isc_value > 75:
-                        jogos_filtrados_isc.append(jogo)
-                    elif isc_lower == "bom" and isc_value >= 65:
-                        jogos_filtrados_isc.append(jogo)
-                    elif isc_lower == "moderado" and isc_value >= 55:
-                        jogos_filtrados_isc.append(jogo)
-                    elif isc_lower == "fraco" and isc_value < 55:
+                    if (
+                        isc_lower == "excelente"
+                        and isc_value > 75
+                        or isc_lower == "bom"
+                        and isc_value >= 65
+                        or isc_lower == "moderado"
+                        and isc_value >= 55
+                        or isc_lower == "fraco"
+                        and isc_value < 55
+                    ):
                         jogos_filtrados_isc.append(jogo)
                 except ValueError:
                     continue

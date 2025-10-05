@@ -1,14 +1,13 @@
 """Helper functions for CLI commands."""
 
-from datetime import date
-from typing import List, Dict
-from pathlib import Path
 import csv
+from pathlib import Path
+
 import requests
 from rich.console import Console
 
+from bet.core.constants import COLUNAS_PRINCIPAIS, URL_TEMPLATES
 from bet.storage import csv_string_to_json_list
-from bet.core.constants import URL_TEMPLATES, COLUNAS_PRINCIPAIS
 
 console = Console()
 
@@ -21,7 +20,7 @@ def safe_float(value: any, default: float = 0.0) -> float:
         return default
 
 
-def get_daily_games(data: str, fonte: str = "betfair") -> List[Dict]:
+def get_daily_games(data: str, fonte: str = "betfair") -> list[dict]:
     """Busca e processa os jogos do dia."""
     if fonte not in URL_TEMPLATES:
         console.print(f"[bold red]Fonte '{fonte}' nao disponivel.[/bold red]")
@@ -37,7 +36,7 @@ def get_daily_games(data: str, fonte: str = "betfair") -> List[Dict]:
         return []
 
 
-def filter_games(games: List[Dict], fonte: str = "betfair"):
+def filter_games(games: list[dict], fonte: str = "betfair"):
     """Filtra as colunas e calcula ISC."""
     if not games:
         console.print("[yellow]Nenhum jogo encontrado.[/yellow]")
@@ -50,12 +49,12 @@ def filter_games(games: List[Dict], fonte: str = "betfair"):
     jogos_filtrados = []
 
     for d in games:
-        jogo_filtrado = {k: d.get(k, '') for k in colunas}
+        jogo_filtrado = {k: d.get(k, "") for k in colunas}
 
         if fonte == "betfair" and "ISC" in colunas:
-            odd_a_lay = safe_float(d.get('Odd_A_Lay', 0))
-            odd_h_back = safe_float(d.get('Odd_H_Back', 0))
-            odd_d_back = safe_float(d.get('Odd_D_Back', 0))
+            odd_a_lay = safe_float(d.get("Odd_A_Lay", 0))
+            odd_h_back = safe_float(d.get("Odd_H_Back", 0))
+            odd_d_back = safe_float(d.get("Odd_D_Back", 0))
 
             if odd_h_back > 0 and odd_a_lay > 0:
                 ph = 1 / odd_h_back
@@ -81,7 +80,7 @@ def print_isc_legend():
     console.print("Fraco: ISC < 55")
 
 
-def save_csv_to_file(data: List[Dict], date_str: str, folder_name: str = "mday"):
+def save_csv_to_file(data: list[dict], date_str: str, folder_name: str = "mday"):
     """Save data to CSV file."""
     if not data:
         console.print("[yellow]No data to save.[/yellow]")
@@ -99,7 +98,7 @@ def save_csv_to_file(data: List[Dict], date_str: str, folder_name: str = "mday")
     console.print(f"[green]File saved to:[/green] {file_path}")
 
 
-def save_diff_to_file(data: List[Dict], date_str: str, filtros_aplicados: List[str]):
+def save_diff_to_file(data: list[dict], date_str: str, filtros_aplicados: list[str]):
     """Save diff results to CSV file."""
     if not data:
         return
@@ -142,11 +141,9 @@ def calculate_similarity(str1: str, str2: str) -> float:
 
     for i in range(1, len1 + 1):
         for j in range(1, len2 + 1):
-            cost = 0 if s1[i-1] == s2[j-1] else 1
+            cost = 0 if s1[i - 1] == s2[j - 1] else 1
             matrix[i][j] = min(
-                matrix[i-1][j] + 1,
-                matrix[i][j-1] + 1,
-                matrix[i-1][j-1] + cost
+                matrix[i - 1][j] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j - 1] + cost
             )
 
     distance = matrix[len1][len2]

@@ -1,23 +1,17 @@
 """ISC (Indice de Supremacia Casa) calculator."""
 
-from typing import Optional, Dict
-
 
 class ISCCalculator:
     """Calculator for ISC - Home Supremacy Index."""
 
     # ISC formula weights
-    WEIGHT_PH = 0.35   # Home win probability
+    WEIGHT_PH = 0.35  # Home win probability
     WEIGHT_PAN = 0.25  # Away not win probability
-    WEIGHT_FD = 0.25   # Differential force
+    WEIGHT_FD = 0.25  # Differential force
     WEIGHT_FDE = 0.15  # Imbalance factor
 
     @staticmethod
-    def calculate(
-        odd_home_back: float,
-        odd_away_lay: float,
-        odd_draw_back: float
-    ) -> Optional[float]:
+    def calculate(odd_home_back: float, odd_away_lay: float, odd_draw_back: float) -> float | None:
         """
         Calculate ISC value.
 
@@ -55,10 +49,10 @@ class ISCCalculator:
 
             # Calculate ISC
             isc = (
-                ph * ISCCalculator.WEIGHT_PH +
-                pan * ISCCalculator.WEIGHT_PAN +
-                fd * ISCCalculator.WEIGHT_FD +
-                fde * ISCCalculator.WEIGHT_FDE
+                ph * ISCCalculator.WEIGHT_PH
+                + pan * ISCCalculator.WEIGHT_PAN
+                + fd * ISCCalculator.WEIGHT_FD
+                + fde * ISCCalculator.WEIGHT_FDE
             ) * 100
 
             return round(isc, 1)
@@ -101,12 +95,12 @@ class ISCCalculator:
             "excelente": "Forte dominância, ideal para Lay Away",
             "bom": "Boa dominância, considerar Lay Away",
             "moderado": "Analisar com cautela",
-            "fraco": "Evitar Lay Away"
+            "fraco": "Evitar Lay Away",
         }
         return descriptions.get(level, "Desconhecido")
 
     @staticmethod
-    def add_to_game(game: Dict) -> Dict:
+    def add_to_game(game: dict) -> dict:
         """
         Add ISC calculation to game dictionary.
 
@@ -122,11 +116,7 @@ class ISCCalculator:
 
         if odd_h and odd_a_lay and odd_d:
             try:
-                isc = ISCCalculator.calculate(
-                    float(odd_h),
-                    float(odd_a_lay),
-                    float(odd_d)
-                )
+                isc = ISCCalculator.calculate(float(odd_h), float(odd_a_lay), float(odd_d))
                 if isc is not None:
                     game["ISC"] = f"{isc:.1f}"
                     game["ISC_Level"] = ISCCalculator.get_level(isc)

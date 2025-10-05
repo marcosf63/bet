@@ -1,7 +1,6 @@
 """Base strategy class for betting strategies."""
 
 from abc import ABC, abstractmethod
-from typing import List, Dict, Optional
 from datetime import datetime
 
 
@@ -21,7 +20,7 @@ class BaseStrategy(ABC):
         self.created_at = datetime.now()
 
     @abstractmethod
-    def analyze(self, games: List[Dict]) -> List[Dict]:
+    def analyze(self, games: list[dict]) -> list[dict]:
         """
         Analyze games and return filtered results.
 
@@ -34,7 +33,7 @@ class BaseStrategy(ABC):
         pass
 
     @abstractmethod
-    def validate_game(self, game: Dict) -> bool:
+    def validate_game(self, game: dict) -> bool:
         """
         Validate if a single game matches strategy criteria.
 
@@ -46,7 +45,7 @@ class BaseStrategy(ABC):
         """
         pass
 
-    def get_recommendation(self, game: Dict) -> Optional[str]:
+    def get_recommendation(self, game: dict) -> str | None:
         """
         Get betting recommendation for a game.
 

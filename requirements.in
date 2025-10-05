@@ -13,3 +13,13 @@ scipy
 matplotlib
 seaborn
 ddgs
+
+# Testing and code quality
+pytest
+pytest-cov
+pytest-mock
+ruff
+black
+mypy
+types-requests
+types-pytz

@@ -1,10 +1,11 @@
 """Favorites command (fav) - games with clear favorites."""
 
 from datetime import date
+
 import typer
 from rich.console import Console
 
-from bet.cli.helpers import get_daily_games, filter_games, safe_float
+from bet.cli.helpers import filter_games, get_daily_games, safe_float
 from bet.utils import print_table
 
 console = Console()
@@ -36,8 +37,12 @@ def fav_command(
         odd_away_col = "Odd_A_FT"
 
     jogos_filtrados = [
-        jogo for jogo in jogos_do_dia
-        if (safe_float(jogo.get(odd_home_col)) <= oddmax or safe_float(jogo.get(odd_away_col)) <= oddmax)
+        jogo
+        for jogo in jogos_do_dia
+        if (
+            safe_float(jogo.get(odd_home_col)) <= oddmax
+            or safe_float(jogo.get(odd_away_col)) <= oddmax
+        )
         and (horai <= int(jogo.get("Time", "0:0").split(":")[0]) <= horaf)
     ]
 

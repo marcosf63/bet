@@ -1,10 +1,11 @@
 """Halftime 0x0 command (ht0x0) - games with potential 0x0 at halftime."""
 
 from datetime import date
+
 import typer
 from rich.console import Console
 
-from bet.cli.helpers import get_daily_games, filter_games, safe_float
+from bet.cli.helpers import filter_games, get_daily_games, safe_float
 from bet.utils import print_table
 
 console = Console()
@@ -32,12 +33,15 @@ def ht0x0_command(
         odd_btts_col = "Odd_BTTS_Yes_Back"
     else:  # footystats e flashscore
         odd_over_col = "Odd_Over05_HT"  # Over 0.5 HT para footystats/flashscore
-        odd_btts_col = "Odd_BTTS_No"    # BTTS No para footystats/flashscore
+        odd_btts_col = "Odd_BTTS_No"  # BTTS No para footystats/flashscore
 
     jogos_filtrados = [
-        jogo for jogo in jogos_do_dia
-        if (safe_float(jogo.get(odd_over_col)) > odd_over and
-            safe_float(jogo.get(odd_btts_col)) > odd_btts)
+        jogo
+        for jogo in jogos_do_dia
+        if (
+            safe_float(jogo.get(odd_over_col)) > odd_over
+            and safe_float(jogo.get(odd_btts_col)) > odd_btts
+        )
         and int(jogo.get("Time", "0:0").split(":")[0]) >= horai
     ]
     jogos_filtrados = filter_games(jogos_filtrados, fonte)

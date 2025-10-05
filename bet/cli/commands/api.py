@@ -1,11 +1,12 @@
 """API command - discover APIs from web pages."""
 
+import json
 from datetime import datetime
 from pathlib import Path
-import json
+from urllib.parse import urlparse
+
 import typer
 from rich.console import Console
-from urllib.parse import urlparse
 
 from bet.utils import obter_apis_sofascore, testar_interceptador_sofascore
 
@@ -14,8 +15,12 @@ console = Console()
 
 def api_command(
     url: str = typer.Argument(..., help="URL da página para descobrir APIs"),
-    mostrar_detalhes: bool = typer.Option(False, "--detalhes", "-d", help="Mostra detalhes adicionais das APIs"),
-    salvar: bool = typer.Option(False, "--salvar", "-s", help="Salva as APIs encontradas em arquivo JSON"),
+    mostrar_detalhes: bool = typer.Option(
+        False, "--detalhes", "-d", help="Mostra detalhes adicionais das APIs"
+    ),
+    salvar: bool = typer.Option(
+        False, "--salvar", "-s", help="Salva as APIs encontradas em arquivo JSON"
+    ),
 ):
     """Descobre todas as APIs de uma página web (comando: api)."""
     console.print(f"[cyan]🔍 Descobrindo APIs da URL: {url}[/cyan]\n")
@@ -23,7 +28,9 @@ def api_command(
     try:
         # Usar função específica do SofaScore se for uma URL do SofaScore, senão usar genérica
         if "sofascore.com" in url.lower():
-            console.print("[dim]🎯 URL do SofaScore detectada, usando interceptador otimizado...[/dim]\n")
+            console.print(
+                "[dim]🎯 URL do SofaScore detectada, usando interceptador otimizado...[/dim]\n"
+            )
 
             if mostrar_detalhes:
                 # Usar função detalhada que mostra tabela
@@ -72,7 +79,9 @@ def api_command(
         # Salvar em arquivo se solicitado
         if salvar:
             parsed_original = urlparse(url)
-            nome_arquivo = f"apis_{parsed_original.netloc}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            nome_arquivo = (
+                f"apis_{parsed_original.netloc}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            )
             arquivo_path = Path(f"data/apis/{nome_arquivo}")
             arquivo_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -81,7 +90,7 @@ def api_command(
                 "timestamp": datetime.now().isoformat(),
                 "total_apis": len(apis),
                 "apis_por_dominio": apis_agrupadas,
-                "todas_apis": apis
+                "todas_apis": apis,
             }
 
             with open(arquivo_path, "w", encoding="utf-8") as f:
@@ -90,7 +99,7 @@ def api_command(
             console.print(f"[green]💾 APIs salvas em: {arquivo_path}[/green]")
 
         # Mostrar resumo
-        console.print(f"[bold yellow]📊 RESUMO:[/bold yellow]")
+        console.print("[bold yellow]📊 RESUMO:[/bold yellow]")
         console.print(f"   • Total de APIs: [cyan]{len(apis)}[/cyan]")
         console.print(f"   • Domínios únicos: [green]{len(apis_agrupadas)}[/green]")
         console.print(f"   • URL analisada: [dim]{url}[/dim]")

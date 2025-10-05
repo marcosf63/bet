@@ -2,22 +2,22 @@
 
 # Import core utilities (from old utils.py)
 from bet.utils.core import (
-    converter_hora_para_datetime,
-    verificar_tempo_passado,
-    print_table,
     buscar_resultado_partida,
     calcular_lucro_lay,
-    obter_apis_sofascore,
-    testar_interceptador_sofascore,
+    converter_hora_para_datetime,
     country_codes,
     markets_dict,
+    obter_apis_sofascore,
+    print_table,
+    testar_interceptador_sofascore,
+    verificar_tempo_passado,
 )
 
 # Import notifications
 from bet.utils.notifications import (
-    send_notification,
     play_sound,
     run_timer,
+    send_notification,
     start_timer,
 )
 

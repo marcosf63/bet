@@ -1,8 +1,9 @@
 """Report command - generate consolidated profit reports from diff files."""
 
+import csv
 from datetime import datetime
 from pathlib import Path
-import csv
+
 import typer
 from rich.console import Console
 
@@ -31,7 +32,7 @@ def report_command(
         console.print(f"[yellow]❌ Nenhum arquivo CSV encontrado em: {pasta}[/yellow]")
         return
 
-    console.print(f"[bold cyan]📊 RELATÓRIO DE LUCROS LAY AWAY[/bold cyan]")
+    console.print("[bold cyan]📊 RELATÓRIO DE LUCROS LAY AWAY[/bold cyan]")
     console.print(f"[dim]Pasta: {pasta}[/dim]")
 
     # Consolidar dados de todos os arquivos
@@ -63,10 +64,14 @@ def report_command(
             continue
 
     if not todos_jogos:
-        console.print(f"[yellow]❌ Nenhum jogo encontrado nos arquivos{' do período ' + periodo if periodo else ''}[/yellow]")
+        console.print(
+            f"[yellow]❌ Nenhum jogo encontrado nos arquivos{' do período ' + periodo if periodo else ''}[/yellow]"
+        )
         return
 
-    console.print(f"[green]✅ Processados {arquivos_processados} arquivos, {len(todos_jogos)} jogos encontrados[/green]")
+    console.print(
+        f"[green]✅ Processados {arquivos_processados} arquivos, {len(todos_jogos)} jogos encontrados[/green]"
+    )
 
     # Calcular estatísticas consolidadas
     lucros_lay_away = []
@@ -78,7 +83,9 @@ def report_command(
         jogo_adicionado = False
 
         # Processar Lucro Lay Away
-        lucro_lay_str = jogo.get("Lucro Lay Away", jogo.get("Lucro", "N/A"))  # Backward compatibility
+        lucro_lay_str = jogo.get(
+            "Lucro Lay Away", jogo.get("Lucro", "N/A")
+        )  # Backward compatibility
         if lucro_lay_str != "N/A" and lucro_lay_str != "":
             try:
                 lucro_lay_value = float(lucro_lay_str)
@@ -105,7 +112,7 @@ def report_command(
             jogos_sem_lucro += 1
 
     if lucros_lay_away or lucros_back_home:
-        console.print(f"\n[bold]📈 RESUMO EXECUTIVO:[/bold]")
+        console.print("\n[bold]📈 RESUMO EXECUTIVO:[/bold]")
         console.print(f"   • Total de jogos processados: [green]{len(jogos_com_lucro)}[/green]")
 
         # Estatísticas LAY AWAY
@@ -116,12 +123,14 @@ def report_command(
             lucros_negativos_lay = [l for l in lucros_lay_away if l < 0]
             taxa_acerto_lay = (len(lucros_positivos_lay) / len(lucros_lay_away)) * 100
 
-            console.print(f"\n[bold yellow]🔄 LAY AWAY:[/bold yellow]")
+            console.print("\n[bold yellow]🔄 LAY AWAY:[/bold yellow]")
             console.print(f"   • Jogos analisados: [green]{len(lucros_lay_away)}[/green]")
             console.print(f"   • Lucro total: [magenta]{lucro_total_lay:.3f}[/magenta] unidades")
             console.print(f"   • Lucro médio por jogo: [cyan]{lucro_medio_lay:.3f}[/cyan] unidades")
             console.print(f"   • Taxa de acerto: [bold cyan]{taxa_acerto_lay:.1f}%[/bold cyan]")
-            console.print(f"   • Jogos com lucro: [green]{len(lucros_positivos_lay)}[/green] | Jogos com prejuízo: [red]{len(lucros_negativos_lay)}[/red]")
+            console.print(
+                f"   • Jogos com lucro: [green]{len(lucros_positivos_lay)}[/green] | Jogos com prejuízo: [red]{len(lucros_negativos_lay)}[/red]"
+            )
 
         # Estatísticas BACK HOME
         if lucros_back_home:
@@ -131,22 +140,26 @@ def report_command(
             lucros_negativos_back = [l for l in lucros_back_home if l < 0]
             taxa_acerto_back = (len(lucros_positivos_back) / len(lucros_back_home)) * 100
 
-            console.print(f"\n[bold blue]🏠 BACK HOME:[/bold blue]")
+            console.print("\n[bold blue]🏠 BACK HOME:[/bold blue]")
             console.print(f"   • Jogos analisados: [green]{len(lucros_back_home)}[/green]")
             console.print(f"   • Lucro total: [magenta]{lucro_total_back:.3f}[/magenta] unidades")
-            console.print(f"   • Lucro médio por jogo: [cyan]{lucro_medio_back:.3f}[/cyan] unidades")
+            console.print(
+                f"   • Lucro médio por jogo: [cyan]{lucro_medio_back:.3f}[/cyan] unidades"
+            )
             console.print(f"   • Taxa de acerto: [bold cyan]{taxa_acerto_back:.1f}%[/bold cyan]")
-            console.print(f"   • Jogos com lucro: [green]{len(lucros_positivos_back)}[/green] | Jogos com prejuízo: [red]{len(lucros_negativos_back)}[/red]")
+            console.print(
+                f"   • Jogos com lucro: [green]{len(lucros_positivos_back)}[/green] | Jogos com prejuízo: [red]{len(lucros_negativos_back)}[/red]"
+            )
 
         # Comparação entre estratégias
         if lucros_lay_away and lucros_back_home:
-            console.print(f"\n[bold]⚖️ COMPARAÇÃO DE ESTRATÉGIAS:[/bold]")
+            console.print("\n[bold]⚖️ COMPARAÇÃO DE ESTRATÉGIAS:[/bold]")
             melhor_estrategia = "LAY AWAY" if lucro_total_lay > lucro_total_back else "BACK HOME"
             diferenca = abs(lucro_total_lay - lucro_total_back)
             console.print(f"   • Melhor estratégia: [bold green]{melhor_estrategia}[/bold green]")
             console.print(f"   • Diferença de lucro: [yellow]{diferenca:.3f}[/yellow] unidades")
 
-        console.print(f"\n[bold]📁 DETALHAMENTO POR ARQUIVO:[/bold]")
+        console.print("\n[bold]📁 DETALHAMENTO POR ARQUIVO:[/bold]")
 
         # Agrupar por arquivo
         dados_por_arquivo = {}
@@ -177,12 +190,16 @@ def report_command(
             if dados["lay_away"]:
                 lucro_lay = sum(dados["lay_away"])
                 media_lay = lucro_lay / len(dados["lay_away"])
-                console.print(f"     🔄 Lay Away: {len(dados['lay_away'])} jogos, {lucro_lay:.3f} total, {media_lay:.3f} média")
+                console.print(
+                    f"     🔄 Lay Away: {len(dados['lay_away'])} jogos, {lucro_lay:.3f} total, {media_lay:.3f} média"
+                )
 
             if dados["back_home"]:
                 lucro_back = sum(dados["back_home"])
                 media_back = lucro_back / len(dados["back_home"])
-                console.print(f"     🏠 Back Home: {len(dados['back_home'])} jogos, {lucro_back:.3f} total, {media_back:.3f} média")
+                console.print(
+                    f"     🏠 Back Home: {len(dados['back_home'])} jogos, {lucro_back:.3f} total, {media_back:.3f} média"
+                )
 
         # Salvar relatório se solicitado
         if salvar:
@@ -192,7 +209,9 @@ def report_command(
 
             # Nome do arquivo do relatório
             sufixo = f"_{periodo}" if periodo else ""
-            nome_relatorio = f"relatorio_consolidado{sufixo}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+            nome_relatorio = (
+                f"relatorio_consolidado{sufixo}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+            )
             relatorio_path = folder_path / nome_relatorio
 
             with relatorio_path.open("w", newline="", encoding="utf-8") as csvfile:
@@ -208,4 +227,4 @@ def report_command(
             console.print(f"\n[dim]ℹ️ {jogos_sem_lucro} jogos ignorados (sem dados de lucro)[/dim]")
 
     else:
-        console.print(f"[yellow]❌ Nenhum jogo com dados de lucro válidos encontrado[/yellow]")
+        console.print("[yellow]❌ Nenhum jogo com dados de lucro válidos encontrado[/yellow]")

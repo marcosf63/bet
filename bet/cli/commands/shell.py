@@ -2,11 +2,11 @@
 
 import typer
 
-from bet.config import settings
-from bet.utils import converter_hora_para_datetime
-from bet.utils.notifications import run_timer, play_sound, send_notification
 from bet.cli.helpers import get_daily_games
+from bet.config import settings
 from bet.core.constants import URL_TEMPLATES
+from bet.utils import converter_hora_para_datetime
+from bet.utils.notifications import play_sound, run_timer, send_notification
 
 
 def shell_command():
@@ -23,7 +23,9 @@ def shell_command():
     typer.echo(f"Auto imports: {list(_vars.keys())}")
     try:
         from IPython import start_ipython
+
         start_ipython(argv=["--ipython-dir=/tmp", "--no-banner"], user_ns=_vars)
     except ImportError:
         import code
+
         code.InteractiveConsole(_vars).interact()
