@@ -39,6 +39,14 @@ notebooks/dados/
 data/mday/*.csv
 data/diff/
 data/sofa/
+data/odds/
+data/*.json
+data/*.txt
+data/*.html
+data/*.png
+data/*.db
+data/betfair_cache/
+.playwright-mcp/
 
 # Jupyter
 .ipynb_checkpoints/

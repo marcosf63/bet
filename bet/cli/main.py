@@ -3,15 +3,18 @@
 import typer
 from rich.console import Console
 
+from bet.cli.commands.add import app as add_app
 from bet.cli.commands.analysis import analysis_command
 from bet.cli.commands.api import api_command
 
 # Import all modular commands
+from bet.cli.commands.calendar import calendar_command
 from bet.cli.commands.daily import mday_command
 from bet.cli.commands.diff import diff_command
 from bet.cli.commands.favorites import fav_command
 from bet.cli.commands.halftime import ht0x0_command
 from bet.cli.commands.layaway import layaway_command
+from bet.cli.commands.odds import odds_command
 from bet.cli.commands.report import report_command
 from bet.cli.commands.shell import shell_command
 from bet.cli.commands.sofa import sofa_command
@@ -31,6 +34,9 @@ app.command(name="relatorio")(report_command)
 app.command(name="layaway")(layaway_command)
 app.command(name="analise")(analysis_command)
 app.command(name="api")(api_command)
+app.command(name="calendario")(calendar_command)
+app.command(name="odds")(odds_command)
+app.add_typer(add_app, name="add")
 
 
 def main():
