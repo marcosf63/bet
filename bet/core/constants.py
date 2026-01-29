@@ -2,7 +2,7 @@
 
 # URLs de fontes de dados
 URL_TEMPLATES = {
-    "betfair": "https://raw.githubusercontent.com/futpythontrader/Jogos_do_Dia/refs/heads/main/Betfair/Jogos_do_Dia_Betfair_Back_Lay_{data}.csv",
+    "betfair": "https://github.com/futpythontrader/Jogos_do_Dia/raw/refs/heads/main/Betfair/Jogos_do_Dia_Betfair_Back_Lay_{data}.csv",
     "footystats": "https://github.com/futpythontrader/Jogos_do_Dia/raw/refs/heads/main/FootyStats/Jogos_do_Dia_FootyStats_{data}.csv",
     "flashscore": "https://github.com/futpythontrader/Jogos_do_Dia/raw/refs/heads/main/FlashScore/Jogos_do_Dia_FlashScore_{data}.csv",
 }
@@ -18,10 +18,12 @@ COLUNAS_PRINCIPAIS = {
         "Odd_H_Back",
         "Odd_D_Back",
         "Odd_A_Lay",
-        "Odd_Over25_FT_Back",
-        "Odd_BTTS_Yes_Back",
-        "Odd_Over15_FT_Back",
+        #"Odd_Over25_FT_Back",
+        #"Odd_BTTS_Yes_Back",
+        #"Odd_Over15_FT_Back",
         "ISC",
+        "Event_ID",
+        "Betfair_URL",
     ],
     "footystats": [
         "Date",

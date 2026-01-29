@@ -46,6 +46,8 @@ data/*.html
 data/*.png
 data/*.db
 data/betfair_cache/
+data/bet365_debug/
+data/bet365_inspect/
 .playwright-mcp/
 
 # Jupyter

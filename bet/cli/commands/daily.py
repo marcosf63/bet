@@ -36,9 +36,26 @@ def mday_command(
     isc: str = typer.Option(
         None, help="Filtra jogos por ISC: excelente (>75), bom (≥65), moderado (≥55), fraco (<55)."
     ),
+    no_scrape: bool = typer.Option(
+        False,
+        "--no-scrape",
+        help="Desabilita scraping e força uso de CSV (apenas betfair).",
+    ),
+    force_scrape: bool = typer.Option(
+        False,
+        "--force-scrape",
+        help="Força novo scraping ignorando cache (apenas betfair).",
+    ),
 ):
     """Lista todas as partidas do dia."""
-    jogos_do_dia = get_daily_games(data, fonte)
+    # Validar flags conflitantes
+    if no_scrape and force_scrape:
+        console.print("[red]❌ Erro: --no-scrape e --force-scrape são mutuamente exclusivos[/red]")
+        raise typer.Exit(1)
+
+    # Passar flags para helpers
+    use_scraper = not no_scrape
+    jogos_do_dia = get_daily_games(data, fonte, use_scraper=use_scraper, force_scrape=force_scrape)
 
     # Filtrar por odd do time da casa se especificado
     # Definir coluna de odd home baseado na fonte

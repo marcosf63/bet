@@ -13,6 +13,7 @@ scipy
 matplotlib
 seaborn
 ddgs
+playwright
 
 # Testing and code quality
 pytest

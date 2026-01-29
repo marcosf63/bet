@@ -3,12 +3,18 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Version
-**Current Version**: 0.3.1-dev (Under Limite Odds Calculator)
+**Current Version**: 0.3.2-dev (Bet365 Under Limite Monitor)
 
 ### Version History
+- **0.3.2-dev** (2025-11-11): Bet365 Under Limite Monitor
+  - ✅ Added `scripts/bet365_monitor_odds.py` for real-time odds monitoring
+  - ✅ Playwright-based API interception for Bet365 data capture
+  - ✅ Linux system notifications when odds change
+  - ✅ Rich table formatting with live updates
+  - ✅ Comprehensive documentation in `scripts/README_BET365_MONITOR.md`
 - **0.3.1-dev** (2025-11-02): Under Limite odds calculator
   - ✅ Added `bet odds` command for calculating Under Limite odds tables
-  - ✅ Implements correction factor formula: Odd(t) = Odd_Initial × (Odd_Final / Odd_Initial)^(t/45)
+  - ✅ Implements correction factor formula: Odd(t) = Odd_Initial × [(Odd_Final / Odd_Initial)^0.02]^t
   - ✅ Supports first half (0-35min) and second half (45-80min) calculations
   - ✅ CSV export functionality to data/odds/ directory
   - ✅ Rich table formatting with color-coded intervals
@@ -54,6 +60,7 @@ bet analise     # Advanced trading analytics with statistical analysis
 bet api         # Discover APIs from web pages
 bet add         # Manage betting records (add, list, summary)
 bet calendario  # Visual monthly calendar with betting performance
+bet graf        # Horizontal bar chart with daily percentage performance
 bet odds        # Calculate Under Limite odds table using correction factor formula
 
 # Examples with options:
@@ -80,10 +87,25 @@ bet calendario --mes 2025-09                            # Specific month (YYYY-M
 bet calendario --estrategia "Under Limite"             # Filter by strategy
 bet calendario --stake-inicial 500.0                    # Custom initial stake
 
+# Visual monthly bar chart:
+bet graf                                                # Chart for current month
+bet graf --mes 2025-10                                  # Specific month (YYYY-MM)
+bet graf --estrategia "Under Limite"                    # Filter by strategy
+
 # Under Limite odds calculator:
 bet odds --odd-inicial 4.6 --tempo 1                    # First half (0-35min) with initial odd 4.6
 bet odds -o 3.2 -t 2                                    # Second half (45-80min) with initial odd 3.2
 bet odds -o 4.6 -t 1 --salvar                          # Calculate and save to CSV
+```
+
+### Scripts (Non-CLI Tools)
+```bash
+# Bet365 Under Limite Monitor (real-time odds monitoring)
+python scripts/bet365_monitor_odds.py "https://www.bet365.bet.br/#/IP/EV151260177742C1"
+
+# Prerequisites for Bet365 monitor:
+playwright install chromium                             # Install Playwright browsers
+# See scripts/README_BET365_MONITOR.md for full documentation
 ```
 
 ### Testing and Code Quality

@@ -1,7 +1,10 @@
 """Helper functions for CLI commands."""
 
 import csv
+import json
+from datetime import datetime
 from pathlib import Path
+from typing import Optional
 
 import requests
 from rich.console import Console
@@ -20,17 +23,121 @@ def safe_float(value: any, default: float = 0.0) -> float:
         return default
 
 
-def get_daily_games(data: str, fonte: str = "betfair") -> list[dict]:
-    """Busca e processa os jogos do dia."""
+def load_from_cache(data: str) -> Optional[list[dict]]:
+    """
+    Carrega dados do cache se existir.
+
+    Args:
+        data: Data no formato YYYY-MM-DD
+
+    Returns:
+        Lista de jogos do cache ou None se não existir
+    """
+    cache_dir = Path("/home/marcos/projetos/bet/data/betfair_cache")
+    cache_file = cache_dir / f"{data}_raw.json"
+
+    if cache_file.exists():
+        try:
+            with open(cache_file, "r", encoding="utf-8") as f:
+                cached = json.load(f)
+                return cached.get("jogos", [])
+        except Exception as e:
+            console.print(f"[yellow]⚠ Erro ao ler cache: {e}[/yellow]")
+            return None
+    return None
+
+
+def save_to_cache(data: str, jogos: list[dict]):
+    """
+    Salva dados no cache.
+
+    Args:
+        data: Data no formato YYYY-MM-DD
+        jogos: Lista de jogos para cachear
+    """
+    cache_dir = Path("/home/marcos/projetos/bet/data/betfair_cache")
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    cache_data = {
+        "metadata": {
+            "data_scraping": datetime.now().isoformat(),
+            "total_jogos": len(jogos),
+            "metodo": "scraping",
+        },
+        "jogos": jogos,
+    }
+
+    cache_file = cache_dir / f"{data}_raw.json"
+    try:
+        with open(cache_file, "w", encoding="utf-8") as f:
+            json.dump(cache_data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        console.print(f"[yellow]⚠ Erro ao salvar cache: {e}[/yellow]")
+
+
+def get_daily_games(
+    data: str, fonte: str = "betfair", use_scraper: bool = True, force_scrape: bool = False
+) -> list[dict]:
+    """
+    Busca e processa os jogos do dia.
+
+    Args:
+        data: Data no formato YYYY-MM-DD
+        fonte: Fonte dos dados (betfair, footystats, flashscore)
+        use_scraper: Se True, tenta usar scraper da Betfair (apenas para fonte=betfair)
+        force_scrape: Se True, ignora cache e força novo scraping
+
+    Returns:
+        Lista de jogos
+    """
     if fonte not in URL_TEMPLATES:
         console.print(f"[bold red]Fonte '{fonte}' nao disponivel.[/bold red]")
         return []
 
+    # Para fonte betfair, implementar lógica de cache + scraping
+    if fonte == "betfair" and use_scraper:
+        # Tentar carregar do cache primeiro (se não for force_scrape)
+        if not force_scrape:
+            cached_data = load_from_cache(data)
+            if cached_data:
+                console.print("[green]📦 Dados carregados do cache[/green]")
+                console.print(f"[dim]   {len(cached_data)} jogos disponíveis[/dim]")
+                return cached_data
+
+        # Cache miss ou force_scrape: fazer scraping
+        try:
+            from bet.services.betfair.scraper import BetfairScraper
+
+            if force_scrape:
+                console.print("[cyan]🔄 Atualizando dados (scraping forçado)...[/cyan]")
+            else:
+                console.print("[cyan]🔄 Cache não encontrado, fazendo scraping...[/cyan]")
+
+            console.print("[dim]   Isso pode levar ~15-20 segundos...[/dim]")
+            scraper = BetfairScraper(headless=True)
+            jogos = scraper.scrape_today()
+
+            if jogos:
+                # Salvar no cache
+                save_to_cache(data, jogos)
+
+                console.print(f"[green]✓ {len(jogos)} jogos obtidos via scraping[/green]")
+                console.print("[dim]💾 Cache salvo para uso futuro[/dim]")
+                return jogos
+            else:
+                console.print("[yellow]⚠ Scraper não retornou jogos, usando CSV...[/yellow]")
+        except Exception as e:
+            console.print(f"[yellow]⚠ Scraper falhou ({e}), usando CSV...[/yellow]")
+
+    # Fallback ou outras fontes: buscar CSV do GitHub
     url = URL_TEMPLATES[fonte].format(data=data)
     try:
         response = requests.get(url)
         response.raise_for_status()
-        return csv_string_to_json_list(response.text)
+        jogos = csv_string_to_json_list(response.text)
+        if fonte == "betfair":
+            console.print(f"[green]✓ {len(jogos)} jogos obtidos via CSV[/green]")
+        return jogos
     except requests.exceptions.RequestException as e:
         console.print(f"[bold red]Erro ao buscar dados: {e}[/bold red]")
         return []
